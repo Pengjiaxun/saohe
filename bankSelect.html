@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>选择银行</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/bankSelect.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body id="bankSelectBg">
+    <!--选择银行-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">选择银行</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+        <div class="cover-head"></div><!--/覆盖占位头部-->
+    </header><!--/head-->
+		
+	
+
+	<!--选择银行-->
+	<section class="sec-bankSelect">
+		<ul class="bank-list">
+			<li class="zgyz vg-flex-wrap">
+				<span></span>
+				<div class="zgyz-bd vg-flex-item">
+					<h1>中国邮政</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="zgyh vg-flex-wrap">
+				<span></span>
+				<div class="zgyh-bd vg-flex-item">
+					<h1>中国银行</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="jsyh vg-flex-wrap">
+				<span></span>
+				<div class="jsyh-bd vg-flex-item">
+					<h1>中国建设银行</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="gsyh vg-flex-wrap">
+				<span></span>
+				<div class="gsyh-bd vg-flex-item">
+					<h1>中国工商银行</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="nyyh vg-flex-wrap">
+				<span></span>
+				<div class="nyyh-bd vg-flex-item">
+					<h1>中国农业银行</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="jtyh vg-flex-wrap">
+				<span></span>
+				<div class="jtyh-bd vg-flex-item">
+					<h1>交通银行</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="zsyh vg-flex-wrap">
+				<span></span>
+				<div class="zsyh-bd vg-flex-item">
+					<h1>招商银行</h1>
+					<p>储值卡</p>
+				</div>
+			</li>
+			<li class="zxyh li vg-flex-wrap">
+                <span></span>
+                <div class="zxyh-bd vg-flex-item">
+                    <h1>中信银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="msyh li vg-flex-wrap">
+                <span></span>
+                <div class="msyh-bd vg-flex-item">
+                    <h1>中国民生银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="gdyh li vg-flex-wrap">
+                <span></span>
+                <div class="gdyh-bd vg-flex-item">
+                    <h1>中国光大银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="xyyh li vg-flex-wrap">
+                <span></span>
+                <div class="xyyh-bd vg-flex-item">
+                    <h1>兴业银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="pfyh li vg-flex-wrap">
+                <span></span>
+                <div class="pfyh-bd vg-flex-item">
+                    <h1>浦发银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="gfyh li vg-flex-wrap">
+                <span></span>
+                <div class="gfyh-bd vg-flex-item">
+                    <h1>广发银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="zgpa li vg-flex-wrap">
+                <span></span>
+                <div class="zgpa-bd vg-flex-item">
+                    <h1>中国平安</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+            <li class="hxyh li vg-flex-wrap">
+                <span></span>
+                <div class="hxyh-bd vg-flex-item">
+                    <h1>华夏银行</h1>
+                    <p>储值卡</p>
+                </div>
+            </li>
+		</ul>
+	</section>
+	
+
+	
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		
+		// 选择
+		$(".bank-list li").tap(function(){
+			var t=$(this).children().children("h1").text()+$(this).children().children("p").text();
+            var el;
+            el=$.tips({
+                content:'选择'+t,
+                stayTime:2000,
+                type:"success"
+            })
+            el.on("tips:hide",function(){
+                window.location.href="bankBinding.html";
+            })
+                
+		});
+	})
+</script>
+
+
+</body>
+
+</html>
+  

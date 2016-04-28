@@ -1,0 +1,12 @@
+
+/*
+*我的设置页面
+ */
+
+.sec-setting{border:1px solid #d6d6d6;padding-left:15px;background:white;margin-top:10px;}
+.vg-list-con{color:#000}
+.setting{padding-right:15px;}
+.leftMoney{color:#000;line-height:25px;padding-right:15px;}
+.leftMoney span{color:#999;}
+.no-arr .vg-list-item:after{display:none}
+

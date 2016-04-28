@@ -1,0 +1,82 @@
+
+.change-name{
+    background:#fff;
+    margin:10px;
+    padding:10px;
+}
+.item{
+    margin:10px 0;
+    padding:0 10px;   
+    border:1px solid #5c3164;
+    border-radius:4px;
+}
+.item input{
+    outline:none;
+    border:none;
+}   
+input[type="text"]{
+    line-height:44px;
+    height:44px;
+    width:100%;
+}
+
+.btns{
+    font-size: 18px;
+    height: 44px;
+    line-height: 44px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    display:block;
+    margin:0 10px:;
+    background:#5c3164;
+    color:#fff;
+}
+/*是否退出弹窗*/
+.dialog{
+    width:270px;
+    display:none;
+    line-height:40px;
+    position:fixed;
+    height:105px;
+    background:#fff;
+    border-radius:4px;
+    z-index:99999;
+    top:50%;
+    left:50%;
+    margin-left:-135px;
+}
+.sure{
+    margin:0 auto;
+    width:90%;
+    border-top:1px solid #d6d6d6;  
+}
+.btn{
+    -webkit-box-flex:1;
+    display:-webkit-box;
+    -webkit-box-sizing:border-box;
+    margin:15px auto;
+    padding:0 50px;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    background:#5c3164;
+    border-radius:4px;
+}
+.yes{
+    background:#5c3164;
+}
+.no{
+    background:#d6d6d6;
+}
+
+
+
+
+
+
+
+
+
+
+

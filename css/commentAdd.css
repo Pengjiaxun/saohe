@@ -1,0 +1,167 @@
+
+.pl-15{padding-left:15px;}
+
+/*
+*订单支付商品列表
+*/
+.commentAdd-sec{
+	/* margin-top:10px; */
+}
+
+.commentAdd-list{
+	margin:10px 15px;
+	background-color: white;
+	border-radius:6px;
+}
+
+/*店铺信息*/
+.orderPay-list-hd{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	height:50px;
+	line-height:50px;
+	color:#333;
+}
+.orderPay-list-hd .selectIcon{
+	width:20px;
+	height: 50px;
+	background: url(../images/icons/icon_select_no.png) no-repeat 15px center;
+	background-size:20px;
+	padding-right:15px;
+	padding-left:15px;
+}
+.orderPay-list-hd .selectIcon.selected{
+	width:20px;
+	height: 50px;
+	background: url(../images/icons/icon_select_yes.png) no-repeat 15px center;
+	background-size:20px;
+	padding-right:15px;
+}
+
+.orderPay-list-hd .shopName{
+	position:relative;
+	height:50px;
+	line-height: 50px;
+	font-size:16px;
+	padding:0 5px 0 20px;
+	overflow:hidden;
+}
+/*订单状态*/
+.order-stat{
+	padding-right:15px;
+}
+
+.orderPay-list-hd .shopName span{
+	display: block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:15px;
+	left:0;
+}
+.shopName span img{
+	display: block;
+	width:100%;
+}
+.orderPay-list-hd .shopName p{
+	height: 100%;
+	overflow:hidden;
+	padding-left:5px;
+}
+
+/*商品信息*/
+.proInfo-box{
+	border:1px solid #ccc;
+	border-radius:6px 6px 0 0;
+	background-color:white;
+}
+.orderpay-list-bd-wrap{display:block;}
+.orderPay-list-bd{
+	padding:10px 15px;
+	position:relative;
+}
+.orderPay-list-bd .proImg{
+	width:55px;
+	height: 55px;
+	overflow:hidden;
+	border-radius:6px;
+	margin-right:10px;
+}
+.orderPay-list-bd .proImg img{
+	display:block;
+	width:100%;
+}
+.orderPay-list-bd .proCnt{
+	
+}
+.orderPay-list-bd .proCnt h1{
+	font-size:15px;
+	color:#333;
+	line-height:17px;
+	width:130px;
+	word-break:break-all;
+}
+.orderPay-list-bd .proCnt h2{
+	font-size:13px;
+	color:#666;
+	max-width:60%;
+	overflow:hidden;
+}
+.orderPay-list-bd .proCnt h3{
+	font-size:12px;
+	color:#999;
+}
+.orderPay-list-bd .proCnt .price{
+	display:block;
+	font-size:16px;
+	color:#c60a1e;
+	text-align:right;
+	position:absolute;
+	top:13px;
+	right:15px;
+}
+.orderPay-list-bd .proCnt .num{
+	display:block;
+	font-size:14px;
+	color:#666;
+	text-align:right;
+	position:absolute;
+	top:35px;
+	right:15px;
+}
+
+
+
+
+/*评论*/
+.addComment-box{width:100%;padding:15px;-webkit-box-sizing:border-box;box-sizing:border-box;}
+/*标题	*/
+.addComment-box h1{font-size:15px;line-height:1;text-align:center;padding-bottom:15px;}
+/*输入框*/
+.addComment-box .comment-cnt{width:100%;height:130px;}
+.addComment-box .comment-cnt textarea{width:100%;height:100%;-webkit-box-sizing:border-box;
+	box-sizing:border-box;padding:10px;border-radius:5px;}
+/*评论星级*/
+.addComment-box .comment-stars{height:44px;padding-left:15px;-webkit-box-sizing:border-box;box-sizing:border-box;
+border-radius:5px;margin-top:6px;}
+.addComment-box .comment-stars span{width:34px;display:block;font-size:15px;line-height:44px;}
+.stars{font-size:0;}
+.stars span{width:32px;height:44px;display:inline-block;background:url(../images/icons/icon_star_grey.png) no-repeat center;
+background-size:23px 21px;float:left;}
+.stars span.active{background:url(../images/icons/icon_star_red.png) no-repeat center;
+background-size:23px 21px;}
+/*按钮*/
+.addComment-box .commentBtn{margin-top:20px; }
+.addComment-box .commentBtn button{width:100%;height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;}
+
+/*已经评价按钮*/
+.commented-btn{
+	width:100%;
+	height:44px ;
+	line-height:44px;
+	text-align:center;
+	background-color: #999;
+	color:white;
+	border-radius:0 0 6px 6px;
+}

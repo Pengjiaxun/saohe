@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>提现记录</title>
+    <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+</head>
+<body ontouchstart="">
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive ui-border-b">
+        <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+        <h1>提现记录</h1>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+    <!-- 页面内容 -->
+    <div class="myorder-top">
+        <div class="ui-row-flex ui-whitespace">
+            <div class="ui-col ui-col active2">
+                <h2><img src="image/icon/icon-all.png" alt=""></h2>
+                <p>提现申请</p>
+            </div>
+            <div class="ui-col ui-col">
+               <h2><img src="image/icon/icon-wait_pay.png" alt=""></h2>
+               <p>提现审核</p>
+           </div>
+           <div class="ui-col ui-col">
+            <h2><img src="image/icon/icon_wait_sent.png" alt=""></h2>
+            <p>提现中</p>
+            </div>
+        </div>
+        <div class="ui-row-flex ui-whitespace">
+            <div class="ui-col ui-col">
+                <h2><img src="image/icon/icon_wait_receive.png" alt=""></h2>
+                <p>提取成功</p>
+            </div>
+            <div class="ui-col ui-col">
+                <h2><img src="image/icon/icon_already_receive.png" alt=""></h2>
+                <p>提现拒绝</p>
+            </div>
+            <div class="ui-col ui-col">
+                <h2><img src="image/icon/icon_already_receive.png" alt=""></h2>
+                <p>已退款</p>
+            </div>
+        </div>
+    </div>
+    <div class="recontent">
+        kong
+    </div>
+<script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+<script src="frozenui-1.3.0/js/frozen.js"></script>
+<script type="text/javascript">
+    $(".ui-col").click(function(){
+        $(".ui-col").removeClass("active2");
+        $(this).addClass("active2");
+    });
+</script>
+</body>
+</html>

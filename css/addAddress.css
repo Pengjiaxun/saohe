@@ -1,0 +1,41 @@
+
+/*
+*添加收货地址
+*/
+.sec-addAddress{border-top:1px solid #ccc;background:white;
+	padding-left:15px;}
+.sec-addAddress1{margin-top:10px;}	
+.sec-addAddress2{border-bottom:1px solid #ccc;}	
+/*输入框外包裹*/
+.addAddress-box{padding:10px 0}
+.addAddress-box label{height:26px;line-height:26px;width:70px;display:inline-block; }
+.addAddress-box .addAddress-input{height:26px;line-height:26px;width:100%;-webkit-box-sizing:border-box;
+	box-sizing:border-box;}
+.addAddress-box .addAddress-input input,.addAddress-box .addAddress-input textarea{width:100%;
+	height:100%;border:none;}
+/*详细地址*/
+.detail-address label{line-height:1;}
+.detail-address label,.detail-address .addAddress-input{height:52px;}
+.addAddress-box .addAddress-input textarea{line-height:1;padding-top:4px;}
+/*省市区*/
+.city-table{width:100%;}
+.city-table td{width:33%;}
+.city-table td select{width:100%;height:100%;}
+/*设置默认地址*/
+.default-address{height:44px;line-height:22px;-webkit-box-sizing:border-box;
+	box-sizing:border-box;padding:11px 45px;background:#fff url(../images/icons/icon_select_no.png) no-repeat 15px center;
+	background-size:20px;border-bottom:1px solid #ccc}
+.default-address.selected{background:#fff url(../images/icons/icon_select_yes.png) no-repeat 15px center;
+	background-size:20px;}
+/*添加地址保存按钮*/
+.addAddress-btn{padding:40px 15px 0 15px;}
+.addAddress-btn button{width:100%;height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;}
+
+/*编辑地址按钮*/
+.editAddress-btn{padding:40px 0px 0 15px;}
+.editAddress-btn div{width:50%;padding-right:15px;-webkit-box-sizing:border-box;
+	box-sizing:border-box;}
+.editAddress-btn button{height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;width:100%}
+

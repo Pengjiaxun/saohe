@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />     
+        <title>店铺管理</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/shop_set.css">
+    </head>
+   <body id="bg_tj">
+    <!-- 头部 -->
+    <header>
+        <div class="head-common">
+            <a href="index.html" class="head-l head-back">返回</a>
+            <div class="head-m">店铺管理</div>
+            <a class="head-r"></a>
+        </div>
+    </header>
+    <!-- 头部占位符 -->
+    <div class="cover-head"></div>
+    <!-- 基本信息 -->
+    <p class="info ui-whitespace">基本信息</p>
+    <section class="basic-info">
+        <div class="vg-list-item vg-flex-wrap Logo">      
+            <div class="vg-flex-item vg-list-con">店铺Logo</div>
+            <div class="header-portrait"></div>
+        </div>
+        <a href="shop_name.html" class="vg-list-item vg-flex-wrap ui-border-tb">      
+            <div class="vg-flex-item vg-list-con-r">店铺名称</div>
+            <div class="vg-list-con-rc">谁的店铺</div>
+        </a>
+        <a href="shop_introduce.html" class="vg-list-item vg-flex-wrap">      
+            <div class="vg-flex-item vg-list-con-r">店铺简介</div>
+            <div class="vg-list-con-rc">什么样的店铺</div>
+        </a>
+    </section>
+    <!-- 客服信息 -->
+    <p class="info ui-whitespace">客服信息</p>
+    <section class="customer-info">
+        <a href="customer_weixin.html" class="vg-list-item vg-flex-wrap">      
+            <div class="vg-flex-item vg-list-con-r">微信</div>
+            <div class="vg-list-con-rc">未绑定</div>
+        </a>
+        <a href="customer_weibo.html" class="vg-list-item vg-flex-wrap ui-border-tb">    
+            <div class="vg-flex-item vg-list-con-r">微博</div>
+            <div class="vg-list-con-rc">未绑定</div>
+        </a>
+        <a href="customer_QQ.html" class="vg-list-item vg-flex-wrap">      
+            <div class="vg-flex-item vg-list-con-r">QQ</div>
+            <div class="vg-list-con-rc">未设置</div>
+        </a>  
+    </section>
+    <!-- 店主信息 -->
+    <p class="info ui-whitespace">店主信息</p>
+    <section class="shopkeer-info">
+        <a href="shopkeer_phone.html" class="vg-list-item vg-flex-wrap">      
+            <div class="vg-flex-item vg-list-con-r">手机</div>
+            <div class="vg-list-con-rc">未设置</div>
+        </a>
+        <a href="shopkeer_qq.html" class="vg-list-item vg-flex-wrap ui-border-t">      
+            <div class="vg-flex-item vg-list-con-r">QQ</div>
+            <div class="vg-list-con-rc">未设置</div>
+        </a>
+    </section>
+    <div class="ui-btn-wrap">
+        <button type="button" class="btns">保存</button>
+    </div>
+    <!-- Logo弹窗 -->
+    <section>
+        <div class="photo">
+        <a href="#" class="pht photograph ui-border-b">
+            拍照
+        </a>
+        <a href="#" class="pht photoget">
+            从手机相册获取
+        </a>
+        <p class="cancel">取消</p>
+    </div>
+     <!-- 遮罩层 -->
+    <div class="ui-dialog"></div> 
+    </section>
+  
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script>
+        // Logo弹窗
+        $(function(){
+        $(".Logo").click(function(){
+            $(".photo").css({"bottom":0,"animation":"moveon 0.5s"});
+            $(".ui-dialog").css("display","block");
+         });
+        $(".cancel").click(function(){
+            $(".photo").css({"bottom":"-125px","animation":"movedown 0.5s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".photo").css({"bottom":"-125px","animation":"movedown 0.5s"});
+        });
+    });
+    </script>
+</body>
+</html>

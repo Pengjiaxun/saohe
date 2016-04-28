@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>修改密码</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/changepwd.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--修改密码头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">修改密码</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+	<!--修改密码-->
+	<section class="changepwd">
+        <h1>注意：登录密码和支付密码默认一致，请妥善保管！</h1>
+		<div class="oldpwd vg-flex-wrap">
+            <span>当前密码</span>
+            <p class="vg-flex-item"><input type="text"><i class="close-btn"></i></p>
+        </div>
+        <div class="newpwd vg-flex-wrap">
+            <span>新密码</span>
+            <p class="vg-flex-item"><input type="text"><i class="close-btn"></i></p>
+        </div>
+        <div class="confirmpwd vg-flex-wrap">
+            <span>确认密码</span>
+            <p class="vg-flex-item"><input type="text"><i class="close-btn"></i></p>
+        </div>
+        <div class="changepwd-btn">
+            <button id="changepwd">确认修改</button>
+        </div>
+	</section>
+	
+    
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		
+		$(function(){
+            //点击清除输入框
+			$("input").on('input',function(){
+                if($(this).val()!=""){
+                    $(this).parent().children(".close-btn").show();
+                }else{
+                    $(this).parent().children(".close-btn").hide();
+                }
+            })
+            //点击清除
+            $(".close-btn").tap(function(e){
+                e.stopPropagation();
+                $(this).parent().children("input").val("");
+                $(this).hide();
+            });
+            //提示框
+            $("#changepwd").tap(function(){
+                el=$.tips({
+                    content:'密码错误！',
+                    stayTime:2000,
+                    type:"warm"
+                })
+                el.on("tips:hide",function(){
+                    console.log("tips hide");
+                })
+            });
+		})
+
+	</script>
+
+</body>
+
+</html>
+  

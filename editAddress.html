@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>编辑收货地址</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/addaddress.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--添加收货地址头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">编辑收货地址</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--编辑收货地址-->
+	<section class="sec-addAddress sec-addAddress1">
+		<div class="addAddress-box ui-border-b vg-flex-wrap">
+			<label for="addrName">收货人</label>
+			<div class="addAddress-input vg-flex-item"><input id="addrName" type="text" value="李先生" /></div>
+		</div>
+		<div class="addAddress-box vg-flex-wrap">
+			<label for="addrMobile">手机号</label>
+			<div class="addAddress-input vg-flex-item"><input id="addrMobile" type="text" value="15988888888" /></div>
+		</div>
+    </section><!--/sec-addAddress1-->
+
+	<section class="sec-addAddress sec-addAddress2">
+		<div class="addAddress-box ui-border-b vg-flex-wrap">
+			<label for="city">省市区</label>
+			<div class="addAddress-input vg-flex-item">
+				<table class="city-table">
+					<tr>
+						<td>
+							<select id="city">
+								<option>广东</option>
+								<option>江西省</option>
+								<option>广东省</option>
+								<option>山东省</option>
+								<option>河北省</option>
+								<option>北京</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option>深圳</option>
+								<option>深圳市</option>
+								<option>广州市</option>
+								<option>惠州市</option>
+								<option>汕头市</option>
+								<option>韶关市</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option>福田</option>
+								<option>福田区</option>
+								<option>龙岗区</option>
+								<option>龙华区</option>
+								<option>罗湖区</option>
+								<option>盐田区</option>
+							</select>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="addAddress-box detail-address ui-border-b vg-flex-wrap">
+			<label for="addrDetAddr">详细地址</label>
+			<div class="addAddress-input vg-flex-item"><textarea rows="2" id="addrDetAddr" type="text" value="软件产业基地卫星大厦705">软件产业基地卫星大厦705</textarea></div>
+		</div>
+		<div class="addAddress-box vg-flex-wrap">
+			<label for="addrCode">邮编</label>
+			<div class="addAddress-input vg-flex-item"><input id="addrCode" type="text" placeholder="（可选）" /></div>
+		</div>
+    </section><!--/sec-addAddress2-->
+	<div class="default-address selected">设置为默认地址</div>
+	<!-- <div class="editAddress-btn clearfix">
+		<div class="delete-btn fl"><button>删除</button></div>
+		<div class="save-btn fl"><button>保存并使用</button></div>
+	</div> -->
+	<div class="addAddress-btn">
+		<button>保存</button>
+	</div>
+
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		//删除地址
+		$(".delete-btn").tap(function(){
+			var dia=$.dialog({
+		        content:'是否删除地址？',
+		        button:["是","否"]
+		    });
+		});
+	})
+</script>
+
+
+</body>
+
+</html>
+  

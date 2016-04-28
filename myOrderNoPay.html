@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>我的订单</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/myorder.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--填写订单头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">我的订单</div>
+            <a class="head-r head-edit">编辑</a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+		
+	<!--订单导航-->
+	<section class="orderPay-nav">
+		<div class="orderPay-nav-t clearfix">
+			<a href="myorder.html" class="orderPay-nav-item all"><p><span></span><b>全部</b></p></a>
+			<a href="myordernopay.html" class="orderPay-nav-item waitpay active"><p><span></span><b>待付款</b></p></a>
+			<a class="orderPay-nav-item waitsend"><p><span></span><b>待发货</b></p></a>
+		</div>
+		<div class="orderPay-nav-b clearfix">
+			<a class="orderPay-nav-item waitreceive"><p><span></span><b>待收货</b></p></a>
+			<a class="orderPay-nav-item received"><p><span></span><b>已收货</b></p></a>
+			<a class="orderPay-nav-item cancel"><p><span></span><b>已取消</b></p></a>
+		</div>
+	</section>
+
+	<!--填写订单列表-->
+	<section class="orderPay-sec">
+		<div class="orderPay-list">
+			<a class="orderPay-list-hd vg-flex-wrap">
+				<div class="selectIcon shopSelected"></div>
+				<div class="shopName vg-flex-item">
+					<span><img src="images/icons/icon_shop_logo.png"></span>
+					<p class="">騷骚的小店</p>
+				</div>
+				<div class="order-stat">订单状态</div>	
+			</a>
+			<div class="orderPay-list-bd vg-flex-wrap">
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt vg-flex-item">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<span class="num">X 22</span>
+					<h2 class="ui-nowrap">口味424热舞热热万人口味424热舞热热万人口味424热舞热热万人</h2>
+				</div>
+			</div>
+			<div class="orderPay-list-bd vg-flex-wrap">
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt vg-flex-item">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<span class="num">X 22</span>
+					<h2 class="ui-nowrap">免费包邮</h2>
+				</div>
+			</div>
+			<div class="totalPrice vg-flex-wrap">
+				<div class="vg-flex-item">
+					<h2>共8件商品</h2>
+					<h3>合计:<em>￥888.00</em><span>(含运费10.00元)</span></h3>
+				</div>
+				<div class="btn-logistics-box">
+					<a href="##">物流轨迹</a>
+				</div>
+			</div>
+			<div class="orderpay-btns">
+				<button>继续付款</button>
+				<button class="btn-cancel">取消订单</button>
+			</div>
+		</div>
+		
+		<div class="orderPay-list">
+			<a class="orderPay-list-hd vg-flex-wrap">
+				<div class="selectIcon shopSelected"></div>
+				<div class="shopName vg-flex-item">
+					<span><img src="images/icons/icon_shop_logo.png"></span>
+					<p class="">騷骚的小店</p>
+				</div>	
+				<div class="order-stat">订单状态</div>	
+			</a>
+			<div class="orderPay-list-bd vg-flex-wrap">
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt vg-flex-item">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<span class="num">X 22</span>
+					<h2 class="ui-nowrap">口味424热舞热热万人口味424热舞热热万人口味424热舞热热万人</h2>
+				</div>
+			</div>
+			<div class="orderPay-list-bd vg-flex-wrap">
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt vg-flex-item">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<span class="num">X 22</span>
+					<h2 class="ui-nowrap">免费包邮</h2>
+				</div>
+			</div>
+			<div class="totalPrice vg-flex-wrap">
+				<div class="vg-flex-item">
+					<h2>共8件商品</h2>
+					<h3>合计:<em>￥888.00</em><span>(含运费10.00元)</span></h3>
+				</div>
+				<div class="btn-logistics-box">
+					<a href="##">物流轨迹</a>
+				</div>
+			</div>
+			<div class="orderpay-btns">
+				<button>继续付款</button>
+				<button class="btn-cancel">取消订单</button>
+			</div>
+		</div>
+    </section><!--/sec-orderPay-->
+	
+
+	<!--底部按钮：删除-->
+	<div class="myordernopay-footer">
+		<div class="footer-btn2 vg-flex-wrap">
+			<div class="selectIcon"></div>
+			<div class="footer-cnt vg-flex-item">
+				全选
+			</div>
+			<div class="btn-del"><button>删除</button></div>
+		</div>
+		<div style="width:100%;height:64px;"></div>
+	</div>
+	<!--底部-->
+	<div class="footer2">
+		<div class="orderPay-footer">
+			<button class="btn-gopay">合并付款(总计:1555.00元)</button>
+		</div>
+		<div style="width:100%;height:64px;"></div>
+	</div>
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		// 取消订单弹窗
+		$(".btn-cancel").tap(function(){
+			var dia=$.dialog({
+				content:'是否取消订单？',
+				button:['是','否']
+			});
+		});
+		
+		//全选
+		var all=false,allSe=$(".orderPay-list .selectIcon"),allDelBtn=$(".footer-btn2 .selectIcon");
+		// 检查全选
+		function checkAll(){
+			var sum=0;
+			for(var i=0;i<allSe.length;i++){
+				if($(allSe[i]).hasClass("selected")){
+					sum++;
+				}
+			}
+			if(allSe.length==sum){
+				all=true;
+			}else{
+				all=false;
+			}
+		}
+		
+		
+		allDelBtn.tap(function(){//全选删除
+			checkAll();
+			if(!all){
+				$(this).addClass("selected");
+				allSe.addClass("selected");
+				all=false;
+			}else{
+				$(this).removeClass("selected");
+				allSe.removeClass("selected");
+				all=true;
+			}	
+		});
+
+
+		//每个单选点击
+		allSe.tap(function(e){
+			e.preventDefault();
+			$(this).toggleClass("selected");
+			checkAll();
+			if(all){
+				allDelBtn.addClass("selected");
+				console.log(11)
+			}else{
+				allDelBtn.removeClass("selected");
+				console.log(22)
+			}	
+		});
+		//编辑
+		var edit=true;
+		$(".head-edit").tap(function(){
+			checkAll();
+			if(all){
+				allDelBtn.addClass("selected");
+				all=false;
+			}else{
+				allDelBtn.removeClass("selected");
+				all=true;
+			}
+			if(edit){
+				$(this).text("完成");
+				$(".myordernopay-footer").show();
+				edit=false;
+			}else{
+				$(this).text("编辑");
+				$(".myordernopay-footer").hide();
+				edit=true;
+			}
+			
+		});
+
+		//删除订单
+		$(".btn-del").tap(function(){
+			for(var i=0;i<allSe.length;i++){
+				if($(allSe[i]).hasClass("proSelected") && $(allSe[i]).hasClass("selected")){
+					$(allSe[i]).parents(".orderPay-list-bd").remove();
+				}
+				if($(allSe[i]).hasClass("shopSelected") && $(allSe[i]).hasClass("selected")){
+					$(allSe[i]).parents(".orderPay-list").remove();
+				}
+			}
+			
+		});
+		
+	})
+</script>
+
+
+</body>
+
+</html>
+  

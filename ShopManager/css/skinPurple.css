@@ -1,0 +1,373 @@
+html,body{
+	min-height:100%;
+}
+/*公共头部*/
+.head-common{background-color:#5c3164;}
+/*弹出框确认按钮*/
+#dialogButton0{
+	background-color:#5c3164;
+}
+/*悬浮菜单*/
+.float-nav .float-nav-item h2{background:rgba(92,49,100,0.9);}
+
+/**********************************************************
+**首页
+***********************************************************/
+
+/*头部面板背景*/
+.head-panel{
+	background:url(../../images/bgs/bg_up.png) no-repeat center;
+	background-size:cover;
+}
+
+.face-img{
+	border:2px solid #866389;
+}
+#Taproduct_body{
+	background-color: #f0f0f0;
+}
+/*body渐变背景*/
+#index_body{
+	background: -webkit-radial-gradient(#d0b3c5 0%, #6d556a 100%);
+}
+
+
+/*底部导航背景*/
+footer.nav{
+	background:url(../../images/bgs/bg_tab.png) no-repeat center;
+	background-size:cover;
+}
+
+.nav-footer-item .nav-footer-item1{
+	background:url(../../images/icons/icon_home.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item.active .nav-footer-item1{
+	background:url(../../images/icons/icon_home_pre.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item .nav-footer-item2{
+	background:url(../../images/icons/icon_list.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item.active .nav-footer-item2{
+	background:url(../../images/icons/icon_list_pre.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item .nav-footer-item3{
+	background:url(../../images/icons/icon_car.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item.active .nav-footer-item3{
+	background:url(../../images/icons/icon_car_pre.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item .nav-footer-item4{
+	background:url(../../images/icons/icon_me.png) no-repeat center;
+	background-size:cover;
+}
+.nav-footer-item.active .nav-footer-item4{
+	background:url(../../images/icons/icon_me_pre.png) no-repeat center;
+	background-size:cover;
+}
+
+
+/**********************************************************
+**商品列表
+***********************************************************/
+/*轮播图*/
+.ui-slider-indicators li{background-color:rgba(255,255,255,0.5);}
+.ui-slider-indicators li.current:before {background-color: rgba(92,49,100,1);border:0;}
+/*分享按钮#c60a1e */
+.income-share{background:url(../../images/icons/detail/icon_share_white.png) no-repeat 85px center;background-size:13px;}
+.income-share-noMoney{background-color:#5c3164 }
+.income-share-hasMoney{background-color:#c60a1e }
+/*底部按钮*/
+.footer-btn-box .buyNow{background-color:#5c3164}
+.footer-btn-box .addCart{background-color:#ffbb33}
+.footer-cart-con h3{background:url(../../images/icons/detail/icon_buy_car.png) no-repeat center;
+background-size:22px }
+.footer-cart-con h4{color:#5c3164; }
+/*弹出框数量加减按钮*/
+.modal-num-bd .jia::after{background:url(../../images/icons/detail/icon_add_detail.png) no-repeat center;
+background-size:25px;left:10px;}
+.modal-num-bd .jian::after{background:url(../../images/icons/detail/icon_minus_detail.png) no-repeat center;
+background-size:25px;}
+
+
+/**********************************************************
+**填写订单页面
+***********************************************************/
+.btn-gopay{background-color:#5c3164; }
+.add-address{background-color:#5c3164;}
+
+
+/**********************************************************
+**填写地址
+***********************************************************/
+.addAddress-btn button{background-color:#5c3164;}
+/*编辑地址按钮*/
+.editAddress-btn .delete-btn button{background-color:#9a9a9a;}
+.editAddress-btn .save-btn button{background-color:#5c3164;}
+
+/**********************************************************
+**我的
+***********************************************************/
+.sec-userhead{
+	background-color:#5c3164;
+}
+
+
+
+/**********************************************************
+**余额
+***********************************************************/
+.mywallet_body{background:url(../../images/icons/mywallet/bg.png) no-repeat center;
+background-size:cover;}
+
+.sec-mywallet .btn-cash a{background-color:#5c3164;color:white; }
+
+
+
+/**********************************************************
+**提现
+***********************************************************/
+.cash-input p input{border:1px solid #5c3164; }
+.sec-cash .btn-cash button{background-color:#5c3164;color:#fff;}
+
+/**********************************************************
+**提现记录
+***********************************************************/
+/*徽标*/
+.accordion-badge{background-color:#5c3164;color:#fff;}
+/*徽标右边文字*/
+.accordion-hd-r{color: #5c3164;}
+/*箭头*/
+.accordion-hd::after{background:url(../../images/icons/icon_down_gray.png) no-repeat center;
+background-size:15px 9px;}
+.accordion.show .accordion-hd::after{background:url(../../images/icons/icon_up_purple.png) no-repeat center;
+background-size:15px 9px;}
+
+
+/**********************************************************
+**失败页
+***********************************************************/
+/*失败提示*/
+.sec-payFailed h1{color:#5c3164}
+/*确定按钮*/
+.payFailed-btn button{background-color:#5c3164;}
+
+
+/**********************************************************
+**成功页
+***********************************************************/
+/*成功提示*/
+.sec-paySuccess h1{color:#5c3164}
+/*确定按钮*/
+.paySuccess-btn button{background-color:#5c3164;}
+
+/**********************************************************
+**404页
+***********************************************************/
+.err-404{background:url(../../images/icons/404.png) no-repeat;
+background-size:contain;}
+
+/**********************************************************
+**500页
+***********************************************************/
+.err-500{background:url(../../images/icons/500.png) no-repeat;
+background-size:contain;}
+
+
+/**********************************************************
+**个人信息页
+***********************************************************/
+/*确定按钮*/
+.userInfo-btn button{background-color:#5c3164;}
+
+/**********************************************************
+**绑定手机
+***********************************************************/
+/*确定按钮*/
+.bindPhone-btn button{background-color:#5c3164;}
+/*输入框*/
+.sec-bindPhone .mobile-box p input,.sec-bindPhone .code-box p input{
+	border:1px solid #5c3164;
+}
+/*获取验证码按钮*/
+.sec-bindPhone .code-box button{
+	background-color:#5c3164;color:#fff;
+}
+
+
+/**********************************************************
+**银行卡绑定
+***********************************************************/
+/*确定按钮*/
+.bankbinding-btn button{background-color:#5c3164;}
+/*输入框*/
+.sec-bankbinding .username p input,.sec-bankbinding .bankName p input,.sec-bankbinding .cardNo p input{
+	border:1px solid #5c3164;
+}
+/**********************************************************
+**选择银行
+***********************************************************/
+/*背景*/
+#bankSelectBg{background: url(../../images/icons/bank/bg_bank.png) no-repeat center;
+background-size:cover;}
+/**********************************************************
+**银行卡列表
+***********************************************************/
+/*背景*/
+#bankCardsListBg{background: url(../../images/icons/bank/bg_bank.png) no-repeat center;
+background-size:cover;}
+
+
+
+
+/**********************************************************
+**我的订单
+***********************************************************/
+/*订单导航*/
+.orderPay-nav{background-color:#5c3164;}
+.orderPay-nav-item.active p{background-color:#432449;border:1px solid #fff}
+/*按钮*/
+.orderpay-btns button,.totalPrice .btn-logistics-box a{
+	border:1px solid #5c3164;color:#5c3164;
+}
+.orderpay-btns button:active,.totalPrice .btn-logistics-box a:active{
+	background-color:#5c3164;color:#fff;
+}
+/*取消按钮*/
+.orderpay-btns button.btn-cancel{
+	border:1px solid #006add;color:#006add;
+}
+/*订单评价tab导航*/
+.myorderComment-tab a.active{background-color:#5c3164 }
+/*订单评价tab导航按钮*/
+.myorderComment-sec .comment-btn{
+	border:1px solid #5c3164;color:#5c3164;
+}
+.myorderComment-sec .comment-btn:active,.myorderComment-sec .comment-btn.active{
+	background-color:#5c3164;color:#fff;
+}
+/*备注*/
+.note-dialog .ui-dialog-cnt h1{
+	color:#5c3164;
+}
+.note-dialog .ui-dialog-cnt p textarea{
+	border: 1px solid #5c3164;
+}
+.note-dialog .ui-dialog-cnt .modifyNote-btn-box button{
+	background:#5c3164;
+}
+/**********************************************************
+**发表评论
+***********************************************************/
+/*评论*/
+.addComment-box .comment-cnt textarea{border:1px solid #5c3164;}
+.addComment-box .comment-stars{border:1px solid #5c3164;}
+.addComment-box .commentBtn button{background-color:#5c3164;}
+/*弹窗评论*/
+.comment-dialog .comment-cnt textarea{border:1px solid #5c3164;}
+.comment-dialog .comment-stars{border:1px solid #5c3164;}
+.comment-dialog .commentBtn button{background-color:#5c3164;}
+/**********************************************************
+**订单为空页
+***********************************************************/
+.orderNone-box{background:url(../../images/icons/none.png) no-repeat center;background-size:contain;}
+
+
+/**********************************************************
+**关于我们
+***********************************************************/
+/*背景*/
+#aboutus_body{background: url(../../images/icons/bg_about_us.png) no-repeat center;
+background-size:cover;min-height:100%;}
+.aboutUs-title h1,.aboutUs-title h4{color:#5c3164;}
+
+
+/**********************************************************
+**修改密码
+***********************************************************/
+/*确定按钮*/
+.changepwd-btn button{background-color:#5c3164;}
+/*输入框*/
+.changepwd .oldpwd p input,.changepwd .newpwd p input,.changepwd .confirmpwd p input{
+	border:1px solid #5c3164;
+}
+
+
+/**********************************************************
+**注册页面
+***********************************************************/
+#reg_body{background:url(../../images/icons/reg/bg_reg.png) no-repeat center;background-size:cover}
+.regForm-box .input-box{border:1px solid #5c3164;color:#5c3164;}
+.regForm-box .input-box input{color:#5c3164;}
+.regForm-box .input-box input::-webkit-input-placeholder{color:#5c3164;}
+.regForm-box .input-box.mobile::before{background:url(../../images/icons/reg/icon_phone.png) no-repeat center;
+background-size:12px 16px;}
+.regForm-box .input-box.code::before{background:url(../../images/icons/reg/icon_number.png) no-repeat center;
+background-size:12px 16px;}
+.regForm-box .input-box.pwd::before{background:url(../../images/icons/reg/icon_password.png) no-repeat center;
+background-size:12px 16px;}
+.regForm-box .input-box.confirmPwd::before{background:url(../../images/icons/reg/icon_password.png) no-repeat center;
+background-size:12px 16px;}
+/*发送验证码按钮*/
+.regForm-box .btn-sendCode{background-color:#5c3164;color:white;}
+/*注册页面确定按钮*/
+.reg-btn button{background-color:#5c3164;color:white;}
+
+
+
+/**********************************************************
+**申请开店同意协议页面
+***********************************************************/
+/*背景*/
+#openShop_protocol_bg{background: url(../../images/icons/uploadID/bg_home_open_shop.png) no-repeat center;
+background-size:cover;}
+.sec-openShop_protocol .face{background: url(../../images/icons/uploadID/bg_apply_for.png) no-repeat center;
+background-size:252px 62px;color: white;}
+/*下一步按钮*/
+.sec-openShop_protocol .btn-box a,.sec-openShop_protocol .openShop_protocol_share a{background: -webkit-linear-gradient(top,#bd2d74 10%, #5e1855 100%);color:white;
+border:1px solid rgba(255,255,255,0.5);box-shadow:inset 0 3px 13px 0px rgba(255,250,225,0.4);}
+
+/**********************************************************
+**申请开店信息录入页面
+***********************************************************/
+/*背景*/
+#openShop_userInfo_bg{background: url(../../images/icons/bank/bg_bank.png) no-repeat center;
+background-size:cover;}
+/*输入框外框*/
+.openShop_userInfo .userInfo-input-box{border:1px solid #5c3164;}
+/*验证码发送按钮*/
+.openShop_userInfo .btn-sendCode{background-color:#5c3164;color:white;}
+/*按钮*/
+.openShop_userInfo-btn button{background-color:#5c3164;color:white;}
+
+
+/**********************************************************
+**申请开店-上传身份证页面
+***********************************************************/
+/*背景*/
+#openShop_uploadID_bg{background: url(../../images/icons/bank/bg_bank.png) no-repeat center;
+background-size:cover;}
+/*上传图片描述*/
+.openShop_uploadID .upload-desc{color:#5c3164; }
+/*增加按钮*/
+.openShop_uploadID .upload-img button{background: url(../../images/icons/uploadID/icon_add_clip.png) no-repeat center;
+background-size:33px;}
+/*提交按钮*/
+.upload-btn button{background-color:#5c3164;color:white;}
+
+
+/**********************************************************
+**申请开店-成功页面
+***********************************************************/
+.sec-openShop_success{border:1px solid #5c3164;}
+.sec-openShop_success h1{color:#5c3164}
+/*确定按钮*/
+.openShop_success-btn li:first-child a{background-color:#5c3164;}
+.openShop_success-btn li:last-child a{background-color:#0069dc;}
+
+

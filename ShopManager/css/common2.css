@@ -1,0 +1,45 @@
+
+
+
+
+
+/*头部左边*/
+/*.head-l{display:block;width:60px;height:44px;line-height:44px;color:#fff;
+	-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;}*/
+/*.head-l:link{color:#fff;}
+.head-l:hover{color:#fff;}
+.head-l:active{color:#fff;}
+.head-l:visited{color:#fff;}*/
+/*头部返回*/
+/*.head-back{background:url(../images/icons/icon_back_white.png) left center no-repeat;background-size:9px 15px;text-align:left;text-indent:14px;
+	line-height:44px;}*/
+/*头部中间*/
+/*.head-common .head-m{display:block;-webkit-box-flex:1;
+	box-flex:1;height:44px;line-height:44px;text-align:center;
+	font-size:18px;color:#fff;}*/
+/*头部右边*/
+/*.head-r{display:block;
+	width:62px;height:44px;line-height:44px;color:#fff;text-align:center; }
+.head-r:link{color:#fff;}
+.head-r:hover{color:#fff;}
+.head-r:active{color:#fff;}
+.head-r:visited{color:#fff;}
+/*覆盖浮动后的头部*/
+/*.cover-head{width:100%;height: 44px;overflow: hidden;}*/*/
+
+
+/*2列布局item弹性布局，两边可以固定宽度*/
+./*vg-flex-wrap{-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:box;}
+.vg-flex-item{display:block;-webkit-box-flex:1;box-flex:1;}
+i.badge{display:block;width:16px;height:16px;line-height:16px;text-align:center;border-radius:100%;
+	background:#d74b41;position:absolute;top:50%;right:30px;color:white;font-size:12px;margin-top:-8px;}
+
+/*2列布局按钮*/
+/*.vg-btn-cols2{width:100%;display:table;}
+.vg-btn-item{width:50%;display:table-cell;}
+*/
+
+/*轮播图*/
+/*.ui-slider-content li a{display:block;}
+*/
+

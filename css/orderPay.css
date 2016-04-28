@@ -1,0 +1,276 @@
+/*
+*首页样式
+*/
+body{color:#333;}
+
+
+/*
+*收货地址
+*/
+.sec-address{position:relative;padding:10px 0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+/*边框*/
+.sec-address-border-t,.sec-address-border-b{
+	width:100%;height:4px;background:url(../images/icons/orderPay/addr_bg.png) repeat-x center;
+}
+/*添加地址*/
+.add-address-wrap{background:#e1eef5;padding:10px 0;}
+.add-address{width:130px;height:40px;line-height:40px;background:#d74b41;text-align:center;border-radius:3px;
+	display:block;color:#fff;margin:0px auto;}
+/*地址管理*/
+.manage-address{background:#e1eef5;padding-left:15px;position:relative;font-size:14px;}
+.manage-address::after{content:"";display:block;width:9px;height:15px;position:absolute;top:50%;right:15px;margin-top:-5px;
+background:url(../images/icons/arr_left_gray.png) no-repeat right center;background-size: 9px 15px;}
+.manage-address-t{padding:8px 30px 8px 0;}
+.manage-address-t h2{padding-bottom:3px;}
+.manage-address-t p{line-height:1.2;}
+/*选择其他地址*/
+.manage-address-b{width:100%;padding:10px 0;}
+.manage-address-b .choose-address{width:100px;height:25px;line-height:25px;background:#333;color:white;
+	margin-right:15px;border-radius:2px;text-align:center;}
+
+/*
+*订单支付商品列表
+*/
+.orderPay-sec{
+	margin-top:10px;
+}
+
+.orderPay-list{
+	border-top:1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+	margin-bottom:10px;
+	background-color:#fff;
+}
+
+/*店铺信息*/
+.orderPay-list-hd{
+	padding:15px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#333;
+}
+
+.orderPay-list-hd .shopName{
+	position:relative;
+	height:20px;
+	line-height: 20px;
+	font-size:16px;
+	padding:0 20px;
+	overflow:hidden;
+}
+.orderPay-list-hd .shopName span{
+	display: block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.shopName span img{
+	display: block;
+	width:100%;
+}
+.orderPay-list-hd .shopName p{
+	height: 100%;
+	overflow:hidden;
+	padding-left:5px;
+}
+.orderPay-list-hd .shopName::after{
+	content: "";
+	width:9px;
+	height:15px;
+	display: block;
+	position:absolute;
+	top:3px;
+	right:0;
+	background: url(../images/icons/arr_left_gray.png) no-repeat left center;
+	background-size:9px 15px;
+}
+/*商品信息*/
+.orderPay-list-bd{
+	padding:10px 15px;
+	border-top:1px solid #d6d6d6;
+	position:relative;
+}
+.orderPay-list-bd .proImg{
+	width:55px;
+	height: 55px;
+	overflow:hidden;
+	border-radius:6px;
+	margin-right:10px;
+}
+.orderPay-list-bd .proImg img{
+	display:block;
+	width:100%;
+}
+.orderPay-list-bd .proCnt{
+	
+}
+.orderPay-list-bd .proCnt h1{
+	font-size:15px;
+	color:#333;
+	line-height:17px;
+	width:130px;
+}
+.orderPay-list-bd .proCnt h2{
+	font-size:13px;
+	color:#666;
+}
+.orderPay-list-bd .proCnt h3{
+	font-size:12px;
+	color:#999;
+}
+.orderPay-list-bd .proCnt .price{
+	display:block;
+	font-size:16px;
+	color:#c60a1e;
+	text-align:right;
+	position:absolute;
+	top:13px;
+	right:15px;
+}
+.orderPay-list-bd .proCnt .num{
+	display:block;
+	font-size:14px;
+	color:#666;
+	text-align:right;
+	position:absolute;
+	top:35px;
+	right:15px;
+}
+
+/*备注*/
+.orderPay-list-bd-note-wrap{
+	border-top:1px solid #d6d6d6;
+	padding:8px 15px;
+	background:white;
+}
+.orderPay-list-bd-note{
+	border:1px solid #d6d6d6;
+	background:#eff3f4;
+	border-radius:4px;
+	position:relative;
+	height:42px;
+}
+.orderPay-list-bd-note input{
+	border:none;
+	background: none;
+	-webkit-appearance:none;
+	width:100%;
+	height:100%;
+	padding:0 36px 0 10px;
+	font-size:14px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.orderPay-list-bd-note .btn-inputClear{
+	width:36px;
+	height:42px;
+	position:absolute;
+	top: 0;
+	right:0;
+	background: url(../images/icons/icon_delete_input_box.png) no-repeat center;
+	background-size: 13px;  
+}
+/*合计*/
+.totalPrice{height:50px;line-height:50px;padding:0 15px;background:white;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.totalPrice .r{float:right;}
+
+
+
+/*支付方式*/
+.sec-payment{border-top:1px solid #ccc;background:white;margin-top:50px;padding:15px;}
+.sec-payment-title{font-size: 13px;color:#999;padding-bottom:10px;}
+/*卡券支付*/
+.coupon-pay{
+	width:100%;
+	height:50px;
+	background:#ed6942;
+	border-radius:5px;
+	border: 1px solid #ed6942;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin-bottom:15px;
+
+}
+.coupon-pay-icon{margin:0 5px 0 15px;width:22px;height:100%;background:url(../images/icons/orderPay/icon_quan.png) no-repeat center;
+background-size:22px;display:block;}
+.coupon-pay-title{width:68px;line-height:48px;color:#fff;font-size:16px;}
+.coupon-pay-input-box{background:white;border-radius:3px;margin:6px 10px 6px 0;height:36px;display:none;}
+.coupon-pay.active .coupon-pay-input-box{display: -webkit-box;display: box;}
+.coupon-pay-input-box input{width:100%;height:36px;-webkit-box-sizing:border-box;
+	box-sizing:border-box;padding-left:3px;font-size: 12px;color: #333;border: none;border-radius:3px;}
+
+/*余额支付*/
+.money-pay{
+	width:100%;
+	height:50px;
+	background:#44b1d9;
+	border-radius:5px;
+	border: 1px solid #44b1d9;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin-bottom:15px;
+
+}
+.money-pay-icon{margin:0 5px 0 15px;width:22px;height:100%;background:url(../images/icons/orderPay/icon_yue.png) no-repeat center;
+background-size:22px;display:block;}
+.money-pay-title{width:68px;line-height:48px;color:#fff;font-size:16px;}
+.money-pay-input-box{background:white;border-radius:3px;margin:6px 10px 6px 0;height:36px;display:none;}
+.money-pay-input-box input{width:45%;float:left;height:36px;-webkit-box-sizing:border-box;
+	box-sizing:border-box;padding-left:3px;font-size: 12px;color: #333;border: none;border-radius:3px;}
+.money-pay-input-box .leftMoney{width: 55%;padding-right:5px;float:left;height:36px;line-height:36px;-webkit-box-sizing:border-box;
+	box-sizing:border-box;font-size: 12px;color:#999;text-align:right;word-wrap:break-word;word-break:break-all;overflow:hidden;}
+.leftMoney2{height:48px;line-height:48px;color:white;font-size:16px;text-align:right;padding-right:10px}	
+/*微信支付*/
+.wx-pay{
+	width:100%;
+	height:50px;
+	background:#44d944;
+	border-radius:5px;
+	border: 1px solid #44d944;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin-bottom:15px;
+
+}
+.wx-pay-icon{margin:0 5px 0 15px;width:22px;height:100%;background:url(../images/icons/orderPay/icon_wechat.png) no-repeat center;
+background-size:22px;display:block;}
+.wx-pay-title{width:68px;line-height:48px;color:#fff;font-size:16px;}
+.wx-pay-input-box{background:white;border-radius:3px;margin:6px 10px 6px 0;height:36px;}
+
+/*支付弹窗密码*/
+.pwd-dialog .ui-dialog-cnt{padding:0 15px;position:relative;padding-bottom:10px;}
+.pwd-dialog h1{font-size:15px;text-align:center;padding:15px 0;line-height:1;}
+.pwd-dialog .pwd-box,.pwd-dialog .pwdBtn{width:100%;height:44px;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.pwd-dialog .pwd-box{position:relative;}
+.pwd-dialog #input-cover{position:absolute;top:0;left:0;background-color:red;z-index:2;opacity:0;}
+.pwd-dialog .pwd-box input{width:100%;border-radius:3px;-webkit-box-sizing:border-box;box-sizing:border-box;
+-webkit-appearance:none;padding-left:10px;border:1px solid #1a1a1a;text-align: center;line-height:44px;
+  font-size: 40px;letter-spacing: 10px;}
+.pwd-dialog .pwd-box input::-webkit-input-placeholder{font-size:15px;line-height:44px;letter-spacing:2px;text-align:center;}  
+.pwd-dialog .pwdBtn{margin:12px auto;}
+.pwd-dialog .pwdBtn button{width:100%;height:100%;border-radius:3px;-webkit-box-sizing:border-box;box-sizing:border-box;
+-webkit-appearance:none;background-color:#999;color:white;}
+.pwd-dialog .pwdBtn button.active{background-color:#5c3264;}
+.pwd-dialog #pwdDiaCloseBtn{width:32px;height:32px;background:url(../images/icons/icon_delete_detail.png) no-repeat center;
+background-size:16px;display: block;position:absolute;top:0px;right:0px;}
+/*提示框*/
+
+/*选择图标*/
+.pay-select-icon{width:48px;height:48px;background:#fff url(../images/icons/icon_select_no.png) no-repeat center;background-size:20px;
+	display:block;border-radius:0 5px 5px 0;}
+.pay-select-icon.selected{background:#fff url(../images/icons/icon_select_yes.png) no-repeat center;background-size:20px;}
+
+
+/*
+*底部
+*/
+.orderPay-footer{height:64px;position:fixed;width:100%;z-index:9999;left:0;bottom:0;background:rgba(255,255,255,0.5);border-top:1px solid #ccc;
+padding:11px 15px;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.btn-gopay{width:100%;height:42px;line-height:42px;text-align:center;font-size:16px;color:#fff;border-radius:5px;
+}
+/*覆盖底部*/
+.cover-footer{width:100%;height:70px;}
+
+

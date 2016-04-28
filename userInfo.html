@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>个人信息</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/userInfo.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    
+    </head>
+<body>
+    <!--头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">个人信息</div>
+            <a href="cashRecord.html" class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+
+	<!--个人信息-->
+    <ul class="ui-list  ui-list-text  ui-border-tb ui-list-link userInfo-img">
+        <li class="ui-border-t">
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap"><img src="images/upload/p1.jpg" /></h4>
+            </div>
+            <div class="ui-list-action">李师师</div>
+        </li>
+    </ul> 
+	<section class="settings userInfo">
+		<ul class="ui-list  ui-list-text  ui-border-tb ui-list-link">
+            <li class="ui-border-t ui-arrow-red userInfo-sex">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="ui-list-action">男</div>
+            </li>
+        </ul>
+        <ul class="ui-list  ui-list-text  ui-border-tb ui-list-link mt-10">
+            <li class="ui-border-t ui-arrow-red userInfo-mobile">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">绑定手机</h4>
+                </div>
+                <div class="ui-list-action">15915354242</div>
+            </li>
+        </ul>
+	</section>
+    <div class="userInfo-btn">
+        <button>确定</button>
+    </div>
+    <!--弹出选择男女-->
+    <div class="vg-select">
+        <div class="vg-select-cnt">
+            <h2 class="sex-item">男</h2>
+            <h2 class="sex-item">女</h2>
+            <div class="splite_line"></div>
+            <h2 class="border-t sex-item">保密</h2>
+        </div>
+        <div class="cover"></div>
+    </div>
+  
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		$(function(){
+            //弹窗性别
+			$(".userInfo-sex").tap(function(){
+                $(".vg-select").addClass("show");
+            });
+            //选择性别
+            $(".sex-item").tap(function(){
+                $(".userInfo-sex .ui-list-action").text($(this).text());
+                $(".vg-select").removeClass("show");
+            });
+            // 跳转绑定手机
+            $(".userInfo-mobile").tap(function(){
+                window.location.href="bindPhone.html"
+            });
+
+		})
+        
+        
+	</script>
+        
+</body>
+
+</html>
+  

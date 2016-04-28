@@ -1,0 +1,43 @@
+
+/*
+*个人信息
+ */
+ html,body{width:100%;height:100%;overflow:hidden;position:relative;background-color:#f0f0f0}
+.head-common{position:static;}
+.userInfo-img{margin-top:15px;} 
+.userInfo-img h4 img{width:50px;height:50px;display:block;}
+.userInfo{margin-top:10px;}
+/*头像*/
+.user-logo{width:100%;height:100%;position:absolute;background:transparent;top:0;left:0;opacity:0;}
+/*昵称*/
+.userInfo-nikename input,
+.userInfo-mobile input,
+.userInfo-birthday input{width:150px;overflow:hidden;text-align:right;}
+/*性别弹出框*/
+.ui-btn-single .sex-item{border:1px solid #cc3d51 !important;color:#cc3d51 !important;}
+.ui-btn-single .sex-item:active{border:1px solid #666 !important;color:#666 !important;background:none !important;}
+/*x性别上拉框*/
+.vg-select{}
+/*遮罩*/
+.vg-select .cover{position:fixed;z-index:9998;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);display:none;}
+.vg-select.show .cover{display:block;}
+/*选择内容*/
+.vg-select .vg-select-cnt{position:absolute;width:100%;bottom:0;left:0;background:#f2f2f2;-webkit-transform:translate(0,160px);
+	-webkit-transition:all 0.5s 0.2s;z-index:9999;overflow:hidden;}
+.vg-select.show .vg-select-cnt{-webkit-transform:translate(0,0px);}	
+.vg-select .vg-select-cnt h2{background:white;text-align:center;border-bottom:1px solid #ccc;height:45px;line-height:45px;
+font-size:16px;}
+.vg-select .vg-select-cnt .splite_line{height:10px;background:#e6e6e6;}
+.border-t{border-top:1px solid #ccc;}
+/*去掉字体箭头*/
+.ui-list-link > li:after{display:none}
+@media (max-width: 320px)
+.ui-list-link > li:after {
+  right: 10px;
+  display:none
+}
+
+/*按钮*/
+.userInfo-btn{padding:0px 15px 0 15px;margin-top:40px; }
+.userInfo-btn button{width:100%;height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;}

@@ -1,0 +1,27 @@
+/*评价*/
+.comment-list{padding-bottom:10px;margin-top:10px;background:#fff;border-bottom: 1px solid #ccc;
+border-top: 1px solid #ccc;}
+/*评论头部用户信息*/
+.comment-hd{margin-left:15px;border-bottom:1px solid #ccc;height:50px;padding:8px 0;}
+.comment-hd .user-face{width:32px;height:32px;overflow:hidden;border-radius:50%;margin-right:5px;}
+.comment-hd .user-face img{width:100%;}
+.comment-hd .user-name{font-size:12px;line-height:1;color:#333;margin-top:3px;}	
+.comment-hd .user-stars{font-size:0;margin-top:3px;}
+.comment-hd .user-stars span{display:inline-block;width:10px;height:10px;margin-right:5px;
+	background:url(../images/icons/detail/icon_star.png) no-repeat center;background-size:10px;}
+.comment-hd .user-stars span.bad{background:url(../images/icons/detail/icon_star_gray.png) no-repeat center;background-size:10px;}
+
+/*评论内容*/
+.comment-bd{margin-left:15px;}
+.comment-bd h1{font-size:12px;color:#333;padding-top:10px;}
+.comment-bd .comment-detail{padding:10px 0;overflow:hidden;}
+.comment-bd .comment-detail img{float:left;width:60px;height:60px;margin:0 10px 10px 0; }
+.comment-bd h6{font-size:8px;color:#999;}
+
+/*回复*/
+.reply-wrap{margin:15px;background-color:#fdf1ff;padding:10px 5px;border-radius:4px;border:1px solid #e0e0e0;position:relative;}
+.reply-hd span{font-size: 14px;font-weight:bold;color:#000}
+.reply-hd i{font-size: 10px;color:#999;}
+.reply-bd{font-size:12px;color:#333;}
+.reply-wrap::after{content:"";display:block;width:10px;height:10px;border-top:1px solid #e0e0e0;border-right:1px solid #e0e0e0;
+background-color:#fdf1ff;top:-6px;left:10%;position:absolute;-webkit-transform:rotate(-45deg);}

@@ -1,0 +1,177 @@
+@keyframes moveon0
+{
+    from {bottom:-450px;}
+    to {bottom:0px;}
+}
+@keyframes movedown0
+{
+    from {bottom:0px;}
+    to {bottom:-450px;}
+}
+@keyframes moveon1
+{
+    from {bottom:-114px;}
+    to {bottom:0px;}
+}
+@keyframes movedown1
+{
+    from {bottom:0px;}
+    to {bottom:-114px;}
+}
+.bindCard-recom{
+    width: 100%;
+    position: fixed;
+    bottom:-114px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 99999;
+}
+.bindCard-recom div{
+    height: 35px;
+    line-height: 35px;
+    background-color: white;
+}
+.bindCard-recom .public{
+    border-bottom:1px solid #d6d6d6;
+}
+.bindCard-recom .cancel{
+    margin-top: 8px;
+}
+/*弹出选择银行卡*/
+.recom{height:65%;}
+.recom .wechat{
+    width: 95%;
+    margin:0 auto;
+    margin-top:10px; 
+    background:#fff;
+    border-radius:5px;
+}
+.recom .fist{margin-top:50px; }
+.band-info{
+    padding-top:5px;
+}
+.wechat .bank{
+   /* */
+}
+.bank_build{
+    margin-right:15px;
+}
+.wechat i{
+    display: block;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    width:120px;
+    height:68px;
+
+
+}
+.youzheng-big{
+    background: url(../image/icon/bank/list/icon_big_China_youzheng.png) #017E3C center no-repeat;
+    background-size:80px 80px; 
+}
+.gongshang-big{
+    background: url(../image/icon/bank/list/icon_big_China_gongshang.png) #D00000 center no-repeat;
+    background-size:80px 80px; 
+}
+.nongye-big{
+    background: url(../image/icon/bank/list/icon_big_China_nongye.png) #219274 center no-repeat;
+    background-size:80px 80px; 
+}
+.zhongguo-big{
+    background: url(../image/icon/bank/list/icon_big_China_bank.png) #B0191E center no-repeat;
+    background-size:80px 80px; 
+}
+.jianshe-big{
+    background: url(../image/icon/bank/list/bg_jianshe.png) #023B92 center no-repeat;
+    background-size:80px 80px; 
+}
+.jiaotong-big{
+    background: url(../image/icon/bank/list/icon_big_traffic_bank.png) #232594 center no-repeat;
+    background-size:80px 80px; 
+}
+.zhaoshang-big{
+    background: url(../image/icon/bank/list/icon_big_zhaoshang_bank.png) #DC0000 center no-repeat;
+    background-size:80px 80px; 
+}
+.zhongxin-big{
+    background: url(../image/icon/bank/list/icon_big_China_zhongxin.png) #B0191E center no-repeat;
+    background-size:80px 80px; 
+}
+.pingan-big{
+    background: url(../image/icon/bank/list/icon_big_China_pingan.png) #DFCB66 center no-repeat;
+    background-size:80px 80px; 
+}
+.guangfa-big{
+    background: url(../image/icon/bank/list/icon_big_China_guangfa.png) #DC0000 center no-repeat;
+    background-size:80px 80px; 
+}
+.minshen-big{
+    background: url(../image/icon/bank/list/icon_big_China_minsheng.png) #017E3C center no-repeat;
+    background-size:80px 80px; 
+}
+.guangda-big{
+    background: url(../image/icon/bank/list/icon_big_China_guangda.png) #DFCB66 center no-repeat;
+    background-size:80px 80px; 
+}
+.xingye-big{
+    background: url(../image/icon/bank/list/icon_big_China_xingye.png) #023B92 center no-repeat;
+    background-size:80px 80px; 
+}
+.pufa-big{
+    background: url(../image/icon/bank/list/icon_big_China_pufa.png) #232594 center no-repeat;
+    background-size:80px 80px; 
+}
+.huaxia-big{
+    background: url(../image/icon/bank/list/icon_big_China_huaxia.png) #DC0000 center no-repeat;
+    background-size:80px 80px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*是否退出弹窗*/
+.dialog{
+    width:270px;
+    display:none;
+    line-height:40px;
+    position:fixed;
+    height:105px;
+    background:#fff;
+    border-radius:4px;
+    z-index:99999;
+    top:50%;
+    left:50%;
+    margin-left:-135px;
+}
+.sure{
+    margin:0 auto;
+    width:90%;
+    border-top:1px solid #d6d6d6;  
+}
+.btn{
+    -webkit-box-flex:1;
+    display:-webkit-box;
+    -webkit-box-sizing:border-box;
+    margin:15px auto;
+    padding:0 50px;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    background:#5c3164;
+    border-radius:4px;
+}
+.yes{
+    background:#5c3164;
+}
+.no{
+    background:#d6d6d6;
+}

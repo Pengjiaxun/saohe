@@ -1,0 +1,158 @@
+/*
+*首页样式
+*/
+body{color:#333;}
+
+
+/*
+*收货地址
+*/
+.sec-address{position:relative;padding:10px 0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+/*边框*/
+.sec-address-border-t,.sec-address-border-b{
+	width:100%;height:4px;background:url(../images/icons/orderPay/addr_bg.png) repeat-x center;
+}
+/*添加地址*/
+.add-address-wrap{background:#e1eef5;padding:10px 0;}
+.add-address{width:130px;height:40px;line-height:40px;background:#d74b41;text-align:center;border-radius:3px;
+	display:block;color:#fff;margin:0px auto;}
+/*地址管理*/
+.manage-address{background:#e1eef5;padding-left:15px;position:relative;font-size:14px;}
+.manage-address::after{content:"";display:block;width:9px;height:15px;position:absolute;top:50%;right:15px;margin-top:-5px;
+background:url(../images/icons/arr_left_gray.png) no-repeat right center;background-size: 9px 15px;}
+.manage-address-t{padding:8px 30px 8px 0;}
+.manage-address-t h2{padding-bottom:3px;}
+.manage-address-t p{line-height:1.2;}
+/*选择其他地址*/
+.manage-address-b{width:100%;padding:10px 0;}
+.manage-address-b .choose-address{width:100px;height:25px;line-height:25px;background:#333;color:white;
+	margin-right:15px;border-radius:2px;text-align:center;}
+
+/*
+*订单支付商品列表
+*/
+.orderDetail-sec{
+	
+}
+
+.orderDetail-list{
+	border-top:1px solid #d6d6d6;
+	background-color:#fff;
+}
+
+/*店铺信息*/
+.orderDetail-list-hd{
+	padding:15px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#333;
+}
+
+.orderDetail-list-hd .shopName{
+	position:relative;
+	height:20px;
+	line-height: 20px;
+	font-size:16px;
+	padding:0 20px;
+	overflow:hidden;
+}
+.orderDetail-list-hd .shopName span{
+	display: block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.shopName span img{
+	display: block;
+	width:100%;
+}
+.orderDetail-list-hd .shopName p{
+	height: 100%;
+	overflow:hidden;
+	padding-left:5px;
+	padding-right:60px;
+}
+.orderDetail-list-hd .shopName i{
+	width:60px;
+	display:block;
+	position:absolute;
+	font-size:15px;
+	color:#999;
+	top:0;
+	right:0;
+}
+/*商品信息*/
+.orderDetail-list-bd{
+	padding:10px 15px;
+	border-top:1px solid #d6d6d6;
+	position:relative;
+}
+.orderDetail-list-bd .proImg{
+	width:55px;
+	height: 55px;
+	overflow:hidden;
+	border-radius:6px;
+	margin-right:10px;
+}
+.orderDetail-list-bd .proImg img{
+	display:block;
+	width:100%;
+}
+.orderDetail-list-bd .proCnt{
+	
+}
+.orderDetail-list-bd .proCnt h1{
+	font-size:15px;
+	color:#333;
+	line-height:17px;
+	width:130px;
+	word-break:break-all;
+}
+.orderDetail-list-bd .proCnt h2{
+	font-size:13px;
+	color:#666;
+}
+.orderDetail-list-bd .proCnt h3{
+	font-size:12px;
+	color:#999;
+}
+.orderDetail-list-bd .proCnt .price{
+	display:block;
+	font-size:16px;
+	color:#c60a1e;
+	text-align:right;
+	position:absolute;
+	top:13px;
+	right:15px;
+}
+.orderDetail-list-bd .proCnt .num{
+	display:block;
+	font-size:14px;
+	color:#666;
+	text-align:right;
+	position:absolute;
+	top:35px;
+	right:15px;
+}
+/*合计*/
+.totalPrice{height:50px;line-height:50px;padding:0 15px;background:white;border-top:1px solid #ccc;border-bottom:1px solid #ccc;
+font-size:12px;}
+.totalPrice span{font-size:10px;color:#999;}
+.totalPrice .r{float:right;font-size:15px;}
+
+
+/*订单其他信息*/
+.stat-tab{background:white;margin-top:10px;border-top:1px solid #ccc;width:100%;-webkit-box-sizing:border-box;
+	box-sizing:border-box;}
+.stat-tab tr{line-height:1;}	
+.stat-tab tr td:first-child{text-align:left;padding-left:15px;font-size:15px;color:#000;}
+.stat-tab tr td:last-child{text-align:right;padding-right:15px;font-size:14px;color:#000;}
+
+.order-btn{background:white;border-top:1px solid #ccc;border-bottom:1px solid #ccc;height:49px;text-align:right;font-size:0;}
+.order-btn span{display:inline-block;width:80px;height:34px;text-align:center;border-radius:5px;
+margin:8px 15px 8px 0;line-height:34px;font-size:14px;}
+.order-btn .btn-cancel{border:1px solid #006add;color:#006add;}
+.order-btn .btn-pay{border:1px solid #5c3164;color:#5c3164;}
+

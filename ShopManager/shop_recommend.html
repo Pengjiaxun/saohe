@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />     
+        <title>新增店铺</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/shop_recommend.css">
+    </head>
+   <body>
+    <!-- 头部 -->
+    <header>
+        <div class="head-common">
+            <a href="classified_manage.html" class="head-l head-back">返回</a>
+            <div class="head-m">新增店铺</div>
+            <div class="head-r point"></div>
+        </div>
+    </header>
+    <!-- 头部占位符 -->
+    <div class="cover-head"></div>
+    <section id="sec-pro">
+        <div class="list">
+            <div class="pro-list vg-flex-wrap">
+                
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+              
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+               
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+                
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+                
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+
+            
+        </div>
+       
+    </section>
+    <!-- 底部查看更多 -->
+    <footer>
+        <div class="info">查看更多</div> 
+    </footer>
+
+  
+    <!-- 属性弹窗 -->
+    <div class="product-about">
+        <a href="change_classified_name.html" class="about change">修改此分类名称</a>
+        <a href="#" class="about change">删除此分类</a>
+        <a href="add_products.html" class="about change">添加产品</a>
+        <a href="#" class="about cancel-product">删除产品</a>
+        <p class="cancel">取消</p>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="ui-dialog"></div> 
+
+   
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script>
+   
+    $(function(){
+         /*底部弹出窗+遮罩层*/
+         $(".point").click(function(){
+            $(".product-about").css({"bottom":0,"animation":"moveon 1s"});
+            $(".ui-dialog").css("display","block");
+         });
+        $(".cancel").click(function(){
+            $(".product-about").css({"bottom":"-205px","animation":"movedown 1s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".product-about").css({"bottom":"-205px","animation":"movedown 1s"});
+        });
+        // 删除产品
+        // var boxDom=document.getElementById();
+
+        // $(".cancel-product").click(function(){
+        //     // var boxDom=$(".pro-list").get(0);
+        //     $(".cancel-product").append("<div class='selectIcon'></div>");
+        // });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>登录</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+        <link rel="stylesheet" type="text/css" href="css/reg.css">
+    </head>
+<body id="reg_body">
+   
+	<!--登录标题-->
+    <h1 class="reg-logo"><img src="images/icons/reg/logo.png" /></h1>
+    <section class="regForm-box">
+        <div class="input-box mobile"><input type="text" placeholder="请输入手机号" /></div>
+        <div class="code-wrap vg-flex-wrap">
+            <div class="input-box code vg-flex-item"><input type="text" placeholder="注册码" maxlength="6" /></div>
+            <span class="btn-sendCode">发送验证码</span>
+        </div>
+        <div class="input-box pwd"><input type="password" class="pwdShow" placeholder="请输入密码" maxlength="6" /><input type="tel" class="pwdCover" maxlength="6"></div>
+        <div class="input-box confirmPwd"><input type="password" class="pwdConfirmShow" placeholder="请重复输入密码" maxlength="6" /><input type="tel" class="pwdConfirmCover" maxlength="6"></div>
+    </section><!--/用户名登录-->
+
+    <div class="reg-btn">
+       <button>确定</button>
+    </div>
+    
+    
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		
+		$(function(){
+            // 输入密码
+            $(".pwdCover")[0].addEventListener("input",function(){
+                var coverVal=$(this).val(),l=coverVal.length;
+                if(l>=6){
+                    trueVal=coverVal.substr(0,6);
+                    $(".pwdShow").val(trueVal);
+                }else{
+                    $(".pwdShow").val(coverVal);
+                }
+            },false);
+            // 输入确认密码
+            $(".pwdConfirmCover")[0].addEventListener("input",function(){
+                var coverVal=$(this).val(),l=coverVal.length;
+                if(l>=6){
+                    trueVal=coverVal.substr(0,6);
+                    $(".pwdConfirmShow").val(trueVal);
+                }else{
+                    $(".pwdConfirmShow").val(coverVal);
+                }
+                // console.log($("#pwdConfirmShow").val())
+            },false);
+            //显示隐藏弹窗
+            var timer,flag=true;
+			$(".btn-sendCode").tap(function(){
+                var that=$(this);
+                if(flag){
+                    clearInterval(timer);
+                    $(this).addClass("disabled");
+                    var el;
+                    el=$.tips({
+                        content:'消息发送111111111111111111成功！',
+                        stayTime:2000,
+                        type:"success"
+                    })
+                    el.on("tips:hide",function(){  
+                    })
+                    var t=10;
+                    timer=setInterval(function(){
+                        if(t>1){
+                            t--;
+                            that.text(t+"s后可再发送");
+                            flag=false;
+                        }else{
+                            that.text("发送验证码").removeClass("disabled");
+                            clearInterval(timer);
+                            flag=true;
+                        }      
+                    },1000)
+                }				
+			});
+		})
+        
+	</script>
+
+</body>
+
+</html>
+  

@@ -1,0 +1,124 @@
+.head-setting {
+    background: url(../image/icon/icon_add.png) left no-repeat;
+    background-size: 16px;
+    position: absolute;
+    display: block;
+    width: 58px;
+    height: 44px;
+    top: 0px;
+    right: 10px;
+    text-indent: 20px;
+}
+.pic{width:100px;height:100px;margin:150px auto;/*margin:0 auto;*/}
+.pic img{	
+}
+.diary{
+	margin:-140px auto;
+	width:300px;
+	height:50px;
+}
+.content-wrap{
+	background-color: white;
+	margin: 10px;
+}
+.content{
+	margin-bottom: 5px;
+	padding: 5px;
+	position: relative;
+}
+.content .detail{
+	margin-bottom: 5px;
+}
+.content .time,.content .zan{
+	color: gray;
+	font-size: 15px;
+}
+.content .zan{
+	position: absolute;
+	bottom: 5px;
+}
+.content .img{
+	height: 100%;
+	width: 30%;
+}
+.content .info{
+	height: 100%;
+	width: 70%;
+
+}
+.content .img img{
+	width: 100%;
+}
+.ui-row-flex{
+	text-align: center;
+	border-top: 1px solid #d6d6d6;
+	padding: 5px 0;
+}
+.ui-row-flex i{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.ui-row-flex .i1{background: url(../image/icon/店长日记/icon_preview_diary.png) center no-repeat;background-size: 26px;}
+.ui-row-flex .i2{background: url(../image/icon/店长日记/icon_share_diary.png) center no-repeat;background-size: 26px;}
+.ui-row-flex .i3{background: url(../image/icon/店长日记/icon_delete.png) center no-repeat;background-size: 26px;}
+.ui-row-flex .ui-col:first-child{border-right: 1px solid #d6d6d6;}
+.ui-row-flex .ui-col:last-child{border-left: 1px solid #d6d6d6;color:blue;}
+.more{
+	margin-top: 15px;
+	text-align: center;
+}
+
+/* 添加日记 */
+.publish{
+	background:url(../image/icon/店长日记/icon_sent.png) left no-repeat;
+	background-size: 22px;
+}
+.diaryInput,.diaryImg,.diaryPro{
+	margin-top: 10px;
+	padding: 10px;
+	background-color: white;
+	font-size: 15px;
+}
+.diaryInput .diaryContent{
+	autofocus="autofocus"
+	border:1px solid #5c3164;
+	border-radius: 5px;
+	padding:5px;
+	margin:0 auto;
+	margin-right: 10px;
+	width:95%;
+	min-height: 100px;
+	resize:none;
+}
+.diaryImg .img{
+	width: 80px;
+    height: 80px;
+    background-color: #dedede;
+    position: relative;
+    margin-top:10px;
+}
+.diaryPro .addPro{
+    border: 1px solid #5c3164;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top:10px;
+    margin-right: 10px;
+    width: 95%;
+    height: 80px;
+    position: relative;
+}
+.diaryImg .img img,.diaryPro .addPro img{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+

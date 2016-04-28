@@ -1,0 +1,73 @@
+/*
+*首页样式
+*/
+body{color:#000;background:#f5f5f5;padding-bottom:60px;}
+
+
+
+/*产品列表*/
+.sec-pro{
+	
+}
+/*标题*/
+.cate-title{
+	color:#666;
+	background: url(../images/icons/icon_goods_list.png) no-repeat left center;
+	background-size: 13px 11px;
+	padding-left:20px;
+	font-size:15px;
+	line-height: 1;
+	margin:0 15px;
+	margin-top:10px;
+}
+/*列表*/
+.list{
+	
+}
+.prod-list{
+	background-color:white;
+	margin-top:10px;
+	padding:0 15px;
+}
+.prod_img{
+	width:130px;
+	height:130px;
+	overflow:hidden;
+	margin-right:10px;
+}
+.prod_img img{
+	width:100%;
+}
+.prod_title{
+	font-size:14px;
+	color:#000;
+	line-height:19px;
+	padding:10px 0;
+}
+.prod_num{
+	font-size:12px;
+	line-height:1;
+	color:#999;
+}
+.prod_price{
+	font-size:18px;
+	color:#c60a1e;
+	margin-top:36px;
+	line-height:1;
+}
+.prod_price span{
+	font-size:15px;
+	color:#999;
+	text-decoration:line-through;
+}
+
+
+
+
+
+
+
+
+
+
+

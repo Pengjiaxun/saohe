@@ -1,0 +1,360 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>我的订单</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/myorder.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--填写订单头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m head-myOrder"><span>我的订单</span><img src="images/icons/icon_down.png" alt=""></div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+		
+	<!--订单导航-->
+	<section class="orderPay-nav">
+		<div class="orderPay-nav-t clearfix">
+			<a href="myorder.html" class="orderPay-nav-item all active"><p><span></span><b>全部</b></p></a>
+			<a href="myordernopay.html" class="orderPay-nav-item waitpay"><p><span></span><b>待付款</b></p></a>
+			<a class="orderPay-nav-item waitsend"><p><span></span><b>待发货</b></p></a>
+		</div>
+		<div class="orderPay-nav-t clearfix">
+			<a class="orderPay-nav-item waitreceive"><p><span></span><b>待收货</b></p></a>
+			<a class="orderPay-nav-item received"><p><span></span><b>已收货</b></p></a>
+			<a href="myorderComment.html" class="orderPay-nav-item comment"><p><span></span><b>评价</b></p></a>
+		</div>
+		<div class="orderPay-nav-b clearfix">
+			<!-- <a class="orderPay-nav-item waitreceive"><p><span></span><b>待收货</b></p></a> -->
+			<!-- <a class="orderPay-nav-item received"><p><span></span><b>已收货</b></p></a> -->
+			<a class="orderPay-nav-item cancel"><p><span></span><b>已取消</b></p></a>
+		</div>
+	</section>
+
+	<!--填写订单列表-->
+	<section class="orderPay-sec">
+		<div class="orderPay-list">
+			<div class="orderPay-top">
+				<h2>创建时间 2015.12.12 12:12:52</h2>
+				<h3>总计金额 2558.00</h3>
+			</div>
+			<div class="orderPay-cnt">
+				<div class="orderPay-list-item">
+					<a class="orderPay-list-hd pl-15 vg-flex-wrap no-bt">
+						<div class="shopName vg-flex-item">
+							<span><img src="images/icons/icon_shop_logo.png"></span>
+							<p class="">騷骚的小店</p>
+						</div>
+						<div class="order-stat red">已支付</div>		
+					</a>
+					<a href="orderDetail.html" class="orderpay-list-bd-wrap">
+						<div class="orderPay-list-bd-wrap-inner">
+							<div class="orderPay-list-bd vg-flex-wrap">
+								<div class="proImg">
+									<img src="images/upload/p1.jpg" alt="">
+									<span>已下架</span>
+								</div>
+								<div class="proCnt vg-flex-item">
+									<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+									<span class="price">￥31.00</span>
+									<span class="num">X 22</span>
+									<h2 class="ui-nowrap">口味424热舞热热万人口味424热舞热热万人口味424热舞热热万人</h2>
+								</div>
+							</div>
+							<div class="orderPay-list-bd-note-wrap">
+								<div class="orderPay-list-bd-note">
+									<p class="note-content">
+										备注：请买家给我挑一个好的！我会给赞，非常感谢备注：请买家给我挑一个好的！我会给赞，非常感谢
+									</p>
+									<span class="btn-noteModify"></span>
+								</div>
+							</div>
+						</div>
+						<div class="orderPay-list-bd-wrap-inner">
+							<div class="orderPay-list-bd vg-flex-wrap">
+								<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+								<div class="proCnt vg-flex-item">
+									<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+									<span class="price">￥31.00</span>
+									<span class="num">X 22</span>
+									<h2 class="ui-nowrap">免费包邮</h2>
+								</div>
+							</div>
+							<div class="orderPay-list-bd-note-wrap">
+								<div class="orderPay-list-bd-note">
+									<p class="note-content">
+										备注：请买家给我挑一个好的！我会给赞，非常感谢备注：请买家给我挑一个好的！我会给赞，非常感谢
+									</p>
+									<span class="btn-noteModify"></span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="totalPrice vg-flex-wrap">
+						<div class="vg-flex-item">
+							<h2>共8件商品</h2>
+							<h3>合计:<em>￥888.00</em><span> (包邮)</span></h3>
+						</div>
+						<div class="btn-logistics-box">
+							<a href="##">物流轨迹</a>
+						</div>
+					</div>
+				</div>
+				<div class="orderpay-btns">
+					<button>确认收货</button>
+					<button class="btn-cancel">取消订单</button>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="orderPay-list">
+			<div class="orderPay-top">
+				<h2>创建时间 2015.12.12 12:12:52</h2>
+				<h3>总计金额 2558.00</h3>
+			</div>
+			<div class="orderPay-cnt">
+				<div class="orderPay-list-item">
+					<a class="orderPay-list-hd pl-15 vg-flex-wrap no-bt">
+						<div class="shopName vg-flex-item">
+							<span><img src="images/icons/icon_shop_logo.png"></span>
+							<p class="">騷骚的小店</p>
+						</div>
+						<div class="order-stat red">已支付</div>		
+					</a>
+					<a href="orderDetail.html" class="orderpay-list-bd-wrap">
+						<div class="orderPay-list-bd-wrap-inner">
+							<div class="orderPay-list-bd vg-flex-wrap">
+								<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+								<div class="proCnt vg-flex-item">
+									<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+									<span class="price">￥31.00</span>
+									<span class="num">X 22</span>
+									<h2 class="ui-nowrap">口味424热舞热热万人口味424热舞热热万人口味424热舞热热万人</h2>
+								</div>
+							</div>
+							<div class="orderPay-list-bd-note-wrap">
+								<div class="orderPay-list-bd-note">
+									<p class="note-content">
+										备注：请买家给我挑一个好的！我会给赞，非常感谢备注：请买家给我挑一个好的！我会给赞，非常感谢
+									</p>
+									<span class="btn-noteModify"></span>
+								</div>
+							</div>
+						</div>
+						<div class="orderPay-list-bd-wrap-inner">
+							<div class="orderPay-list-bd vg-flex-wrap">
+								<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+								<div class="proCnt vg-flex-item">
+									<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+									<span class="price">￥31.00</span>
+									<span class="num">X 22</span>
+									<h2 class="ui-nowrap">免费包邮</h2>
+								</div>
+							</div>
+							<div class="orderPay-list-bd-note-wrap">
+								<div class="orderPay-list-bd-note">
+									<p class="note-content">
+										备注：请买家给我挑一个好的！我会给赞，非常感谢备注：请买家给我挑一个好的！我会给赞，非常感谢
+									</p>
+									<span class="btn-noteModify"></span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="totalPrice vg-flex-wrap">
+						<div class="vg-flex-item">
+							<h2>共8件商品</h2>
+							<h3>合计:<em>￥888.00</em><span> (包邮)</span></h3>
+						</div>
+						<div class="btn-logistics-box">
+							<a href="##">物流轨迹</a>
+						</div>
+					</div>
+				</div>
+				<div class="orderPay-list-item">
+					<a class="orderPay-list-hd pl-15 vg-flex-wrap">
+						<div class="shopName vg-flex-item">
+							<span><img src="images/icons/icon_shop_logo.png"></span>
+							<p class="">騷骚的小店</p>
+						</div>	
+						<div class="order-stat gray">订单状态</div>	
+					</a>
+					<a href="orderDetail.html" class="orderpay-list-bd-wrap">
+						<div class="orderPay-list-bd-wrap-inner">
+							<div class="orderPay-list-bd vg-flex-wrap">
+								<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+								<div class="proCnt vg-flex-item">
+									<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口味道独特，香甜可口味道独特，香甜可口</h1>
+									<span class="price">￥31.00</span>
+									<span class="num">X 22</span>
+									<h2 class="ui-nowrap">免费包邮</h2>
+								</div>
+							</div>
+							<div class="orderPay-list-bd-note-wrap">
+								<div class="orderPay-list-bd-note">
+									<p class="note-content">
+										备注：请买家给我挑一个好的！我会给赞，非常感谢备注：请买家给我挑一个好的！我会给赞，非常感谢
+									</p>
+									<span class="btn-noteModify"></span>
+								</div>
+							</div>
+						</div>
+						<div class="orderPay-list-bd-wrap-inner">
+							<div class="orderPay-list-bd vg-flex-wrap">
+								<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+								<div class="proCnt vg-flex-item">
+									<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+									<span class="price">￥31.00</span>
+									<span class="num">X 22</span>
+									<h2 class="ui-nowrap">免费包邮</h2>
+								</div>
+							</div>
+							<div class="orderPay-list-bd-note-wrap">
+								<div class="orderPay-list-bd-note">
+									<p class="note-content">
+										备注：请买家给我挑一个好的！我会给赞，非常感谢备注：请买家给我挑一个好的！我会给赞，非常感谢
+									</p>
+									<span class="btn-noteModify"></span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="totalPrice vg-flex-wrap">
+						<div class="vg-flex-item">
+							<h2>共8件商品</h2>
+							<h3>合计:<em>￥888.00</em><span> (包邮)</span></h3>
+						</div>
+						<div class="btn-logistics-box">
+							<a href="##">物流轨迹</a>
+						</div>
+				</div>
+				</div>
+				<div class="orderpay-btns">
+					<button class="btn-comment">评价订单</button>
+					<button class="btn-del">删除订单</button>
+				</div>
+			</div>
+		</div>	
+    </section><!--/sec-orderPay-->
+
+	<!--弹出html-->
+	<div class="ui-dialog note-dialog">
+	    <div class="ui-dialog-cnt">
+	        <div class="ui-dialog-bd">
+	           <h1>修改备注（50字以内）</h1>
+	           <p>
+	               <textarea id="noteModifyContent" name="" placeholder="请填写备注"></textarea>			
+	           </p>
+	           <div class="modifyNote-btn-box"><button id="btnModifyNote">提交备注</button></div>
+	        </div>
+	        <span class="btn-dialogClose">关闭</span>
+	    </div>        
+	</div>
+	
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 头部箭头
+		var headActive=true;
+		$(".head-myOrder").tap(function(){
+			if(headActive){
+				$(this).children("img").attr("src","images/icons/icon_up.png");
+				$(".orderPay-nav").addClass("active");
+				headActive=false;
+
+			}else{
+				$(this).children("img").attr("src","images/icons/icon_down.png");
+				$(".orderPay-nav").removeClass("active");
+				headActive=true;
+			}
+		})
+		// 取消订单弹窗
+		$(".btn-cancel").tap(function(){
+			var dia=$.dialog({
+				content:'是否取消订单？',
+				button:['是','否']
+			});
+
+		});
+		// 删除订单弹窗
+		$(".btn-del").tap(function(){
+			var dia=$.dialog({
+				content:'是否删除订单？',
+				button:['是','否']
+			});
+			that=$(this);
+			dia.on("dialog:action",function(e){
+		        if(e.index==0){
+		        	that.parents(".orderPay-list").remove();
+		        }
+		    });
+		    dia.on("dialog:hide",function(e){
+		        
+		    });
+		});
+		//评论跳转
+		$(".btn-comment").tap(function(){
+			window.location.href="commentAdd.html"
+		});
+
+		//修改评论
+		$(".orderPay-list-bd-note").tap(function(e){
+			e.stopPropagation();
+			$this=$(this);
+			$(".ui-dialog").dialog("show");
+			$this.attr("show","show");
+			var txt=trim($this.children("p").text());
+			$("#noteModifyContent").val(txt);
+		}); 
+		$("#btnModifyNote").tap(function(){
+			var $noteTextArea=$("#noteModifyContent"),
+				$noteTextShow=$(".orderPay-list-bd-note");
+			$(".ui-dialog").dialog("hide");
+			$noteTextShow.each(function(i){
+				if($(this).attr("show")==="show"){
+					$(this).children("p").text($noteTextArea.val());
+					$(this).removeAttr("show");
+				}
+			})
+			$noteTextArea.val("");
+		});
+		//关闭弹窗
+		$(".btn-dialogClose").tap(function(){
+			$(".ui-dialog").dialog("hide");
+		}) 
+
+		// 去掉空格
+		function trim(str){   
+		    str = str.replace(/^(\s|\u00A0)+/,'');   
+		    for(var i=str.length-1; i>=0; i--){   
+		        if(/\S/.test(str.charAt(i))){   
+		            str = str.substring(0, i+1);   
+		            break;   
+		        }   
+		    }   
+		    return str;   
+		}
+	})
+</script>
+
+
+</body>
+
+</html>
+  

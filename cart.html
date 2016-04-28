@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>购物车</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/cart.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--购物车头部-->
+    <header>
+        <div class="head-common border-b">
+            <a href="javascript:history.go(-1);" class="head-l"></a>
+            <div class="head-m head-logo">购物车</div>
+            <div class="head-r head-edit">编辑</div>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--购物车列表-->
+	<section class="cart-sec">
+		<div class="cart-list">
+			<a href="cate.html" class="cart-list-hd vg-flex-wrap">
+				<div class="selectIcon shopSelected"></div>
+				<div class="shopName vg-flex-item">
+					<span><img src="images/icons/icon_shop_logo.png"></span>
+					<p class="">騷骚的小店</p>
+				</div>	
+			</a>
+			<div class="cart-list-bd vg-flex-wrap">
+				<div class="selectIcon proSelected"></div>
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<div class="num-box">
+						<span class="num-minus disabled"></span><input type="tel" value="1" class="num-input"><span class="num-plus"></span>
+					</div>
+				</div>
+			</div>
+			<div class="cart-list-bd vg-flex-wrap">
+				<div class="selectIcon proSelected selected"></div>
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<div class="num-box">
+						<span class="num-minus"></span><input type="tel" value="1" class="num-input"><span class="num-plus"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cart-list">
+			<a href="cate.html" class="cart-list-hd vg-flex-wrap">
+				<div class="selectIcon shopSelected disable"></div>
+				<div class="shopName vg-flex-item">
+					<span><img src="images/icons/icon_shop_logo.png"></span>
+					<p class="">騷骚的小店</p>
+				</div>	
+			</a>
+			<div class="cart-list-bd vg-flex-wrap">
+				<div class="selectIcon proSelected disable"></div>
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<div class="num-box">
+						<span class="num-minus"></span><input type="tel" value="1" class="num-input"><span class="num-plus"></span>
+					</div>
+				</div>
+			</div>
+			<div class="cart-list-bd vg-flex-wrap">
+				<div class="selectIcon proSelected selected disable"></div>
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<div class="num-box">
+						<span class="num-minus"></span><input type="tel" value="1" class="num-input"><span class="num-plus"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section><!--/sec-cart-->
+
+	<!--底部按钮：结算-->
+	<div class="footer-btn vg-flex-wrap">
+		<div class="selectIcon"></div>
+		<div class="footer-summary vg-flex-item">
+			<h1>合计：￥18821.00</h1>
+		</div>
+		<a href="orderPay.html" class="btn-buy">去结算<span>(99)</span></a>
+	</div>
+	<!--底部按钮：删除-->
+	<div class="footer-btn2 vg-flex-wrap">
+		<div class="selectIcon"></div>
+		<div class="footer-cnt vg-flex-item">
+			全选
+		</div>
+		<div class="btn-del"><button>删除</button></div>
+	</div>
+	<!-- 底部导航 -->
+	<footer class="nav">
+		<!--底部导航-->
+		<div class="ui-row-flex ui-whitespace nav-footer">  
+		    <a href="index.html" class="ui-col ui-col nav-footer-item"><h1 class="nav-footer-item1"></h1><b>首页</b></a>
+		    <a href="itemList.html" class="ui-col ui-col nav-footer-item"><h1 class="nav-footer-item2"></h1><b>商品列表</b></a>
+		    <a href="Cart.html" class="ui-col ui-col nav-footer-item active"><div class="cart-reddot"><h1 class="nav-footer-item3"></h1><span>8</span></div><b>购物车</b></a>
+		    <a href="mine.html" class="ui-col ui-col nav-footer-item"><div class="ui-reddot"><h1 class="nav-footer-item4"></h1></div><b>我的</b></a>
+		</div>
+	</footer>
+	<!--微信分享指引弹窗-->
+	<div class="wx-share">
+		<img src="images/upload/item-img.png" width="100%" />
+	</div>
+	<!--弹窗-->
+	
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//微信分享指引
+		// $(".head-share").tap(function(){
+		// 	$(".wx-share").show();
+		// });
+		// $(".wx-share").tap(function(){
+		// 	$(this).hide();
+		// });
+		
+		//全选
+		var all=false,allSe=$(".cart-list .selectIcon"),allBtn=$(".footer-btn .selectIcon"),allDelBtn=$(".footer-btn2 .selectIcon");
+		// 检查全选
+		function checkAll(){
+			var sum=0;
+			for(var i=0;i<allSe.length;i++){
+				if($(allSe[i]).hasClass("selected")){
+					sum++;
+				}
+			}
+			if(allSe.length==sum){
+				all=true;
+			}else{
+				all=false;
+			}
+		}
+		// 检查每个店选框勾选还是去掉
+		function checkShop(that){
+			var s=that.parents(".cart-list").children().children(".proSelected").size();
+			var obj=that.parents(".cart-list").children().children(".proSelected");
+			var n=0;
+			if(that.hasClass("selected")){
+				for(var i=0;i<s;i++){
+					if($(obj[i]).hasClass("selected")){
+						n+=1;
+					}
+				}
+				if(n==s){
+					that.parents(".cart-list").children().children(".shopSelected").addClass("selected");
+				}else{
+					that.parents(".cart-list").children().children(".shopSelected").removeClass("selected");
+				}
+			}else{
+				that.parents(".cart-list").children().children(".shopSelected").removeClass("selected");
+			}
+			
+		}
+		allBtn.tap(function(){//全选付款
+			checkAll();
+			if(!all){
+				$(this).addClass("selected");
+				allSe.addClass("selected");
+				all=false;
+			}else{
+				$(this).removeClass("selected");
+				allSe.removeClass("selected");
+				all=true;
+			}	
+		});
+		allDelBtn.tap(function(){//全选删除
+			checkAll();
+			if(!all){
+				$(this).addClass("selected");
+				allSe.addClass("selected");
+				all=false;
+			}else{
+				$(this).removeClass("selected");
+				allSe.removeClass("selected");
+				all=true;
+			}	
+		});
+
+
+		//每个单选点击
+		allSe.tap(function(e){
+			e.preventDefault();
+			var that=$(this);
+			$(this).toggleClass("selected");
+			if(that.hasClass("shopSelected")){
+				if(that.hasClass("selected")){
+					that.parents(".cart-list").children().children(".selectIcon").addClass("selected")
+				}else{
+					that.parents(".cart-list").children().children(".selectIcon").removeClass("selected")
+				}
+				checkAll();
+				if(all){
+					allBtn.addClass("selected");
+					allDelBtn.addClass("selected");
+					all=false;
+				}else{
+					allBtn.removeClass("selected");
+					allDelBtn.removeClass("selected");
+					all=true;
+				}
+			}else{
+				checkShop(that);
+				checkAll();
+				if(all){
+					allBtn.addClass("selected");
+					allDelBtn.addClass("selected");
+					all=false;
+				}else{
+					allBtn.removeClass("selected");
+					allDelBtn.removeClass("selected");
+					all=true;
+				}
+			}
+			
+		});
+		//编辑
+		var edit=true;
+		$(".head-edit").tap(function(){
+			checkAll();
+			if(all){
+				allBtn.addClass("selected");
+				allDelBtn.addClass("selected");
+				all=false;
+			}else{
+				allBtn.removeClass("selected");
+				allDelBtn.removeClass("selected");
+				all=true;
+			}
+			if(edit){
+				$(this).text("完成");
+				//$(".cart-list .selectIcon").removeClass("selected");
+				$(".footer-btn").hide();
+				$(".footer-btn2").css("display","-webkit-box");
+				edit=false;
+			}else{
+				$(this).text("编辑");
+				//$(".cart-list .selectIcon").removeClass("selected");
+				$(".footer-btn2").hide();
+				$(".footer-btn").css("display","-webkit-box");
+				edit=true;
+			}
+			
+		});
+
+		//删除订单
+		$(".btn-del").tap(function(){
+			for(var i=0;i<allSe.length;i++){
+				if($(allSe[i]).hasClass("proSelected") && $(allSe[i]).hasClass("selected")){
+					$(allSe[i]).parents(".cart-list-bd").remove();
+				}
+				if($(allSe[i]).hasClass("shopSelected") && $(allSe[i]).hasClass("selected")){
+					$(allSe[i]).parents(".cart-list").remove();
+				}
+			}
+			
+		});
+	})
+
+</script>
+
+
+</body>
+
+</html>
+  

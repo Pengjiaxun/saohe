@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>商品详情</title>
+        <link rel="stylesheet" type="text/css" href="../css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/itemDetail.css">
+        <link rel="stylesheet" type="text/css" href="../css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">商品详情</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--产品详情-->
+	<section class="sec-detail">
+		<!-- 轮播图 -->
+		 <div class="ui-slider banner">
+	    	<ul class="ui-slider-content" style="width: 300%">
+		        <li><a href="##"><img src="../images/upload/pro.jpg" /></a></li>
+		        <li><a href="##"><img src="../images/upload/pro.jpg" /></a></li>
+		        <li><a href="##"><img src="../images/upload/pro.jpg" /></a></li>
+		    </ul>
+		</div><!--/ui-slider-->
+		<div class="title">
+			产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述
+		</div>
+		<!-- <div class="price">￥199.00&nbsp;<em>￥999.00</em></div> -->
+		<div class="income vg-flex-wrap">
+			<div class="income-cnt vg-flex-item">
+				<h2>￥199.00&nbsp;<em>￥999.00</em></h2>
+				<h3>库存：11</h3>
+			</div>
+			<!-- <div class="income-share income-share-hasMoney">分享到微信</div> -->
+		</div>
+		<div class="line-10 border-t border-b"></div>
+		<!-- 评价 -->
+		<div class="comment">
+			<a href="comment.html" class="comment-summary vg-flex-wrap">
+				<div class="comment-summary_title vg-flex-item">
+					商品评价<span>（99）</span>
+				</div>
+				<div class="comment-summary_time">
+					2015-02-15 15:12:12
+				</div>
+				<div class="item-arr"></div>
+			</a>
+			<div class="comment-hd vg-flex-wrap">
+				<div class="user-face"><img src="../images/upload/p1.jpg" alt=""></div>
+				<div class="user-info vg-flex-item">
+					<div class="user-name">15882***25585</div>
+					<div class="user-stars">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="bad"></span>
+					</div>
+				</div>
+			</div>
+			<div class="comment-bd">
+				<h1 class="ui-nowrap">非常好的店，好评！！！！</h1>
+				<div class="comment-detail clearfix">
+					<img src="../images/upload/p1.jpg" alt="">
+					<img src="../images/upload/p1.jpg" alt="">
+					<img src="../images/upload/p1.jpg" alt="">
+					<img src="../images/upload/p1.jpg" alt="">
+				</div>
+				<h6>购买日期：2015-02-12 12:12:00</h6>
+			</div>
+		</div>
+		<div class="line-10 border-t"></div>
+		<!-- 商品图文详情 -->
+		<div class="pro-info">
+			<img src="../images/upload/pro.jpg" alt="">
+			<img src="../images/upload/pro.jpg" alt="">
+			<img src="../images/upload/pro.jpg" alt="">
+			<img src="../images/upload/pro.jpg" alt="">
+		</div>
+	</section>
+	<!-- 版权 -->
+	<div class="copyright">
+		<div class="copyright-top clearfix">
+			<img src="../images/upload/saohe_logo.png" alt="">
+		</div>
+		<h3>中高联提供技术支持</h3>
+	</div>
+
+	<!-- <div class="footer-wrap">
+		<div class="vg-flex-wrap">
+			<div class="vg-flex-item footer-btn-box clearfix">
+				<div class="footer-btn">
+					<a href="orderPay.html" class="buyNow">立即购买</a>
+				</div>
+				<div class="footer-btn">
+					<a href="##" class="addCart">加入购物车</a>
+				</div>
+			</div>
+			<a href="cart.html" class="footer-cart">
+				<div class="footer-cart-con"><h3 class=""></h3><h4 class="hide"></h4></div>
+			</a>
+		</div>
+	</div> -->
+	<!--属性弹出框-->
+	<div class="wx-share" id="cover">
+	</div>
+	<div class="modal-para">
+		<div class="modal-pro vg-flex-wrap">
+			<div class="modal-pro-img">
+				<img src="../images/upload/p1.jpg">
+			</div>
+			<div class="modal-pro-info vg-flex-item">
+				<h2 class="ui-nowrap-multi">非常好的龙井茶！！！！！非常好的龙井茶！！！！！非常好的龙井茶！！！！！</h2>
+				<p><span>￥188.00</span>&nbsp;<i>￥888.00</i></p>
+			</div>
+			<i class="close-btn" id="modalClose"></i>
+		</div>
+		<div class="modal-num">
+			<h6>购买数量</h6>
+			<div class="modal-num-bd vg-flex-wrap">
+				<div class="left">
+					<span class="jian"></span>
+					<input type="num" value="1" class="num" />
+					<span class="jia"></span>
+				</div>
+				<div class="vg-flex-item right">剩余18888件</div>
+			</div>
+		</div>
+		<div class="next-btn"><button id="next1">购买</button></div>
+	</div>
+	<!-- <div class="modal-addr">
+		<div class="modal-addr-hd vg-flex-wrap">
+			<span class="back-btn"></span>
+			<div class="modal-addr-title vg-flex-item">
+				请填写收货地址
+			</div>
+			<i class="close-btn" id="closeAddr"></i>
+		</div>
+		<div class="modal-addr-bd">
+			<ul class="ui-list ui-form ui-border-tb">
+			    <li class="ui-border-t ui-form-item ui-form-item-show ">
+			        <label for="name">收货人</label>
+		            <input type="text" value="" id="name" placeholder="请填写收货人">
+			    </li>
+			    <li class="ui-border-t ui-form-item ui-form-item-show">
+			        <label for="name">手机</label>
+		            <input type="text" value="" id="name" placeholder="请填写手机">
+			    </li>
+			</ul>
+
+			<ul class="ui-list ui-form">
+				<li class="ui-border-t ui-form-item ui-form-item-show ">
+			        <label for="name">地区</label>
+		            <div class="area">
+		            	<select name="" id=""><option value="选择省">省</option></select>
+		            	<select name="" id=""><option value="选择市">市</option></select>
+		            	<select name="" id=""><option value="选择区">区</option></select>
+		            </div>
+			    </li>
+			    <li class="ui-border-t ui-form-item ui-form-item-show ">
+			        <label for="name">详细地址</label>
+		            <input type="text" value="" id="name" placeholder="请填写详细地址">
+			    </li>
+			    <li class="ui-border-t ui-form-item ui-form-item-show">
+			        <label for="name">邮编</label>
+		            <input type="text" value="" id="name" placeholder="请填写邮编(选填)">
+			    </li>
+			</ul>
+		</div>
+		<div class="next-btn"><button id="next">下一步</button></div>
+	</div> -->
+	<!-- 微信分享 -->
+	<!-- <div class="wx-share" id="wxShare">
+		<img src="../images/icons/share_tip.png" />
+	</div> -->
+	<!-- 悬浮框按钮 -->
+	<!-- <div class="float-nav hisCard">
+		<a href="http://m.baidu.com" class="float-nav-item float-nav-usercard">
+			<h1><img src="../images/upload/p1.jpg" /></h1>
+			<h2>他的名片</h2>
+		</a>
+	</div> -->
+
+<script src="../js/lib/zepto.min.js"></script>
+<script src="../js/lib/rem.js"></script>
+<script src="../js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	//<!-- 轮播图js -->
+	(function(){
+	    var slider = new fz.Scroll('.ui-slider', {
+	        role: 'slider',
+	        indicator: true,
+	        autoplay: true,
+	        interval: 3000
+		});
+	})();
+
+	$(function(){
+		//微信分享指引
+		$(".income-share").tap(function(){
+			$("#wxShare").show().css("z-index","10000");
+		});
+		$("#wxShare").tap(function(){
+			$(this).hide().css("z-index","100");
+		});
+
+		//弹窗选择属性数量
+		var flag=true;
+		$(".buyNow").tap(function(){
+			$("#cover").show();
+			$("html").addClass("hide");
+			$("body").addClass("hide");
+			$(".footer-wrap").hide();
+			$(".modal-para").addClass("show");
+			flag=false;
+		});
+		//关闭弹窗
+		$("#cover,#modalClose").tap(function(){
+			if(!flag){
+				$("html").toggleClass("hide");
+				$("body").removeClass("hide");
+				$("#cover").hide();
+				$(".modal-para").removeClass("show");
+				$(".modal-addr").removeClass("show");
+				$(".footer-wrap").show();
+				flag=true;
+			}
+		});
+
+		//数量加减
+		var numDom=$(".num");
+		$(".jian").tap(function(){
+			var num=numDom.val();
+			if(num<=1){
+				numDom.val(1);
+			}else{
+				numDom.val(--num);
+			}
+
+		});
+		$(".jia").tap(function(){
+			var num=numDom.val();
+			if(num>=999){
+				numDom.val(999);
+			}else{
+				numDom.val(++num);
+			}
+		});
+		// 加入购物车
+		$(".addCart").tap(function(){
+			$(".footer-cart-con").addClass("show");
+			$(".footer-cart-con h3").addClass("sm");
+			$(".footer-cart-con h4").removeClass("hide");
+			var tx=$(".footer-cart-con h4");
+			if(tx.html()==""){
+				tx.html("(1)");
+			}else{
+				var num=tx.html().replace(/[^0-9]/ig,"");
+				num++;
+				tx.html("("+num+")");
+			}
+
+
+		});
+		// 下一步
+		$("#next1").tap(function(){
+			// $(".modal-para").removeClass("show");
+			// $(".modal-addr").addClass("show");
+			window.location.href="cart.html";
+		});
+		// 关闭第二步填写资料表单
+		// $("#closeAddr").tap(function(){
+		// 	var dia=$.dialog({
+		//         //title:'温馨提示',
+		//         content:'是否放弃此次编辑',
+		//         button:["是","否"]
+		//     });
+		//     dia.on("dialog:action",function(e){
+		//         if(!flag){
+		// 			$("html").toggleClass("hide");
+		// 			$("body").removeClass("hide");
+		// 			$("#cover").hide();
+		// 			$(".modal-addr").removeClass("show");
+		// 			$(".footer-wrap").show();
+		// 			flag=true;
+		// 			console.log("action")
+		// 		}
+		//     });
+		//     dia.on("dialog:hide",function(e){
+		// 		console.log("000");
+		//     });
+		// });
+		//拖拽名片
+		var ele=$(".float-nav");
+		ele.on('touchstart',startHandler);
+		ele.on('touchmove',movetHandler);
+		ele.on('touchend',endHandler);
+		var startX,startY,offsetX=0,offsetY=0;
+		var ww=document.documentElement.clientWidth||document.body.clientWidth;
+		var wh=document.documentElement.clientHeight||document.body.clientHeight;
+		var eleW=ele.width();
+		var eleH=ele.height();
+
+		function startHandler(evt){
+			startX=evt.touches[0].pageX-ele[0].offsetLeft;
+			startY=evt.touches[0].pageY-ele[0].offsetTop;
+		}
+		function movetHandler(evt){
+			evt.preventDefault();
+			offsetX=evt.touches[0].pageX-startX;
+			offsetY=evt.touches[0].pageY-startY;
+			if(offsetX<0) offsetX=0;
+	        if(offsetX+eleW>ww) offsetX=ww-eleW;
+	        if(offsetY-50<0) offsetY=50;
+	        if(offsetY+eleH+65>wh) offsetY=wh-eleH-65;
+			ele.css({right:'auto',bottom:'auto',left:offsetX+'px',top:offsetY+'px'});
+		}
+		function endHandler(evt){
+
+		}
+	})
+</script>
+
+
+</body>
+
+</html>

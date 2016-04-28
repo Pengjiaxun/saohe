@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>选择收货地址</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/selectaddress.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--选择收货地址头部-->
+   <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">选择收货地址</div>
+            <a href="addaddress.html" class="head-r">+新建</a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--选择收货地址-->
+	<!--管理收货地址-->
+	<section class="sec-mamageAddr">
+		<div class="mamageAddr-list vg-flex-wrap">
+			<div class="selectedIcon"></div>
+			<div class="manageaddr-con vg-flex-item">
+				<h2><span>八连杀</span>&emsp;<span>15988884240</span></h2>
+				<p>广东省深圳市福田区竹子林求是大广东省深圳市福田区竹子林求是大</p>
+			</div>
+			<a href="editAddress.html" class="editIcon"></a>
+		</div>
+
+		<div class="mamageAddr-list vg-flex-wrap">
+			<div class="selectedIcon selected"></div>
+			<div class="manageaddr-con vg-flex-item">
+				<h2><span>八连杀</span>&emsp;<span>15988884240</span></h2>
+				<p>广东省深圳市福田区竹子林求是大广东省深圳市福田区竹子林求是大</p>
+			</div>
+			<a href="editAddress.html" class="editIcon"></a>
+		</div>
+		<div class="mamageAddr-list vg-flex-wrap">
+			<div class="selectedIcon"></div>
+			<div class="manageaddr-con vg-flex-item">
+				<h2><span>八连杀</span>&emsp;<span>15988884240</span></h2>
+				<p>广东省深圳市福田区竹子林求是大广东省深圳市福田区竹子林求是大</p>
+			</div>
+			<a href="editAddress.html" class="editIcon"></a>
+		</div>
+    </section><!--/sec-mamageAddr-->
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//选择地址
+		$(".manageaddr-con").tap(function(){
+			$(".mamageAddr-list").children(".selectedIcon").removeClass("selected");
+			$(this).siblings(".selectedIcon").addClass("selected");
+		});
+
+	})
+</script>
+
+
+</body>
+
+</html>
+  

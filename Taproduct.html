@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh" style="font-size: 20px;">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="cardspay.cn">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>Ta的货</title>
+	<link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+</head>
+<body id="Taproduct_body">
+	<!--头部面板-->
+	<header>
+		<div class="head-common">
+			<a href="javascript:history.go(-1);" class="head-l">跳过</a>
+			<div class="head-m">Ta的货</div>
+			<a class="head-r" href=""></a>
+		</div><!--/head-common-->
+	</header><!--/head-->
+	<div class="cover-head"></div><!--/覆盖占位头部-->
+	<!--商品列表-->
+	<div class="changePro">
+		<!-- <button ><img src="images/icons/icon_update.png" />换一批</button> -->
+		<button ><i></i><span>换一批</span></button>
+	</div>
+	<div class="pro-list">
+		<div class="newPub">
+			<div class="list list-newPub clearfix">
+				<a href="itemDetail.html" class="list-item fl">
+					<div class="list-item-box">
+						<div class="selectedIcon"></div>
+						<div class="list-item-img">
+							<img src="images/upload/p1.jpg" width="100%">
+						</div>
+						<h2 class="ui-nowrap-multi ui-whitespace list-item-t1">2015新脐橙10斤装，赣南信丰脐橙，天下脐橙之乡！</h2>
+						<h3 class="prod_num">销量：999</h3>
+						<p class="list-item-price"><em>￥85</em>&nbsp;<span class="old-price">￥50</span></p>
+					</div>
+				</a>
+				<a href="itemDetail.html" class="list-item fl">
+					<div class="list-item-box">
+						<div class="selectedIcon"></div>
+						<div class="list-item-img">
+							<img src="images/upload/p1.jpg" width="100%">
+						</div>
+						<h2 class="ui-nowrap-multi ui-whitespace list-item-t1">2015新脐橙10斤装，赣南信丰脐橙，天下脐橙之乡！</h2>
+						<h3 class="prod_num">销量：999</h3>
+						<p class="list-item-price"><em>￥85</em>&nbsp;<span class="old-price">￥50</span></p>
+					</div>
+				</a>
+				<a href="itemDetail.html" class="list-item fl">
+					<div class="list-item-box">
+						<div class="selectedIcon"></div>
+						<div class="list-item-img">
+							<img src="images/upload/p1.jpg" width="100%">
+						</div>
+						<h2 class="ui-nowrap-multi ui-whitespace list-item-t1">2015新脐橙10斤装，赣南信丰脐橙，天下脐橙之乡！</h2>
+						<h3 class="prod_num">销量：999</h3>
+						<p class="list-item-price"><em>￥85</em>&nbsp;<span class="old-price">￥50</span></p>
+					</div>
+				</a>
+				<a href="itemDetail.html" class="list-item fl">
+					<div class="list-item-box">
+						<div class="selectedIcon"></div>
+						<div class="list-item-img">
+							<img src="images/upload/p1.jpg" width="100%">
+						</div>
+						<h2 class="ui-nowrap-multi ui-whitespace list-item-t1">2015新脐橙10斤装，赣南信丰脐橙，天下脐橙之乡！</h2>
+						<h3 class="prod_num">销量：999</h3>
+						<p class="list-item-price"><em>￥85</em>&nbsp;<span class="old-price">￥50</span></p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div><!--shangpin-->
+	<!-- 悬浮框按钮 -->
+    <div class="float-nav-button">
+        <!-- <a href="http://m.baidu.com" class="float-nav-item float-nav-usercard">
+            <h1>上 架</h1>
+        </a> -->
+        <button id="productOn"></button>
+    </div>
+		<script src="js/lib/rem.js"></script>
+		<script src="js/lib/zepto.min.js"></script>
+		<script src="js/1.0.1/frozen.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			//选择
+			var sum=0;
+			var proOn=document.getElementById("productOn");
+			proOn.innerHTML="上 架("+sum+")";
+			$(".list-item-box").tap(function(){
+				if($(this).children(".selectedIcon").hasClass("selected"))
+				{
+					$(this).removeClass("selected-wrap");
+					$(this).children(".selectedIcon").removeClass("selected");
+					sum--;
+				}
+				else
+				{
+					$(this).addClass("selected-wrap");
+					$(this).children(".selectedIcon").addClass("selected");
+					sum++;
+				}
+				proOn.innerHTML="上 架("+sum+")";
+			});
+		})
+	</script>
+</body>
+</html>

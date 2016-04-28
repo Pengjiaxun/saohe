@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>提现</title>
+    <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <link rel="stylesheet" type="text/css" href="css/cash.css">
+
+</head>
+<body ontouchstart="">
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive">
+         <a class="head-l head-back">返回</a>
+        <h1>提现</h1>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+    <!--提现-->
+    <section class="sec-cash">
+        <h1>提现资料</h1>
+        <div class="cash-box">
+
+                 <!-- <div class="bank vg-flex-wrap ">
+                 <a href="bindcard.html">银行账户</a>
+                <i class="arrowLeft"></i>
+                </div> -->
+                <a href="bindcard.html" class="bank vg-flex-wrap ">
+                 <span >银行账户<span>
+                <i class="arrowLeft"></i>
+                </a>
+
+
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">提现金额</span>
+                <p class="vg-flex-item"><input type="text" id="cash" autofocus placeholder="可提现余额：0.00"></p>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">支付密码</span>
+                <p class="vg-flex-item"><input type="password" id="pwd" placeholder="请输入6位纯数字密码"></p>
+            </div>
+        </div>
+        <div class="btn-cash"><button>确定</button></div>
+    </section>
+  
+     <!-- 是否退出弹窗 -->
+    <div class="dialog ui-center">是否退出此次编辑
+        <div class="sure">
+            <div class="yes btn fl">是</div>
+            <div class="no btn fr">否</div> 
+        </div>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="ui-dialog"></div>
+
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        // 是否退出弹窗
+         $(".head-back").click(function(){
+            $(".ui-dialog").css("display","block");
+            $(".dialog").css("display","block");
+        });
+        $(".no").click(function(){
+            $(".ui-dialog").css("display","none");
+            $(".dialog").css("display","none");
+        });
+        $(".ui-dialog").click(function(){
+            $(".ui-dialog").css("display","none");
+            $(".dialog").css("display","none");
+        });
+         $(".yes").click(function(){
+            location.href='wallet.html';
+        });
+
+
+        $(".btn-cash").click(function(){
+            var cash=$("#cash").val();
+            var pwd=$("#pwd").val();
+            if(cash==""){
+                el=$.tips({
+                    content:'请输入转账金额',
+                    stayTime:1000,
+                    type:"success"
+                })
+            }
+            else if(pwd==""){
+                el=$.tips({
+                    content:'请输入支付密码',
+                    stayTime:1000,
+                    type:"success"
+                })
+            }
+        });
+  });
+    
+    </script>
+</body>
+</html>

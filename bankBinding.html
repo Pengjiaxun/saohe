@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>银行卡绑定</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/bankBinding.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--银行卡绑定-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">银行卡绑定</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+		
+	
+
+	<!--银行卡绑定-->
+	<section class="sec-bankbinding">
+		<h1>填写资料</h1>
+        <div class="username vg-flex-wrap">
+            <span>开户名</span>
+            <p class="vg-flex-item"><input type="text"></p>
+        </div>
+        <a href="bankSelect.html" class="bankType vg-flex-wrap">
+            <span>请选择开户行</span><i>工商银行</i>
+        </a>
+        <div class="bankName vg-flex-wrap">
+            <span>支行名称</span>
+            <p class="vg-flex-item"><input type="text"></p>
+        </div>
+        <div class="cardNo vg-flex-wrap">
+            <span>银行账号</span>
+            <p class="vg-flex-item"><input type="text"></p>
+        </div>
+        <div class="bankbinding-btn">
+            <button id="bankbinding">确定</button>
+        </div>
+	</section>
+	
+
+	
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		
+		// 提交评论
+		$(".commentBtn button").tap(function(){
+            var el;
+            el=$.tips({
+                content:'评论成功！',
+                stayTime:2000,
+                type:"success"
+            })
+            el.on("tips:hide",function(){
+                window.location.href="myorder.html";
+            })
+                
+		});
+	})
+</script>
+
+
+</body>
+
+</html>
+  

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>我的</title>
+    <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive">
+        <h1>我的</h1><a href="setting.html" class="head-r head-setting"></a>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+    <!-- 页面内容 -->
+    <div class="my-top">
+        <div class="myimg"></div>
+        <ul class="ui-grid-halve">
+            <li>
+                <div class="ui-grid-halve-img profit">
+                    <a href="proDetail.html">
+                        <div class="top-info">
+                            <p>预计收益</p>
+                            <p>¥999.00</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-halve-img wallet">
+                    <a href="wallet.html">
+                    <div class="top-info">
+                        <p>我的钱包</p>
+                        <p>¥999.00</p>
+                    </div>
+                    <a/>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-halve-img order">
+                    <a href="order.html">
+                    <div class="top-info">
+                        <p>我的订单</p>
+                        <p>999</p>
+                    </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ui-grid-halve-img team">
+                    <a href="team.html">
+                    <div class="top-info">
+                        <p>我的团队</p>
+                        <p>999</p>
+                    </div>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="my-bottom">
+        <div class="ui-row-flex ui-whitespace">
+            <div class="ui-col ui-col openshop">
+                <h2><img src="image/icon/我的/icon_tuijian_shop.png" alt=""></h2>
+                <p>推荐开店</p>
+            </div>
+            <div class="ui-col ui-col">
+               <a href="eval.html">
+                   <h2><img src="image/icon/icon_my_evaluation.png" alt=""></h2>
+                   <p>评价管理</p>
+               </a>
+           </div>
+           <div class="ui-col ui-col">
+                <a href="certi.html">
+                <h2><img src="image/icon/我的/icon_certificate.png" alt=""></h2>
+                <p>授权证书</p>
+                </a>
+        </div>
+    </div>
+    <div class="ui-row-flex ui-whitespace">
+        <div class="ui-col ui-col">
+            <a href="diary.html">
+                <h2><img src="image/icon/我的/icon_diary.png" alt=""></h2>
+                <p>店长日记</p>
+            </a>
+        </div>
+        <div class="ui-col ui-col">
+            <a href="tutorial.html">
+                <h2><img src="image/icon/我的/icon_new_tutorial.png" alt=""></h2>
+                <p>新手教程</p>
+            </a>
+        </div>
+        <div class="ui-col ui-col">
+            <a href="../index.html">
+                <h2><img src="image/icon/我的/icon_go_buy.png" alt=""></h2>
+                <p>前往购物</p>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- 推荐开店弹出框 -->
+<div class="recoms">
+    <div class="wechats clearfix">
+        <div class="friends fl">
+            <i class="friend-icon"></i>
+            微信好友
+        </div>
+        <div class="fricirs fl">
+            <i class="fricir-icon"></i>
+            微信朋友圈
+        </div>
+    </div>
+    <p class="cancel">取消</p>
+</div>
+<!-- 遮罩层 -->
+ <div class="ui-dialog"></div>
+    <!-- 底部导航 -->
+    <footer class="ui-footer">
+        <ul class="ui-tiled">
+            <li class="nav-footer-item"><i class="nav-footer-item1"></i><a href="index.html">首页</a></li>
+            <li class="nav-footer-item"><i class="nav-footer-item2"></i><a href="tj.html">统计分析</a></li>
+            <li class="nav-footer-item"><i class="nav-footer-item3"></i><a href="msg.html">消息中心</a></li>
+            <li class="nav-footer-item active"><i class="nav-footer-item4"></i><a href="my.html">我的</a></li>
+        </ul>
+    </footer>
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script>
+
+    $(function(){
+        /*推荐开店弹窗*/
+        $(".openshop").click(function(){
+            $(".recoms").css({"bottom":0,"animation":"moveon 0.5s"});
+            $(".ui-dialog").css("display","block");
+        });
+        $(".cancel").click(function(){
+            $(".recoms").css({"bottom":"-100px","animation":"movedown 0.5s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".recoms").css({"bottom":"-100px","animation":"movedown 0.5s"});
+        });
+
+    });
+    </script>
+</body>
+</html>

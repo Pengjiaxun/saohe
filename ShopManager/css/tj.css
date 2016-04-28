@@ -1,0 +1,58 @@
+
+.sec-income{
+	background:white;
+	margin:10px 0;
+}
+.sec-order{
+	background:white;
+	margin:10px 0;
+}
+.sec-customer{
+	background:white;
+	margin:10px 0;
+}
+.vg-list-item{
+	position:relative;
+	-webkit-box-pack:center;
+}
+.vg-flex-wrap{
+	display:-webkit-box;
+	box-sizing:border-box;
+}
+.vg-list-icon{
+	padding:10px 0 10px 15px;
+	width:24px;
+	height:24px;
+	display:block;
+}
+.vg-flex-item{
+	display:block;
+	-webkit-box-flex:1;
+}
+.vg-list-con{
+	line-height:44px;
+	color:#000;
+	font-size:16px;
+}
+.rightNum{
+	line-height:44px;
+	color:#000;
+	padding-right:40px;
+
+}
+/*后缀箭头*/
+.vg-list-item:after{background:url("../image/icon/icon_go.png") no-repeat center;
+	background-size:20px 20px;position:absolute;display:block;content:"";
+	width:20px;height:20px;right:15px;top:50%;margin-top:-10px;}
+
+
+
+
+
+
+
+
+
+
+
+

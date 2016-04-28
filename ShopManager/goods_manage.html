@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>商品管理</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/goods_manage.css">
+    </head>
+   <body id="bg_tj">
+    <!-- 头部 -->
+    <header>
+        <div class="head-common">
+            <a href="index.html" class="head-l head-back">返回</a>
+            <div class="head-m">商品管理</div>
+            <div class="head-r point"></div>
+        </div>
+        <div class="head-common-next">
+            <div class="search_btn">
+                <input type="text" id="search" autofocus placeholder="搜索产品名称..." />
+                <a href="#"></a>
+            </div>
+        </div>
+    </header>
+    <!-- 头部占位符 -->
+    <div class="cover-head"></div>
+    <section class="sec-pro">
+        <div class="list">
+            <a href="itemDetail2.html">
+            <div class="pro-list vg-flex-wrap">
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">2015超新款巧克力浓香蛋糕包邮  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h3 class="pro-price">￥2881.00</h3>
+                </div>
+            </div>
+            </a>
+            <div class="btn">
+            <div class="line"></div>
+                <input type="button" class="btns" value="下架">
+            </div>
+        </div>
+        <div class="list">
+            <a href="itemDetail2.html">
+            <div class="pro-list vg-flex-wrap">
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">2015超新款巧克力浓香蛋糕包邮  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h3 class="pro-price">￥2881.00</h3>
+                </div>
+            </div>
+            </a>
+            <div class="btn">
+            <div class="line"></div>
+                <input type="button" class="btns" value="下架">
+            </div>
+        </div>
+        <div class="list">
+            <a href="itemDetail2.html">
+            <div class="pro-list vg-flex-wrap">
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">2015超新款巧克力浓香蛋糕包邮  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h3 class="pro-price">￥2881.00</h3>
+                </div>
+            </div>
+            </a>
+            <div class="btn">
+            <div class="line"></div>
+                <input type="button" class="btns" value="下架">
+            </div>
+        </div>
+    </section>
+    <!-- 分类管理弹窗 -->
+    <div class="classified">
+        <a href="classified_manage.html" class="classified-item">
+            分类管理
+        </a>
+        <p class="cancel">取消</p>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="ui-dialog"></div>
+    <!-- 微信朋友圈分享弹窗 -->
+    <div class="weixin-share">
+        <div class="wechat clearfix">
+            <div class="friend fl">
+                <i class="friend-icon"></i>
+                微信好友
+            </div>
+            <div class="fricir fl">
+                <i class="fricir-icon"></i>
+                微信朋友圈
+            </div>
+        </div>
+        <p class="weixin-cancel">取消</p>
+    </div>
+     <!-- 是否退出弹窗 -->
+    <div class="dialog ui-center">是否要删除商品？
+        <div class="sure">
+            <div class="yes btnn fl">是</div>
+            <div class="no btnn fr">否</div>
+        </div>
+    </div>
+
+
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script>
+    $(function(){
+        /*分类管理弹窗*/
+        $(".point").click(function(){
+            $(".classified").css({"bottom":0,"animation":"moveon 0.5s"});
+            $(".ui-dialog").css("display","block");
+         });
+        $(".cancel").click(function(){
+            $(".classified").css({"bottom":"-100px","animation":"movedown 0.5s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".classified").css({"bottom":"-100px","animation":"movedown 0.5s"});
+        });
+       // 提示操作成功弹窗,不能引入jquery会和zepto.js冲突
+       var el;
+        $(".btns").click(function(){
+            el=$.tips({
+                content:'操作成功',
+                stayTime:2000,
+                type:"success"
+            })
+            el.on("tips:hide",function(){
+                console.log("tips hide");
+            })
+
+        });
+        $(".btnss").click(function(){
+            el=$.tips({
+                content:'操作成功',
+                stayTime:2000,
+                type:"success"
+            })
+            el.on("tips:hide",function(){
+                console.log("tips hide");
+            })
+
+        });
+        // 按钮切换
+        var i=0;
+        $(".btns").click(function(){
+            if(i==0){
+               $(this).attr("value","上架").css({"color":"#5c3164","borderColor":"#5c3164"});
+                $(this).prev().attr("value","删除");
+               i=1;
+            }
+            else{
+                $(this).attr("value","下架").css({"color":"#787CF6","borderColor":"#787CF6"});
+                $(this).prev().attr("value","推广");
+                i=0;
+            }
+
+         });
+
+        // 推广弹窗
+        var sems=$("input[value='推广']");
+        sems.click(function(){
+            $(".weixin-share").css({"bottom":0,"animation":"moveon 0.5s"});
+            $(".ui-dialog").css("display","block");
+         });
+        $(".weixin-cancel").click(function(){
+            $(".weixin-share").css({"bottom":"-110px","animation":"movedown 0.5s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".weixin-share").css({"bottom":"-110px","animation":"movedown 0.5s"});
+        });
+        // 删除弹窗
+        var slice=$("input[value='删除']");
+        slice.click(function(){
+            $(".ui-dialog").css("display","block");
+            $(".dialog").css("display","block");
+            var parentDom=$(this).parent().parent();
+          $(".yes").click(function(){
+            $parentDom.remove();
+            $(".ui-dialog").css("display","none");
+            $(".dialog").css("display","none");
+            });
+        });
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".dialog").css("display","none");
+        });
+        $(".no").click(function(){
+            $(".ui-dialog").css("display","none");
+            $(".dialog").css("display","none");
+        });
+    });
+ </script>
+</body>
+</html>

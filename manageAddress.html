@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>管理收货地址</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/manageaddress.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+</head>
+<body>
+    <!--管理收货地址头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">管理收货地址</div>
+            <a href="addaddress.html" class="head-r">+新建</a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--管理收货地址-->
+	<section class="sec-mamageAddr">
+		<div class="ui-border-b manageaddr-con">
+			<h2><span>八连杀</span>&emsp;<span>159****4240</span></h2>
+			<p>广东省深圳市福田区竹子林求是大厦东座广东省深圳市福田区竹子林求是大厦东座</p>
+		</div>
+		<div class="manageaddr-op clearfix">
+			<div class="fl addr-default selected">设为默认</div>
+			<div class="fr addr-btn">
+				<a href="editaddress.html" class="addr-modify">编辑</a>
+				<div class="addr-del">删除</div>
+			</div>
+		</div>
+    </section><!--/sec-mamageAddr-->
+	
+	<section class="sec-mamageAddr">
+		<div class="ui-border-b manageaddr-con">
+			<h2><span>八连杀</span>&emsp;<span>159****4240</span></h2>
+			<p>广东省深圳市福田区竹子林求是大厦东座广东省深圳市福田区竹子林求是大厦东座</p>
+		</div>
+		<div class="manageaddr-op clearfix">
+			<div class="fl addr-default">设为默认</div>
+			<div class="fr addr-btn">
+				<a href="editaddress.html" class="addr-modify">编辑</a>
+				<div class="addr-del">删除</div>
+			</div>
+		</div>
+    </section><!--/sec-mamageAddr-->
+    <section class="sec-mamageAddr">
+		<div class="ui-border-b manageaddr-con">
+			<h2><span>八连杀</span>&emsp;<span>159****4240</span></h2>
+			<p>广东省深圳市福田区竹子林求是大厦东座广东省深圳市福田区竹子林求是大厦东座</p>
+		</div>
+		<div class="manageaddr-op clearfix">
+			<div class="fl addr-default">设为默认</div>
+			<div class="fr addr-btn">
+				<a href="editaddress.html" class="addr-modify">编辑</a>
+				<div class="addr-del">删除</div>
+			</div>
+		</div>
+    </section><!--/sec-mamageAddr-->
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 设置为默认地址
+		$(".addr-default").tap(function(){
+			$(".addr-default").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		//删除地址
+		$(".addr-del").tap(function(){
+			var _thisParent=$(this).parents(".sec-mamageAddr");
+			var dia=$.dialog({
+				content:'确定删除地址吗？',
+				button:['是','否']
+			});
+			dia.on("dialog:action",function(e){
+		        if(e.index==0){
+	        		_thisParent.remove();
+	        	}
+		    });
+		    dia.on("dialog:hide",function(e){
+		    	if(e.index==0){
+	        		_thisParent.remove();
+	        	}
+		    });
+
+		});
+
+	})
+</script>
+
+
+</body>
+
+</html>
+  

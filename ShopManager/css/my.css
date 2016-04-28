@@ -1,0 +1,136 @@
+.head-setting {
+    background: url(../image/icon/我的/icon_my_set.png) center no-repeat ;
+    background-size: 26px;
+}
+a{color:#000;}
+.my-top{
+	margin:10px 0px 10px 0px;
+	background-color: white;
+	position: relative;
+}
+.my-top .myimg{
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    background-color: #AD2E2E;
+    text-align: center;
+    top: 50%;
+    margin-top: -40px;
+    z-index:1;
+    border:4px solid white;
+}
+.ui-grid-halve{
+    text-align: center;
+}
+
+.ui-grid-halve .ui-grid-halve-img{
+    position: relative;
+    border-radius:5px;
+    padding-top: 0px;
+    height: 100px;
+}
+.ui-grid-halve .top-info{
+    position:absolute;
+    width:80px;
+    height: 50px;
+    left:50%;
+    margin-left:-40px;
+    top:50%;
+    margin-top: -25px;
+    text-align:center;
+    color: white;
+}
+.ui-grid-halve .profit{
+	background-color:#6b96b9 ;
+}
+.ui-grid-halve .wallet{
+	background-color:#b174ba ;
+}
+.ui-grid-halve .order{
+	background-color:#d39681 ;
+}
+.ui-grid-halve .team{
+	background-color:#bac893 ;
+}
+.my-bottom{
+    background-color: white;
+    margin-bottom: 60px;
+}
+.my-bottom .ui-whitespace {
+    padding-left: 0;
+    padding-right: 0;
+}
+.my-bottom .ui-row-flex{
+    text-align: center;
+    border-top: 1px solid #d6d6d6;
+}
+.my-bottom .ui-row-flex .ui-col:last-child{border-right: none;}
+.my-bottom .ui-col{
+    padding:25px 0 25px 0;
+    border-right: 1px solid #d6d6d6;
+}
+.my-bottom .ui-row-flex:last-child{
+    border-bottom: 1px solid #d6d6d6;
+}
+.my-bottom img{width: 32px;}
+.my-bottom p{
+    /*font-family:"黑体";*/
+}
+.recom{
+    width: 100%;
+    position: fixed;
+    bottom: -100px;
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    padding-bottom: 7px;
+    z-index: 99999;
+
+}
+.recoms{
+    width: 100%;
+    position: fixed;
+    bottom: -100px;
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    padding-bottom: 7px;
+    z-index: 99999;
+
+}
+.recoms .wechats i{
+    display: block;
+    width:32px;
+    height: 32px;
+    margin: 0 auto;
+}
+.recoms .friends{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.recoms .wechats .friend-icon{background: url(../image/icon/icon_wechat.png) center no-repeat;background-size:32px;}
+.recoms .wechats .fricir-icon{background: url(../image/icon/icon_friend.png) center no-repeat;background-size:32px;}
+.recoms .wechats{
+    width: 95%;
+    margin:0 auto;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #d6d6d6;
+}
+@keyframes moveon
+{
+from {bottom:-100px;}
+to {bottom:0px;}
+}
+@keyframes movedown
+{
+from {bottom:0px;}
+to {bottom:-100px;}
+}
+.recontent{
+    padding: 10px;
+}

@@ -1,0 +1,33 @@
+
+/*
+*提现
+*/
+
+/*提现*/
+.sec-cash{}
+.sec-cash h1{height:27px;line-height: 27px;color:#999999;font-size:13px;padding-left: 15px}
+.cash-box{background:white;font-size:15px;border-bottom: 1px solid #ccc;border-top:1px solid #ccc;
+padding-top:8px;}
+/*表单标题*/
+.cash-box span{display:block;width:66px;margin-right:15px;height:30px;line-height:30px;}
+.cash-box p{height:30px;line-height:30px;}
+.left-money ,.bank,.username,.cash-input{
+	height:30px;
+	padding:0 15px;
+}
+.username{padding-bottom:8px;height:38px}
+.cash-input{height:50px;}
+.cash-input span{line-height:50px;height: 50px;}
+.cash-input p{padding:8px 30px 8px 0;}
+.cash-input p input{width:100%;height:34px;border:none;border-radius:3px;padding-left:8px;}
+/*确定按钮*/
+.sec-cash .btn-cash{padding:40px 15px;font-size:16px;color:#fff;text-align:center;}
+.sec-cash .btn-cash button{width:100%;height: 44px;line-height: 44px;border-radius:4px;display: block;}
+/*弹出框样式*/
+.ui-dialog-cnt{position:relative;padding:15px;}
+.ui-dialog-cnt img{width:30px;height:36px;display:block;margin:0px auto 10px auto;}
+.ui-dialog-cnt p{padding:10px 15px;line-height:1.2;font-size: 14px;border:1px solid #333;border-radius:3px;}
+.ui-dialog-cnt i{display:block;width:32px;height: 32px;background:red;position:absolute;top:5px;right:5px;
+background: url(../images/icons/icon_delete_detail.png) no-repeat center;background-size: 20px;}
+
+

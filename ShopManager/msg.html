@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>消息中心</title>
+    <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/msg.css">
+</head>
+<body ontouchstart="">
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive ui-border-b">
+        <h1>消息中心</h1>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+    <!-- 切换按钮 -->
+    <div class="toggle-btn">
+        <button class="btn fl active">未读</button>
+        <button class="btn fr">已读</button>
+    </div>
+    <!-- 页面内容 -->
+    <section class="content-wrap">
+        <div class="content">
+            <h2 class="time">2015.11.11&nbsp;&nbsp;20.30.00</h2>
+            <div class="msg">
+                <i></i><h3>用户付款</h3>
+               <p>小鹏哥购买的内裤已付款，订单编号fdfdsfsdf12880201123156454895452121dfdfd</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="time">2015.11.11&nbsp;&nbsp;20.30.00</h2>
+            <div class="msg">
+                <i></i><h3>用户付款</h3>
+                <p>小鹏哥购买的内裤已付款，订单编号小鹏哥购买的内裤已付款，订单编号fdfdsf</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="time">2015.11.11&nbsp;&nbsp;20.30.00</h2>
+            <div class="msg">
+               <i></i><h3>用户付款</h3>
+                <p>小鹏哥购买的内裤已付款，订单编号fdfdsfsdf12880201123156454895452121dfdfdf</p>
+            </div>
+        </div>
+    </section>
+    <!-- 底部导航 -->
+    <footer class="ui-footer">
+        <ul class="ui-tiled">
+            <li class="nav-footer-item"><i class="nav-footer-item1"></i><a href="index.html">首页</a></li>
+            <li class="nav-footer-item"><i class="nav-footer-item2"></i><a href="tj.html">统计分析</a></li>
+            <li class="nav-footer-item active"><i class="nav-footer-item3"></i><a href="msg.html">消息中心</a><div class="cart-reddot"><h1 class="nav-footer-item3"></h1><span>8</span></div></li>
+            <li class="nav-footer-item"><i class="nav-footer-item4"></i><a href="my.html">我的</a></li>
+        </ul>
+    </footer>
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script type="text/javascript">
+        $(".toggle-btn .btn").click(function(){
+            $(".toggle-btn .btn").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+</body>
+</html>

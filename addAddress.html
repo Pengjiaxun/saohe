@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>添加收货地址</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/addaddress.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body onload="setup();preselect('广东省');promptinfo();">
+    <!--添加收货地址头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">添加收货地址</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--添加收货地址-->
+	<section class="sec-addAddress sec-addAddress1">
+		<div class="addAddress-box ui-border-b vg-flex-wrap">
+			<label for="addrName">收货人</label>
+			<div class="addAddress-input vg-flex-item"><input id="addrName" type="text" placeholder="请输入收货人" /></div>
+		</div>
+		<div class="addAddress-box vg-flex-wrap">
+			<label for="addrMobile">手机号</label>
+			<div class="addAddress-input vg-flex-item"><input id="addrMobile" type="text" placeholder="请输入手机号" /></div>
+		</div>
+    </section><!--/sec-addAddress1-->
+
+	<section class="sec-addAddress sec-addAddress2">
+		<div class="addAddress-box ui-border-b vg-flex-wrap">
+			<label for="city">省市区</label>
+			<div class="addAddress-input vg-flex-item">
+				<table class="city-table">
+					<tr>
+						<td>
+							<select id="s1">
+								<option>省</option>
+								
+							</select>
+						</td>
+						<td>
+							<select id="s2">
+								<option>市</option>
+								
+							</select>
+						</td>
+						<td>
+							<select id="s3">
+								<option>区</option>
+								
+							</select>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<input id="address" name="address" type="hidden" value="" />
+			</div>
+		</div>
+		<div class="addAddress-box detail-address ui-border-b vg-flex-wrap">
+			<label for="addrDetAddr">详细地址</label>
+			<div class="addAddress-input vg-flex-item"><textarea rows="2" id="addrDetAddr" type="text" placeholder="请输入详细地址"></textarea></div>
+		</div>
+		<div class="addAddress-box vg-flex-wrap">
+			<label for="addrCode">邮编</label>
+			<div class="addAddress-input vg-flex-item"><input id="addrCode" type="text" placeholder="（可选）" /></div>
+		</div>
+    </section><!--/sec-addAddress2-->
+	<div class="default-address selected">设置为默认地址</div>
+	<div class="addAddress-btn">
+		<button onclick="alert(document.getElementById('address').value); return false;">保存并使用</button>
+	</div>
+	
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script src="js/lib/commonAddress.js"></script>
+<script>
+	function promptinfo()
+	{
+		var address = document.getElementById('address');
+		var s1 = document.getElementById('s1');
+		var s2 = document.getElementById('s2');
+		var s3 = document.getElementById('s3');
+		var s4=document.getElementById('addrDetAddr');
+		address.value = s1.value + s2.value + s3.value+s4.value;
+	}
+</script>
+<script type="text/javascript">
+	$(function(){
+		//保存地址
+		$("#saveAddress").tap(function(){
+			el=$.tips({
+		        content:'保存成功',
+		        stayTime:2000,
+		        type:"success"
+		    })
+		    el.on("tips:hide",function(){
+		        console.log("tips hide");
+		    })
+		});
+		// 设置为默认地址
+		$(".default-address").tap(function(){
+			$(this).toggleClass("selected");
+		});
+
+	})
+</script>
+
+
+</body>
+
+</html>
+  

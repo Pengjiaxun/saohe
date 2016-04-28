@@ -1,0 +1,26 @@
+/*
+*管理收货地址
+*/
+.sec-mamageAddr{margin-top:10px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:white;
+	padding-left:15px;}
+/*地址用户名*/
+.manageaddr-con{padding:10px 0;}
+.manageaddr-con h2{line-height:1.5;font-size:15px;color:#000}
+.manageaddr-con p{line-height:1.5;font-size:13px;color:#999;}
+/*地址操作按钮*/
+.manageaddr-op{width:100%;height:32px;}
+/*默认地址*/
+.manageaddr-op .addr-default{width:50%;height:32px;line-height:32px;padding-left:25px;-webkit-box-sizing:border-box;box-sizing:border-box;
+	background:url(../images/icons/icon_select_no.png) no-repeat left center;background-size:20px;}
+.manageaddr-op .addr-default.selected{background:url(../images/icons/icon_select_yes.png) no-repeat left center;background-size:20px;}	
+/*编辑删除地址*/
+.manageaddr-op .addr-btn{width:50%;height:32px;position:relative;}
+.manageaddr-op .addr-modify,.manageaddr-op .addr-del{width:60px;height:32px;line-height:32px;position:absolute;top:0;background:red;
+	-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:25px;display:block;color: #999;}
+.manageaddr-op .addr-modify{right:85px;background:url(../images/icons/icon_modify.png) no-repeat left center;background-size:20px;}
+.manageaddr-op .addr-del{right:15px;background:url(../images/icons/icon_delete_address_management.png) no-repeat left center;background-size:20px;}
+/*覆盖底部*/
+.cover-footer{width:100%;height:56px;}
+
+
+

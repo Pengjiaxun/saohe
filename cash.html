@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>提现</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/cash.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--提现头部-->
+   <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">提现</div>
+            <a href="cashRecord.html" class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--提现-->
+	<section class="sec-cash">
+		<h1>提现资料</h1>
+		<div class="cash-box">
+			<div class="left-money vg-flex-wrap">
+				<span class="cash-box-title">余额</span>
+				<p class="vg-flex-item">1255999.00</p>
+			</div>
+			<div class="bank vg-flex-wrap">
+				<span class="cash-box-title">银行账户</span>
+				<p class="vg-flex-item">建设银行（8888）</p>
+			</div>
+			<div class="username vg-flex-wrap">
+				<span class="cash-box-title">开户人</span>
+				<p class="vg-flex-item">李先生</p>
+			</div>
+			<div class="cash-input vg-flex-wrap ui-border-t">
+				<span class="cash-box-title">提现金额</span>
+				<p class="vg-flex-item"><input type="number" placeholder="可提现1255999.00"></p>
+			</div>
+			<div class="cash-input vg-flex-wrap ui-border-t">
+				<span class="cash-box-title">支付密码</span>
+				<p class="vg-flex-item"><input type="password" placeholder="请输入支付密码"></p>
+			</div>
+		</div>
+		<div class="btn-cash"><button>确定</button></div>
+    </section><!-- /sec-mywallet -->
+	<!-- 弹窗 -->
+	<div class="ui-dialog">
+	    <div class="ui-dialog-cnt">
+	        <img src="images/icons/mywallet/icon_wait.png" alt="">
+	        <p>您的提现申请已经提交，请等待1-2工作日！</p>
+	        <i class="dialog-close"></i>
+	    </div>        
+	</div>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		//弹窗
+		$(".btn-cash").tap(function(){
+			$(".ui-dialog").dialog("show");
+		});
+		// 关闭弹窗
+		$(".dialog-close").tap(function(){
+			$(".ui-dialog").dialog("hide");
+		})
+
+	})
+</script>
+
+
+</body>
+
+</html>
+  

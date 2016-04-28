@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>骚盒首页</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+        <script src="frozenui-1.3.0/js/frozen.js"></script>
+        <script src="js/echarts/echarts.common.min.js"></script>
+        <script src="js/echarts/echarts_incom.js"></script>
+        <script src="js/echarts/echarts_order.js"></script>
+        <script src="js/echarts/echarts_addcustomer.js"></script>
+    </head>
+    <style>
+    .preview{background:url(image/icon/icon_preview.png)  center left no-repeat;
+    background-size:20px 20px;text-indent:14px;padding-left:10px;display:block;}
+    </style>
+    <body id="bg_home">
+        <!-- 头部 -->
+        <header class="ui-header ui-header-positive">
+            <div class="head-common" style="background:rgba(75,72,117,0.5);">
+                <a href="#" class="preview">预览店铺</a>
+                <div class="head-m">XX的店铺</div>
+                <!-- <div class="header_share"></div> -->
+                <a class="head-r2"></a>
+            </div>
+        </header>
+        <div class="cover-head"></div>
+        <!-- 中间内容 -->
+        <section class="content">
+            <ul id="nav_head" class="ui-tiled">
+                <li class="sel"><p>0.00</p><P>七日收益<P></li>
+                <li><p>0</p><P>七日订单数<P></li>
+                <li><p>0</p><P>七日新增客户<P></li>
+            </ul>
+            <!-- 折线图 -->
+            <!-- 七日收益折线图 -->
+            <div class="wrap">
+            <div class="zhexian">
+                <div class="main_head">
+                    <div class="incom">七日总收益</div>
+                    <div class="price">0.00元</div>
+                </div>
+            <div id="main_incom"></div>
+            </div>
+            <!-- 七日订单数折线图 -->
+            <div class="zhexian">
+                <div class="main_head">
+                    <div class="incom">七日订单数</div>
+                    <div class="price">0单</div>
+                </div>
+            <div id="main_order"></div>
+            </div>
+            <!-- 七日新增客户数 -->
+            <div class="zhexian">
+                <div class="main_head">
+                    <div class="incom">七日新增客户数</div>
+                    <div class="price">0个</div>
+                </div>
+            <div id="main_addcustomer"></div>
+            </div>
+            </div>
+            <!-- 日期 -->
+            <div class="analysis-date">2016-4-5&nbsp星期二</div>
+        </section>
+        <!-- 店铺 产品管理 -->
+        <section class="product-list">
+            <div class="ui-tiled">
+                <a  href="shop_set.html" class="product-list-item"><i class="product-list-item1"></i>
+                    <h2>店铺管理</h2>
+                </a>
+                <a href="cloud_product.html" class="product-list-item"><i class="product-list-item2"></i>
+                    <h2>云产品库</h2>
+                </a>
+                <a href="goods_manage.html" class="product-list-item">
+                    <i class="product-list-item3"></i><h2>商品管理</h2>
+                </a>
+            </div>
+        </section>
+        <!-- 底部导航 -->
+        <footer class="ui-footer">
+            <ul class="ui-tiled">
+                <li class="nav-footer-item active"><i class="nav-footer-item1"></i><a href="index.html">首页</a></li>
+                <li class="nav-footer-item"><i class="nav-footer-item2"></i><a href="tj.html">统计分析</a></li>
+                <li class="nav-footer-item"><i class="nav-footer-item3"></i><a href="msg.html">消息中心</a></li>
+                <li class="nav-footer-item"><i class="nav-footer-item4"></i><a href="my.html">我的</a></li>
+            </ul>
+        </footer>
+        <!-- 微信朋友圈分享弹窗 -->
+        <div class="weixin-share">
+            <div class="wechat clearfix">
+                <div class="friend fl">
+                    <i class="friend-icon"></i>
+                    微信好友
+                </div>
+                <div class="fricir fl">
+                    <i class="fricir-icon"></i>
+                    微信朋友圈
+                </div>
+            </div>
+            <p class="cancel">取消</p>
+        </div>
+        <!-- 遮罩层 -->
+        <div class="ui-dialog"></div>
+
+    <script>
+    $(function(){
+        // 折线图切换
+        $("#nav_head").find("li").click(function(){
+            $(this).addClass("sel").siblings().removeClass("sel");
+            $(".zhexian").hide().eq($(this).index()).show();
+
+        });
+
+         /*微信朋友圈分享弹窗*/
+        $(".header_share").click(function(){
+            $(".weixin-share").css({"bottom":0,"animation":"moveon 0.5s"});
+            $(".ui-dialog").css("display","block");
+        });
+        $(".cancel").click(function(){
+            $(".weixin-share").css({"bottom":"-100px","animation":"movedown 0.5s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".weixin-share").css({"bottom":"-100px","animation":"movedown 0.5s"});
+        });
+    });
+    </script>
+</body>
+</html>

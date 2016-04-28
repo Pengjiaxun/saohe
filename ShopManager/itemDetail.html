@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />     
+        <title>商品详情</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
+    </head>
+   <body>
+    <!-- 头部 -->
+    <header>
+        <div class="head-common">
+            <a href="cloud_product.html" class="head-l head-back">返回</a>
+            <div class="head-m">商品详情</div>
+            <a class="head-r"></a>
+        </div>
+    </header>
+    <!-- 覆盖占位头部 -->
+    <div class="cover-head"></div>
+    <!-- 产品详情 -->
+    <section class="sec-detail">
+        <!-- 轮播图 -->
+         <div class="ui-slider banner">
+             <ul class="ui-slider-content" style="width:300%;">
+                <li><img src="image/icon/pro.jpg"></li>
+                <li><img src="image/icon/pro.jpg"></li>
+                <li><img src="image/icon/pro.jpg"></li>
+             </ul>
+         </div> 
+         <div class="info ui-border-b">
+             <div class="title">
+                 产品描述详情产品描述详情产品描述详情产品描述详情产品描述详情
+             </div>
+             <h2>￥223.00</h2>
+         </div> 
+    </section>
+    <section class="content">
+        <div class="desc">
+           <img src="image/icon/pro.jpg" >
+           <img src="image/icon/pro.jpg" >
+           <img src="image/icon/pro.jpg" >
+          
+        </div>
+    </section>
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script src="js/rem.js"></script>
+    <script>
+        // 轮播图
+        (function(){
+            var slider=new fz.Scroll('.ui-slider',{
+                role:'slider',
+                indicator:true,
+                autoplay:true,
+                interval:2000,
+            });
+        })();
+    </script>
+</body>
+</html>

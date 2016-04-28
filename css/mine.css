@@ -1,0 +1,112 @@
+/*
+*首页样式
+*/
+body{color:#333;background:#f0f0f0;padding-bottom:60px;}
+
+
+/*我的  头部*/
+.head-common{border:none;}
+.head-setting{background:url(../images/icons/mine/icon_setmy.png) no-repeat 80% center;background-size:22px;}
+
+/*
+*我的头像
+*/
+.sec-userhead{height:125px;display:block;padding-top:10px;}
+.sec-userhead .username{text-align:center;}
+.sec-userhead h1{height:22px;line-height:22px;padding:0px 15px 0px 0px;text-align:center;color:#fff;font-size:14px;
+display:inline-block;margin:0 auto;background:url(../images/icons/mine/icon_go_name.png) no-repeat right center;background-size:12px;}
+.sec-userhead .userhead-img{width:70px;height:70px;border-radius:50%;margin:0 auto;overflow:hidden;}
+
+
+
+
+
+/*订单*/
+.sec-order{border:1px solid #d6d6d6;padding-left:15px;background:white;}
+.my-order{border-bottom:1px solid #e0e0e0;padding-right:15px;}
+.nav-order{}
+.nav-order li{width:20%;}
+.nav-order li a,.nav-order li p{display:block;}
+.nav-order li p{width: 20px;height: 20px;margin: 0 auto;}
+/*标题*/
+.vg-list-con{font-size:16px;color:#000;}
+.vg-list-rTxt{font-size:13px;color:#666;}
+/*待付款*/
+.nav-order-waitpay p{background:url(../images/icons/mine/icon_payment.png) no-repeat center;
+	background-size:18px 14px;}
+.nav-order-waitpay:active p{background:url(../images/icons/icon_payment.png) no-repeat center;
+	background-size:18px 14px;}	
+.nav-order-waitpay:active b{color:#d74b41}
+/*待发货*/
+.nav-order-waitsend p{background:url(../images/icons/mine/icon_wait_send.png) no-repeat center;
+	background-size:18px 14px;}
+.nav-order-waitsend:active p{background:url(../images/icons/mine/icon_wait_send.png) no-repeat center;
+	background-size:18px 14px;}	
+.nav-order-waitsend:active b{color:#d74b41}
+/*待收货*/
+.nav-order-waitreceive p{background:url(../images/icons/mine/icon_wait_receive.png) no-repeat center;
+	background-size:18px 14px;}
+.nav-order-waitreceive:active p{background:url(../images/icons/mine/icon_wait_receive.png) no-repeat center;
+	background-size:18px 14px;}	
+.nav-order-waitreceive:active b{color:#d74b41}
+/*已收货*/
+.nav-order-received p{background:url(../images/icons/mine/icon_al_receive.png) no-repeat center;
+	background-size:18px 14px;}
+.nav-order-received:active p{background:url(../images/icons/mine/icon_al_receive.png) no-repeat center;
+	background-size:18px 14px;}	
+.nav-order-received:active b{color:#d74b41}
+/*评价*/
+.nav-order-comment p{background:url(../images/icons/mine/icon_evaluation_black.png) no-repeat center;
+	background-size:18px 14px;}
+.nav-order-comment:active p{background:url(../images/icons/mine/icon_evaluation_black.png) no-repeat center;
+	background-size:18px 14px;}	
+.nav-order-comment:active b{color:#d74b41}
+
+.nav-order li b{display: block;text-align: center;height: 24px;line-height: 24px;color: #333;font-weight: 400;font-size:13px;}
+
+
+
+/*
+*我的钱包
+*/
+.sec-mywallet{border:1px solid #d6d6d6;padding-left:15px;background:white;margin-top:10px;}
+.mywallet{padding-right:15px;}
+.leftMoney{color:#000;line-height:25px;padding-right:15px;}
+.leftMoney span{color:#999;}
+
+/*
+*我的收益
+*/
+.sec-myIncome{border:1px solid #d6d6d6;padding-left:15px;background:white;margin-top:10px;}
+.myIncome{border-bottom:1px solid #e0e0e0;padding-right:15px;}
+
+.income-sumary{width:100%;display:table;}
+.income-sumary li{width:25%;display:table-cell;}
+.income-sumary li a{display:inline-block;}
+.income-sumary h2{font-size:15px;padding-left:10px;line-height:1.2;padding-top:8px;color:#000;}
+.income-sumary p{font-size:16px;padding-left:10px;line-height:1;padding-bottom:10px;color:#666;}
+
+/*
+*我的地址
+*/
+.sec-myAddr{border:1px solid #d6d6d6;padding-left:15px;background:white;margin-top:10px;margin-bottom:15px;}
+.myAddr{padding-right:15px;}
+
+/*
+*银行卡绑定
+*/
+.sec-bankCard{border:1px solid #d6d6d6;padding-left:15px;background:white;margin-top:10px;margin-bottom:15px;}
+.myAddr{padding-right:15px;}
+
+/*
+*我的卡券
+*/
+.sec-mycoupon{border:1px solid #d6d6d6;padding-left:15px;background:white;margin-top:10px;margin-bottom:15px;}
+.mycoupon{padding-right:15px;}
+
+
+
+
+
+
+

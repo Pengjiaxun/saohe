@@ -1,0 +1,27 @@
+/*
+*管理收货地址
+*/
+.sec-mamageAddr{width:100%;margin:10px 0;border-top:1px solid #ccc;background:white;
+	-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+/*地址用户名*/
+.mamageAddr-list{width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:15px;
+border-bottom:1px solid #ccc;}
+/*地址内容*/
+.manageaddr-con{padding:10px 0;-webkit-box-sizing:border-box;box-sizing:border-box;
+	}
+.manageaddr-con h2{line-height:1.5;padding:0;margin:0;font-size:15px;color:#000}
+.manageaddr-con p{font-size:13px;color:#666;line-height:1.5;padding:0;margin:0;}
+/*默认地址图标*/
+.selectedIcon{width:35px;min-height:40px;
+	background:url(../images/icons/icon_select_yes.png) no-repeat left center;
+background-size:20px;display:none;}
+.selectedIcon.selected{display:block;}
+/*编辑*/
+.editIcon{width:48px;min-height:40px;-webkit-box-sizing:border-box;box-sizing:border-box;
+padding:15px 0;margin:15px 0 15px 10px;display:block;border-left:1px solid #ccc;
+background:url(../images/icons/icon_modify.png) no-repeat center;background-size:17px;
+}
+
+
+

@@ -1,0 +1,51 @@
+.transfer_myself,.transfer_other{
+	background:white;
+	margin:10px 0;
+}
+.vg-list-icon{
+	padding:10px 0 10px 15px;
+	width:24px;
+	height:24px;
+	display:block;
+}
+
+/*后缀箭头*/
+.vg-list-item:after{background:url("../image/icon/icon_go.png") no-repeat center;
+	background-size:20px 20px;position:absolute;display:block;content:"";
+	width:20px;height:20px;right:15px;top:50%;margin-top:-10px;}
+
+a{color:#000;}
+.vg-list-con{
+	line-height:44px;
+	color:#000;
+	font-size:16px;
+}
+
+/*自己账户*/
+.tansfer_info h1{height:27px;line-height: 27px;color:#999;font-size:13px;padding-left:15px}
+.tansfer-box{background:white;}
+
+.tansfer-box span{display:block;width:66px;margin:0 15px;height:50px;line-height:50px;}
+.tansfer-box p{height:30px;line-height:30px;}
+.username{padding-bottom:8px;height:38px}
+.tansfer-input{height:50px;position: relative;}
+.tansfer-input span{line-height:50px;height: 50px;width:75px;}
+.tansfer-input p{padding:8px 30px 8px 0;}
+.tansfer-input p input{border: 1px solid #5c3164;
+   width:100%;height:34px;line-height:34px;border-radius:3px;padding-left:8px;}
+/*确定按钮*/
+.btns{padding:40px 15px;font-size:18px;text-align:center;}
+.btns button{background:#5c3164;width:100%;height:44px;line-height:44px;border-radius:5px;display:block;color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+

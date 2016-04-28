@@ -1,0 +1,21 @@
+
+/*
+*支付成功页
+*/
+.sec-payFailed{margin:50px 15px 35px 15px;background-color:white;border-radius:8px;padding:20px 0 40px 0}
+.failed-icon{height:85px;background:url(../images/icons/icon_error.png) no-repeat center;background-size:75px 85px; }
+.sec-payFailed h1{font-size:18px;text-align:center;margin-top:10px;}
+.sec-payFailed p{font-size:15px;color:#666;text-align:center;}
+.sec-payFailed .gopay{color:#d74b41;}
+
+/*按钮*/
+.payFailed-btn{padding:0px 15px 0 15px;}
+.payFailed-btn button{width:100%;height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;}
+
+
+/*覆盖底部*/
+.cover-footer{width:100%;height:56px;}
+
+
+

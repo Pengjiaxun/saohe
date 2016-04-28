@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>店长日记</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/diaryList.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">店长日记</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--店长日记-->
+	<div class="diary-list-hd vg-flex-wrap">
+		<img src="images/upload/p1.jpg" alt="" />
+		<p class="vg-flex-item">店@阿木木</p>
+	</div>
+	<section class="sec-diaryList" id="container">
+		<!-- <div class="diary-list">
+			<div class="desc hide">
+				<p>
+				盛小游戏 雷恩的饰品——狼齿 这是雷恩在野外遇到野狼把狼打死并一举拔下 这是勇士的象征！这是勇士的象征！这是勇士的象征！	
+				</p>
+				<div class="published-time">
+					<span>201601.02 12:21:11</span>
+				</div>
+				<button class="descBtn">展开</button>
+			</div>
+			<div class="diary-list-bd">
+				<ul class="imglist imglist-1">
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+				</ul>
+				<ul class="imglist imglist-2">
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+				</ul>
+				<ul class="imglist imglist-3">
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+				</ul>
+				<ul class="imglist imglist-4">
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+					<li><img src="images/upload/pro.jpg" alt=""></li>
+				</ul>
+				<div class="go-detail">
+					<a href="diaryDetail.html" class="btn-goDetail">查看详情</a>
+				</div>
+				
+			</div>
+			<div class="diary-list-ft">
+				<div class="btn-box">
+					<a href="itemDetail.html">立即购买</a>
+				</div>
+				<div class="praise vg-flex-wrap">
+					<span class="praise-icon praise-icon-cancel"></span>
+					<div class="vg-flex-item praise-list">秦雨墨，秦莫宇，秦宁宁,秦雨墨秦雨墨，秦莫宇，秦宁宁,秦雨墨</div>
+					<span class="praise-summary"><em>8</em>人点赞</span>
+				</div>
+			</div>
+		</div> -->
+	</section>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/lib/rem.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript" src="js/lib/stick.js"></script>
+<script type="text/javascript">
+	// 瀑布流动态加载数据
+	/** 模拟ajax加载，提供假数据 **/
+	var loadTime = 0;
+	function loadMore(){
+	  if(++loadTime >= 8){
+	    return
+	  }
+	  setTimeout(function(){
+	  	//loading
+	    var el=$.loading({
+	        content:'加载中...',
+	    })
+	    setTimeout(function(){
+	        el.loading("hide");
+	    },300);
+	    list = [
+	      {}
+	    ];
+	    list.forEach(function(item) {
+	      var html='<div class="diary-list">'+
+					'<div class="desc hide">'+
+						'<p>'+
+						'盛小游戏 雷恩的饰品——狼齿 这是雷恩在野外遇到野狼把狼打死并一举拔下 这是勇士的象征！这是勇士的象征！这是勇士的象征！'+	
+						'</p>'+
+						'<div class="published-time">'+
+							'<span>201601.02 12:21:11</span>'+
+						'</div>'+
+						'<button class="descBtn">展开</button>'+
+					'</div>'+
+					'<div class="diary-list-bd">'+
+						'<ul class="imglist imglist-1">'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+						'</ul>'+
+						'<ul class="imglist imglist-2">'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+						'</ul>'+
+						'<ul class="imglist imglist-3">'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+						'</ul>'+
+						'<ul class="imglist imglist-4">'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+							'<li><img src="images/upload/pro.jpg" alt=""></li>'+
+						'</ul>'+
+						'<div class="go-detail">'+
+							'<a href="diaryDetail.html" class="btn-goDetail">查看详情</a>'+
+						'</div>'+
+					'</div>'+
+					'<div class="diary-list-ft">'+
+						'<div class="btn-box">'+
+							'<a href="itemDetail.html">立即购买</a>'+
+						'</div>'+
+						'<div class="praise vg-flex-wrap">'+
+							'<span class="praise-icon praise-icon-cancel"></span>'+
+							'<div class="vg-flex-item praise-list">秦雨墨，秦莫宇，秦宁宁,秦雨墨秦雨墨，秦莫宇，秦宁宁,秦雨墨</div>'+
+							'<span class="praise-summary"><em>8</em>人点赞</span>'+
+						'</div>'+
+					'</div>'+
+				'</div>'
+	      stick.addItem(html, item.cover);
+	    });
+	  },300);
+	}
+
+	//定义瀑布流组件
+	var stick = new Stick({
+	  container: document.getElementById('container'),
+	  //column_width: 200,
+	  column_gap: 0,
+	  onNeedMore: loadMore
+	});
+	loadMore();		
+</script>
+<script type="text/javascript">
+	$(function(){
+		// 详情描述收起
+		var show=true;
+		$(document).on("tap",".descBtn",function(){
+			if(show){
+				$(this).text("收起").parent().removeClass("hide");
+				show=false;
+			}else{
+				$(this).text("展开").parent().addClass("hide");
+				show=true;
+			}
+		})
+		$(document).on("tap","a",function(e){
+			var url=$(e.target).attr("href");
+			window.location.href=url;
+		});
+		// 点赞
+		var praise=true;
+		$(document).on("tap",".praise-icon",function(){
+			// ajax请求
+			if(praise){
+				// 点赞
+				$(this).removeClass("praise-icon-cancel");
+				$(this).addClass("praise-scale");
+				$(this).on('webkitAnimationEnd',function(){
+					$(this).removeClass("praise-scale");
+					praise=false;
+				})
+			}else{
+				// 取消
+				$(this).addClass("praise-icon-cancel");
+				praise=true;
+			}
+		});
+	})
+</script>
+
+
+</body>
+
+</html>
+  

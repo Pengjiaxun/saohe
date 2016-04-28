@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>转账</title>
+    <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/cash.css">
+    <link rel="stylesheet" type="text/css" href="css/skinPurple.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body ontouchstart="">
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive ui-border-b">
+         <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+        <h1>转账</h1>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+    <!--提现-->
+    <section class="sec-cash">
+        <h1>转账资料</h1>
+        <div class="cash-box cash-box-my">
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">对方账号</span>
+                <p class="vg-flex-item"><input type="text" placeholder="请输入对方账号"></p>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">转账金额</span>
+                <p class="vg-flex-item"><input type="password" id="cash" placeholder="可转账余额：0.00"></p>
+            </div>
+        </div>
+        <div class="btn-cash"><button>确定</button></div>
+    </section><!-- /sec-mywallet -->
+
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script type="text/javascript">
+        $(".head-back").tap(function(){
+        var dia=$.dialog({
+            title:'是否退出此次编辑',
+            button:["是","否"],
+
+        });
+        dia.on("dialog:action",function(e){
+            console.log(e.index);
+            location.href="wallet.html";
+        });
+        dia.on("dialog:hide",function(e){
+            console.log("dialog hide");
+        });
+    });
+        $(".btn-cash").tap(function(){
+            var val=$("#cash").val();
+            if(val==""){
+                el=$.tips({
+                    content:'请输入转账金额',
+                    stayTime:1000,
+                    type:"success"
+                })
+                el.on("tips:hide",function(){
+                    console.log("tips hide");
+                })
+            }
+        });
+
+    </script>
+</body>
+</html>

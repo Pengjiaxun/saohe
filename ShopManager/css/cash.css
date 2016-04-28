@@ -1,0 +1,201 @@
+/*提现*/
+.sec-cash h1{height:27px;line-height: 27px;color:#999999;font-size:13px;padding-left: 15px}
+.cash-box{background:white;font-size:15px;border-bottom: 1px solid #ccc;border-top:1px solid #ccc;
+}
+/*表单标题*/
+.cash-box span{display:block;width:66px;margin-right:15px;height:50px;line-height:50px;}
+.cash-box p{height:30px;line-height:30px;}
+.left-money ,.bank,.username,.cash-input{
+	position: relative;
+	height:50px;
+	padding:0 15px;
+    line-height:50px;
+}
+.username{padding-bottom:8px;height:38px}
+.cash-input{height:50px;position:relative;outline:none;}
+.cash-input span{line-height:50px;height: 50px;width:75px;}
+.cash-input p{padding:8px 30px 8px 0;}
+.cash-input p input{width:100%;height:34px;line-height:34px;border:1px solid #5c3164; background-color:#fff;border-radius:3px;padding-left:8px;}
+/*确定按钮*/
+.sec-cash .btn-cash{padding:40px 15px;font-size:18px;color:#fff;text-align:center;}
+.sec-cash .btn-cash button{color:#fff;width:100%;height: 44px;line-height: 44px;border-radius:4px;display: block;background:#5c3164;}
+/*弹出框样式*/
+.ui-dialog-cnt{position:relative;padding:15px;}
+.ui-dialog-cnt img{width:30px;height:36px;display:block;margin:0px auto 10px auto;}
+.ui-dialog-cnt p{padding:10px 15px;line-height:1.2;font-size: 14px;border:1px solid #333;border-radius:3px;}
+.ui-dialog-cnt i{display:block;width:32px;height: 32px;background:red;position:absolute;top:5px;right:5px;
+background: url(../images/icons/icon_delete_detail.png) no-repeat center;background-size: 20px;}
+
+.ui-dialog-cnt {
+	text-align: center;
+    height: 100px;
+}
+.ui-dialog-bd {
+     min-height:0;
+}
+#dialogButton0,#dialogButton1 {
+	color: white;
+	border-radius: 5px;
+
+}
+#dialogButton1{background:rgba(204,204,204,1);}
+.ui-dialog-ft{
+	padding-top: 6px;
+}
+.cash-box-my {
+     border-top: none;
+     padding-top: 0;
+}
+.cash-box .long{
+	width: 100%;
+
+}
+.cash-out{
+    overflow:auto;
+	bottom:-1000px;
+	background-color: transparent;
+	background: url(../image/icon/bank/bg_bank_list.png) center no-repeat;
+}
+ .cash-out .band-nav{
+ 	text-align: center;
+	background-color:#5c3164;
+    color: #fff;
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom:40px;
+    /*padding: 0 10px;*/
+    /*position: relative;*/
+    position: fixed;
+    width:100%;
+    margin:0 auto;
+ }
+ .cash-out .band-nav i{
+ 	display: inline-block;
+ 	position: absolute;
+ 	width: 26px;
+ 	height: 26px;
+ 	top: 7px;
+ 	right: 5px;
+ 	background: url(../image/icon/icon_delete_selrct_bank.png) center no-repeat;
+ 	background-size: 26px 26px;
+
+ }
+.cash-out .band-icon-big{
+/*	display: inline-block!important;*/
+	width:100px!important;
+	height: 64px!important;
+	background-color: blue;
+}
+/*.cash-out .wechat {
+    border-bottom:none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    background-color: white;
+    border-radius: 5px;
+}*/
+.cash-out .band-info .band-icon-small{
+	width: 32px;
+	height: 32px;
+	float: left;
+}
+.cash-out .band-info .band-name,.cash-out .band-info .band-type{
+	color: red;
+	float: left;
+	margin-left: 10px;
+}
+.cash-out .band-info .band-type{
+	font-size: 12px;
+}
+.bank .arrowLeft,.cash-box .cash-input .arrowLeft{
+	display: inline-block;
+	float: right;
+	background: url(../image/icon/arr_left_gray.png) no-repeat center;
+    background-size: 8px 16px;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 16px;
+    margin: auto;
+    right: 15px;
+    top: 0px;
+    bottom: 0;
+}
+}
+
+@keyframes moveon1
+{
+from {bottom:-114px;}
+to {bottom:0px;}
+}
+@keyframes movedown1
+{
+from {bottom:0px;}
+to {bottom:-114px;}
+}
+@keyframes moveon0
+{
+from {bottom:-375px;}
+to {bottom:0px;}
+}
+@keyframes movedown0
+{
+from {bottom:0px;}
+to {bottom:-375px;}
+}
+
+#typeInput,#bankInput{
+	float: right;
+	margin-right: 20px;
+}
+.cash-box .region{
+	/*visibility: hidden;*/
+	display: none;
+}
+.cash-box .region .regionInput{
+	width: 80px!important;
+    position: absolute;
+    left: 105px;
+    top: 0px;
+}
+.cash-box .region .regionInput:last-child{
+    left: 200px;
+    top: 0px;
+}
+/*是否退出弹窗*/
+.dialog{
+    width:270px;
+    display:none;
+    line-height:40px;
+    position:fixed;
+    height:105px;
+    background:#fff;
+    border-radius:4px;
+    z-index:99999;
+    top:50%;
+    left:50%;
+    margin-left:-135px;
+}
+.sure{
+    margin:0 auto;
+    width:90%;
+    border-top:1px solid #d6d6d6;  
+}
+.btn{
+    -webkit-box-flex:1;
+    display:-webkit-box;
+    -webkit-box-sizing:border-box;
+    margin:15px auto;
+    padding:0 50px;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    background:#5c3164;
+    border-radius:4px;
+}
+.yes{
+    background:#5c3164;
+}
+.no{
+    background:#d6d6d6;
+}

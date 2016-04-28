@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>登录</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/quickLogin.css">
+    </head>
+<body>
+   
+	<!--登录标题-->
+    <h1 class="login-logo"><img src="images/icons/login_logo.png" /></h1>
+    <section class="login-user-box">
+        <h2>手机号</h2>
+        <div class="input"><input type="text" placeholder="请输入手机号" /></div>
+        <h2>验证码</h2>
+        <div class="input vg-flex-wrap">
+            <input type="text" placeholder="验证码" class="vg-flex-item" />
+            <button class="code-btn">获取验证码</button>
+            <button class="code-btn-gray">获取验证码</button>
+        </div>
+        <div class="login-input-getPwd clearfix">
+            <a href="login.html">账户登录</a>
+            
+        </div>
+        
+    </section><!--/用户名登录-->
+    <div class="btn">
+       <button>登录</button>
+    </div>
+    <div class="back-home"><a href="index.html">返回首页</a></div>
+    
+    <!--弹窗 -->
+    <div class="ui-dialog">
+        <div class="ui-dialog-cnt">
+            <div class="ui-dialog-hd">
+                <h4></h4>
+            </div>
+            <div class="ui-dialog-bd">
+                <div>
+                    <!-- <h4><img src="images/icon/icon-ok.png" /></h4> -->
+                    <div>验证码已经发送</div>
+                </div>
+            </div>
+            <div class="ui-dialog-ft ui-btn-group ui-btn-single">
+                <button type="button" data-role="button"  class="select" id="dialogButton1">关闭</button> 
+            </div>
+        </div>        
+    </div><!--/ui-dialog-->
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		
+		$(function(){
+            //显示隐藏弹窗
+			$(".code-btn").tap(function(){
+				$(".ui-dialog").dialog("show");
+                $(this).hide();
+                $(".code-btn-gray").show();
+			});
+            
+
+		})
+        
+	</script>
+
+</body>
+
+</html>
+  

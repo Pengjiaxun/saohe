@@ -1,0 +1,18 @@
+
+/*
+*我的钱包
+*/
+
+/*头部*/
+.head-l,.head-r{width:72px;}
+
+html,body{height:100%;width:100%;overflow:hidden;}
+/*提现*/
+.sec-mywallet{padding-top:18.67%;}
+.sec-mywallet .img{width:6.5rem;height:6.5rem;margin:0 auto;}
+.sec-mywallet h2{padding-top:8.67%;font-size:17px;color:#000;text-align:center;line-height:1}
+.sec-mywallet h1{padding-top:10px;font-size:30px;color:#fff;text-align:center;line-height: 1}
+.sec-mywallet .btn-cash{padding:1rem 15px;font-size:16px;color:#fff;text-align:center;}
+.sec-mywallet .btn-cash a{width:100%;height: 44px;line-height: 44px;border-radius:4px;display: block;}
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>发表评论</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/commentAdd.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--发表评论-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">发表评论</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+		
+
+	
+	<!--发表评论-->
+	<div class="commentAdd-sec">
+		<div class="commentAdd-list">
+		    <div class="proInfo-box orderPay-list-bd vg-flex-wrap">
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt vg-flex-item">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<span class="num">X 22</span>
+				</div>
+			</div>
+		    <div class="addComment-box">
+		        <div class="comment-cnt"><textarea name="" id="" placeholder="对产品进行积极评价，可对小伙伴购买提供莫大帮助！"></textarea></div>
+		        <div class="comment-stars vg-flex-wrap">
+		        	<span>评分</span>
+					<p class="vg-flex-item stars clearfix">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</p>
+		        </div>
+		        <div class="commentBtn"><button>提交评论</button></div>
+		    </div> 
+	    </div>
+	    <div class="commentAdd-list">
+		    <div class="proInfo-box orderPay-list-bd vg-flex-wrap">
+				<div class="proImg"><img src="images/upload/p1.jpg" alt=""></div>
+				<div class="proCnt vg-flex-item">
+					<h1 class="ui-nowrap-multi">西湖龙井-味道独特，香甜可口</h1>
+					<span class="price">￥31.00</span>
+					<span class="num">X 22</span>
+				</div>
+			</div>
+			<div class="commented-btn">已评价</div>
+	    </div>        
+	</div>
+
+	
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		// 取消订单弹窗
+		$(".btn-cancel").tap(function(){
+			var dia=$.dialog({
+				content:'是否取消订单？',
+				button:['是','否']
+			});
+
+		});
+		// 删除订单弹窗
+		$(".btn-del").tap(function(){
+			var dia=$.dialog({
+				content:'是否删除订单？',
+				button:['是','否']
+			});
+			that=$(this);
+			dia.on("dialog:action",function(e){
+		        if(e.index==0){
+		        	that.parents(".orderPay-list").remove();
+		        }
+		    });
+		    dia.on("dialog:hide",function(e){
+		        
+		    });
+		});
+		// 评价弹窗
+		$(".btn-comment").tap(function(){
+			var dia=$(".ui-dialog").dialog("show");
+		});
+		// 评论星级
+		$(".stars span").tap(function(){
+			var stars=$(this).index()+1;
+			$(this).parent(".stars").children("span").removeClass("active");
+			switch(stars)
+			{
+			case 1:
+			  $(this).parent(".stars").children("span").eq(0).addClass("active");
+			  break;
+			case 2:
+			  $(this).parent(".stars").children("span").eq(0).addClass("active");
+			  $(this).parent(".stars").children("span").eq(1).addClass("active");
+			  break;
+			case 3:
+			  $(this).parent(".stars").children("span").eq(0).addClass("active");
+			  $(this).parent(".stars").children("span").eq(1).addClass("active");
+			  $(this).parent(".stars").children("span").eq(2).addClass("active");
+			  break;
+			case 4:
+			  $(this).parent(".stars").children("span").eq(0).addClass("active");
+			  $(this).parent(".stars").children("span").eq(1).addClass("active");
+			  $(this).parent(".stars").children("span").eq(2).addClass("active");
+			  $(this).parent(".stars").children("span").eq(3).addClass("active");
+			  break;     
+			case 5:
+			  $(this).parent(".stars").children("span").eq(0).addClass("active");
+			  $(this).parent(".stars").children("span").eq(1).addClass("active");
+			  $(this).parent(".stars").children("span").eq(2).addClass("active");
+			  $(this).parent(".stars").children("span").eq(3).addClass("active");
+			  $(this).parent(".stars").children("span").eq(4).addClass("active");
+			  break;
+			}
+		});
+		// 提交评论
+		$(".commentBtn button").tap(function(){
+            var el;
+            el=$.tips({
+                content:'评论成功！',
+                stayTime:2000,
+                type:"success"
+            })
+            el.on("tips:hide",function(){
+                // window.location.href="myorder.html";
+            })
+                
+		});
+	})
+</script>
+
+
+</body>
+
+</html>
+  

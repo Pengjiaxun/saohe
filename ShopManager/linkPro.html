@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>关联商品</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/diary.css">
+    </head>
+<body id="pro_detail_bag">
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive ui-border-b">
+        <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+        <h1>关联商品</h1>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+
+<div class="ui-searchbar-wrap ui-border-b">
+    <div class="ui-searchbar ui-border-radius">
+        <i class="ui-icon-search"></i>
+        <div class="ui-searchbar-text">搜索商品名称</div>
+        <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索商品名称" autocapitalize="off"></div>
+        <i class="ui-icon-close"></i>
+    </div>
+    <button class="ui-searchbar-cancel">取消</button>
+</div>
+    <!-- 页面内容 -->
+    <div class="content-wrap pro_detail clearfix">
+
+    </div>
+    <p class="more">查看更多</p>
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+
+    <script type="text/javascript">
+        $('.ui-searchbar').tap(function(){
+            $('.ui-searchbar-wrap').addClass('focus');
+            $('.ui-searchbar-input input').focus();
+        });
+        $('.ui-searchbar-cancel').tap(function(){
+            $('.ui-searchbar-wrap').removeClass('focus');
+        });
+    </script>
+</body>
+
+</html>

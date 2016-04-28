@@ -1,0 +1,55 @@
+/*
+*登陆
+ */
+html,body{width:100%;height:100%;margin:0;padding:0;}
+body{position:relative;overflow-x:hidden; }
+/*logo*/
+.reg-logo{text-align:center;width:180px;height:65px;margin:0 auto;}
+.reg-logo img{display:block;width:100%;height:auto;}
+
+/*regForm-box登陆框*/
+.regForm-box{width:100%;padding:0px 35px;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.regForm-box .input-box{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:49px;position:relative;
+border-radius:25px;padding:0px 22px 0px 42px;margin-bottom:20px;overflow:hidden;}
+.regForm-box .input-box input{width:100%;height:100%;border:none;font-size:15px;background:none;
+	-webkit-appearance:none;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.regForm-box .input-box input::-webkit-input-placeholder{font-size:15px;}
+.regForm-box .input-box::before{content:"";display:block;width:12px;height:16px;
+position:absolute;top:16px;left:25px;}
+/*密码框*/
+.pwdShow{
+	position:absolute;
+}
+.pwdCover{
+	position:absolute;
+	letter-spacing:1px;
+	opacity:0
+}
+/*密码确认框*/
+.pwdConfirmShow{
+	position:absolute;
+}
+.pwdConfirmCover{
+	position:absolute;
+	letter-spacing:1px;
+	opacity:0
+}
+
+/*验证码*/
+.regForm-box .btn-sendCode{width:105px;height:49px;margin-left:10px;display:block;text-align:center;line-height:49px;font-size:14px;
+border-radius:25px;}
+.regForm-box .btn-sendCode.disabled{background:#999;color:#ccc;}
+
+/*按钮*/
+@media screen and (max-width:320px){
+	.reg-logo{padding:30px 0 30px 0;}
+	.reg-btn{padding:25px 35px 10px 35px;}
+}
+@media screen and (min-width:321px){
+	.reg-logo{padding:40px 0 50px 0;}
+	.reg-btn{padding:30px 35px 15px 35px;}
+}
+.reg-btn button{display:block;width:100%;height:44px;line-height:44px;text-align:center;border-radius:22px;}
+
+
+

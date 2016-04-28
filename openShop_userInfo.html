@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>信息录入</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/openShop.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body id="openShop_userInfo_bg">
+    <!--头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">信息录入</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+	<!--信息录入-->
+	<section class="openShop_userInfo">
+		<div class="userInfo-input-box uTrueName vg-flex-wrap">
+            <span>真实姓名<i>*</i></span>
+            <p class="vg-flex-item"><input placeholder="请输入" type="text"></p>
+        </div>
+        <div class="userInfo-input-box uName vg-flex-wrap">
+            <span>注册名称</span>
+            <p class="vg-flex-item"><input placeholder="请填写公司名称或个人昵称" type="text"></p>
+        </div>
+        <div class="userInfo-input-box uID vg-flex-wrap">
+            <span>身份证号<i>*</i></span>
+            <p class="vg-flex-item"><input placeholder="请输入" type="tel"></p>
+        </div>
+        <div class="userInfo-input-box uPhone vg-flex-wrap">
+            <span>手机号码<i>*</i></span>
+            <p class="vg-flex-item"><input placeholder="请输入" type="tel"></p>
+        </div>
+        <div class="userInfo-input-box uPWD vg-flex-wrap">
+            <span>密&emsp;&emsp;码<i>*</i></span>
+            <p class="vg-flex-item"><input type="password" class="pwdShow" placeholder="请输入" maxlength="6" /><input type="tel" class="pwdCover" maxlength="6"></p>
+        </div>
+        <div class="userInfo-input-box uPWD2 vg-flex-wrap">
+            <span>重复密码<i>*</i></span>
+            <p class="vg-flex-item"><input type="password" class="pwdConfirmShow" placeholder="请输入" maxlength="6" /><input type="tel" class="pwdConfirmCover" maxlength="6"></p>
+        </div>
+        <div class="userInfo-input-box uCode vg-flex-wrap">
+            <span>验&nbsp;证&nbsp;码<i>*</i></span>
+            <p class="vg-flex-item"><input placeholder="请输入" type="tel"></p>
+            <button class="btn-sendCode">发送验证码</button>
+        </div>
+        <div class="openShop_userInfo-btn">
+            <button id="openShop_userInfo">下一步</button>
+        </div>
+	</section>
+	
+    
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		
+		$(function(){
+            // 输入密码
+            $(".pwdCover")[0].addEventListener("input",function(){
+                var coverVal=$(this).val(),l=coverVal.length;
+                if(l>=6){
+                    trueVal=coverVal.substr(0,6);
+                    $(".pwdShow").val(trueVal);
+                }else{
+                    $(".pwdShow").val(coverVal);
+                }
+            },false);
+            // 输入确认密码
+            $(".pwdConfirmCover")[0].addEventListener("input",function(){
+                var coverVal=$(this).val(),l=coverVal.length;
+                if(l>=6){
+                    trueVal=coverVal.substr(0,6);
+                    $(".pwdConfirmShow").val(trueVal);
+                }else{
+                    $(".pwdConfirmShow").val(coverVal);
+                }
+            },false);
+            //提示框
+            $("#openShop_userInfo").tap(function(){
+                el=$.tips({
+                    content:'密码错误！',
+                    stayTime:2000,
+                    type:"warm"
+                })
+                el.on("tips:hide",function(){
+                    window.location.href="openShop_uploadID.html";
+                })
+            });
+            // 发送验证码
+            var timer,flag=true;
+            $(".btn-sendCode").tap(function(){
+                var that=$(this);
+                if(flag){
+                    clearInterval(timer);
+                    $(this).addClass("disabled");
+                    var el;
+                    el=$.tips({
+                        content:'消息发送111111111111111111成功！',
+                        stayTime:2000,
+                        type:"success"
+                    })
+                    el.on("tips:hide",function(){  
+                    })
+                    var t=10;
+                    timer=setInterval(function(){
+                        if(t>1){
+                            t--;
+                            that.text(t+"s后可再发送");
+                            flag=false;
+                        }else{
+                            that.text("发送验证码").removeClass("disabled");
+                            clearInterval(timer);
+                            flag=true;
+                        }      
+                    },1000)
+                }               
+            });
+            
+		})
+
+	</script>
+
+</body>
+
+</html>
+  

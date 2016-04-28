@@ -1,0 +1,113 @@
+html,body{width:100%;min-height:100%;}
+/*选择银行*/
+.sec-bankSelect{padding:15px;}
+.bank-list li{margin-bottom:15px;background:white;height:60px;border-radius:5px;overflow:hidden;}
+
+.bank-list li span{width:115px;height:60px;display:block;margin-right:37px;}
+/*邮政*/
+.bank-list .zgyz span{background:#007e3b url(../images/icons/bank/youzheng_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .zgyz-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/youzheng.png) no-repeat left center;
+background-size:29px;}
+.bank-list .zgyz-bd h1{font-size:15px;line-height:1;color:#007e3b}
+.bank-list .zgyz-bd p{font-size:12px;line-height:1;color:#007e3b;padding-top:3px;}
+/*中国银行*/
+.bank-list .zgyh span{background:#b0191d url(../images/icons/bank/zhongguo_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .zgyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/zhongguo.png) no-repeat left center;
+background-size:29px;}
+.bank-list .zgyh-bd h1{font-size:15px;line-height:1;color:#b0191d}
+.bank-list .zgyh-bd p{font-size:12px;line-height:1;color:#b0191d;padding-top:3px;}
+/*建设银行*/
+.bank-list .jsyh span{background:#013c92 url(../images/icons/bank/jianshe_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .jsyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/jianshe.png) no-repeat left center;
+background-size:29px;}
+.bank-list .jsyh-bd h1{font-size:15px;line-height:1;color:#013c92}
+.bank-list .jsyh-bd p{font-size:12px;line-height:1;color:#013c92;padding-top:3px;}
+/*工商银行*/
+.bank-list .gsyh span{background:#cf0000 url(../images/icons/bank/gongshang_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .gsyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/gongshang.png) no-repeat left center;
+background-size:29px;}
+.bank-list .gsyh-bd h1{font-size:15px;line-height:1;color:#cf0000}
+.bank-list .gsyh-bd p{font-size:12px;line-height:1;color:#cf0000;padding-top:3px;}
+/*农业银行*/
+.bank-list .nyyh span{background:#219273 url(../images/icons/bank/nongye_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .nyyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/nongye.png) no-repeat left center;
+background-size:29px;}
+.bank-list .nyyh-bd h1{font-size:15px;line-height:1;color:#219273}
+.bank-list .nyyh-bd p{font-size:12px;line-height:1;color:#219273;padding-top:3px;}
+/*交通银行*/
+.bank-list .jtyh span{background:#232494 url(../images/icons/bank/jiaotong_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .jtyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/jiaotong.png) no-repeat left center;
+background-size:29px;}
+.bank-list .jtyh-bd h1{font-size:15px;line-height:1;color:#232494}
+.bank-list .jtyh-bd p{font-size:12px;line-height:1;color:#232494;padding-top:3px;}
+/*招商银行*/
+.bank-list .zsyh span{background:#dc0000 url(../images/icons/bank/zhaoshang_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .zsyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/zhaoshang.png) no-repeat left center;
+background-size:29px;}
+.bank-list .zsyh-bd h1{font-size:15px;line-height:1;color:#dc0000}
+.bank-list .zsyh-bd p{font-size:12px;line-height:1;color:#dc0000;padding-top:3px;}
+/*中信银行*/
+.bank-list .zxyh span{background:#c21002 url(../images/icons/bank/zhongxin_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .zxyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/zhongxin.png) no-repeat left center;
+background-size:29px;}
+.bank-list .zxyh-bd h1{font-size:15px;line-height:1;color:#c21002}
+.bank-list .zxyh-bd p{font-size:12px;line-height:1;color:#c21002;padding-top:3px;}
+/*民生银行*/
+.bank-list .msyh span{background:#1e8431 url(../images/icons/bank/minsheng_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .msyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/minsheng.png) no-repeat left center;
+background-size:29px;}
+.bank-list .msyh-bd h1{font-size:15px;line-height:1;color:#1e8431}
+.bank-list .msyh-bd p{font-size:12px;line-height:1;color:#1e8431;padding-top:3px;}
+/*光大银行*/
+.bank-list .gdyh span{background:#dfcb66 url(../images/icons/bank/guangda_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .gdyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/guangda.png) no-repeat left center;
+background-size:29px;}
+.bank-list .gdyh-bd h1{font-size:15px;line-height:1;color:#dfcb66}
+.bank-list .gdyh-bd p{font-size:12px;line-height:1;color:#dfcb66;padding-top:3px;}
+/*兴业银行*/
+.bank-list .xyyh span{background:#004186 url(../images/icons/bank/xingye_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .xyyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/xingye.png) no-repeat left center;
+background-size:29px;}
+.bank-list .xyyh-bd h1{font-size:15px;line-height:1;color:#004186}
+.bank-list .xyyh-bd p{font-size:12px;line-height:1;color:#004186;padding-top:3px;}
+/*浦发银行*/
+.bank-list .pfyh span{background:#1d2056 url(../images/icons/bank/pufa_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .pfyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/pufa.png) no-repeat left center;
+background-size:29px;}
+.bank-list .pfyh-bd h1{font-size:15px;line-height:1;color:#1d2056}
+.bank-list .pfyh-bd p{font-size:12px;line-height:1;color:#1d2056;padding-top:3px;}
+/*广发银行*/
+.bank-list .gfyh span{background:#d9232a url(../images/icons/bank/guangfa_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .gfyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/guangfa.png) no-repeat left center;
+background-size:29px;}
+.bank-list .gfyh-bd h1{font-size:15px;line-height:1;color:#d9232a}
+.bank-list .gfyh-bd p{font-size:12px;line-height:1;color:#d9232a;padding-top:3px;}
+/*中国平安*/
+.bank-list .zgpa span{background:#ed6d00 url(../images/icons/bank/pingan_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .zgpa-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/pingan.png) no-repeat left center;
+background-size:29px;}
+.bank-list .zgpa-bd h1{font-size:15px;line-height:1;color:#ed6d00}
+.bank-list .zgpa-bd p{font-size:12px;line-height:1;color:#ed6d00;padding-top:3px;}
+/*华夏银行*/
+.bank-list .hxyh span{background:#cd1a25 url(../images/icons/bank/huaxia_120.png) no-repeat center;
+background-size:contain;}
+.bank-list .hxyh-bd{padding:15px 0px 15px 35px;background:url(../images/icons/bank/huaxia.png) no-repeat left center;
+background-size:29px;}
+.bank-list .hxyh-bd h1{font-size:15px;line-height:1;color:#cd1a25}
+.bank-list .hxyh-bd p{font-size:12px;line-height:1;color:#cd1a25;padding-top:3px;}
+
+

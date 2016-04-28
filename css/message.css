@@ -1,0 +1,90 @@
+
+/*消息切换tab导航*/
+.message-tab{
+	padding:15px 30px 0 30px;
+}
+.message-tab a{
+	display:inline-block;
+	height:42px;
+	line-height:42px;
+	width:50%;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	text-align:center;
+	background-color:#999;
+}
+.message-tab a.active{	
+}
+.message-tab a:first-child{
+	color:white;
+	border-right:1px solid #fff;
+	border-radius:21px 0 0 21px;
+}
+.message-tab a:last-child{
+	color:white;
+	border-left:1px solid #fff;
+	border-radius:0 21px 21px 0;
+}
+/*激活tab样式*/
+.message-tab a.active{background-color:#5c3164 }
+
+/*
+*订单支付商品列表
+*/
+.message-sec{
+	padding-bottom:15px;
+}
+.message-list{
+	padding:0 15px;
+}
+.message-date{
+	font-size: 13px;
+	color:#999999;
+	padding:15px 0;
+	text-align:center;
+	line-height: 1;
+}
+.message-panel{
+	background:white;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	display:block;
+	padding:13px 10px 10px 10px
+}
+.message-panel:active{
+	background:#ccc;
+}
+.message-panel-hd{
+	font-size: 14px;
+	color:#5c3164;
+	padding-left:8px;
+	line-height:19px;
+	height:19px;
+	position:relative;
+}
+.message-panel-hd.message-read{
+	padding-left:0px;
+}
+.message-panel-hd::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top:2px;
+	left: 0;
+	background:#c60a1e;
+	width:6px;
+	height:6px;
+	border-radius:3px;
+}
+.message-panel-hd.message-read::before{
+	display:none;
+}
+.message-panel-bd{
+	font-size: 13px;
+	color:#333;
+	line-height:20px;
+	word-break:break-all;
+}
+
+
+

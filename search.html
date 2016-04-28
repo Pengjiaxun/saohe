@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>搜索</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/search.css">
+    </head>
+<body>
+    <!--搜索头部-->
+    <header>
+        <div class="vg-flex-wrap head-search">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+        	<input class="vg-flex-item head-search-input" type="text" placeholder="输入商品名称" />
+        	<button class="head-search-btn"></button>
+        </div><!--/head-common-->
+    </header><!--/head-->
+
+	<!--热门搜索-->
+	<section class="sec-hot-search">
+		<h2>热门搜索</h2>
+		<!-- 滚动券 -->
+		<div class="ui-scroller hot-search">
+		    <ul>
+		        <li><a href="##">Iphone 6</a></li>
+		        <li><a href="##">Iphone 6s</a></li>
+		        <li><a href="##">Iphone 6s 2</a></li>
+		        <li><a href="##">Iphone 6s 21</a></li>
+		        <li><a href="##">Iphone 6s 2 2</a></li>
+		        <li><a href="##">Iphone 6s 2333</a></li>
+		        <li><a href="##">Iphone 6s 244444</a></li>
+		        <li><a href="##">Iphone 6s 25555</a></li>
+		    </ul>
+		</div>
+    </section><!--/sec-hot-search-->
+	<div class="white-line"></div>
+	<!--最近搜索-->
+	<section class="sec-history-search">
+		<h2>最近搜索</h2>
+		<ul class="history-search-list">
+			<li><a href="##">好看的衣服</a><span class="history-del"></span></li>
+			<li><a href="##">好看的衣服</a><span class="history-del"></span></li>
+			<li><a href="##">好看的衣服</a><span class="history-del"></span></li>
+			<li><a href="##">好看的衣服</a><span class="history-del"></span></li>
+		</ul>
+		<div class="history-del-all">删除所有记录</div>
+	</section>
+
+	<!--弹窗-->
+	<div class="ui-dialog">
+	    <div class="ui-dialog-cnt">
+	        <div class="ui-dialog-bd">
+	            <div>
+		            <h2>是否删除</h2>
+	            </div>
+	        </div>
+	        <div class="ui-dialog-ft ui-btn-group">
+	            <button type="button" data-role="button"  class="select-no" id="dialogButton<%=i%>">否</button>
+	            <button type="button" data-role="button"  class="select-yes ml-30" id="dialogButton2">是</button> 
+	        </div>
+	    </div>        
+	</div><!--/ui-dialog-->
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+//滚动js
+(function() {
+	//设置滚动父容器的宽度
+	// var NewCategoryItems=$(".hot-search ul li").size();
+	// var liW=$(".hot-search ul li").width();
+	// var NewCategoryW=NewCategoryItems*liW+(NewCategoryItems-1)*10
+	// $(".hot-search ul").css("width",NewCategoryW);
+	liHot=$(".hot-search ul li");
+	wrapW=0;
+	liHot.each(function(){
+		wrapW+=($(this).width()+5);
+	});
+	$(".hot-search ul").css("width",wrapW);
+	//滚动
+    var scroll = new fz.Scroll('.ui-scroller', {
+        scrollX: true
+    });
+    scroll.scrollToElement("li:first-child", 1000, true, true);
+})();
+$(function(){
+	//点击输入的时候改变搜索框长度
+	$(".head-search-input").focus(function(){
+		$(this).siblings(".head-back").hide();
+	});
+	$(".head-search-input").blur(function(){
+		$(this).siblings(".head-back").show();
+	});
+	//单个删除历史记录
+	$(".history-del").tap(function(){
+		$(this).parents("li").remove();
+	});
+	//弹窗
+	$(".history-del-all").click(function(){
+		$(".ui-dialog").dialog("show");
+	});
+})
+</script>
+
+
+</body>
+
+</html>
+  

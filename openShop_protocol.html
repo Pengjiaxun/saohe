@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html style="font-size: 20px;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>开店协议</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/openShop.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body id="openShop_protocol_bg">
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">开店协议</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--支付成功-->
+	<section class="sec-openShop_protocol">
+		<div class="logo">
+            <img src="images/icons/uploadID/logo_open_shop.png" alt="">      
+        </div>
+        <div class="referrer-wrap">
+            <div class="face"><img src="images/upload/p1.jpg" /></div>
+            <div class="referrer">
+            推荐人：到底是谁？
+            </div>
+        </div>
+        <div class="btn-box"><a>下一步</a></div>
+        <div class="agree-box vg-flex-wrap checked">
+            <div class="check-btn"></div>
+            <div class="vg-flex-item agree-cnt">我已经认真阅读，<a>《骚盒分销商入驻合约》</a>，并愿意承担相关法律责任。</div>
+        </div>
+    </section><!--/sec-openShop_protocol-->
+	
+
+
+
+<script src="js/lib/zepto.min.js"></script>
+<!-- <script src="js/lib/rem.js"></script> -->
+<script src="js/1.0.1/frozen.js"></script>
+<script type="text/javascript">
+	$(function(){
+        // 下一步按钮
+        $(".btn-box a").tap(function(e){
+            if(!$(".agree-box").hasClass("checked")){
+                el=$.tips({
+                    content:'请勾选同意协议！',
+                    stayTime:2000,
+                    type:"warm"
+                })
+                e.preventDefault();
+                console.log(11);
+            }else{
+                window.location.href="openShop_userInfo.html";
+            }
+        })
+        // 勾选同意协议
+		$(".agree-box").tap(function(){
+			$(this).toggleClass("checked");
+		});
+        $(".agree-cnt a").tap(function(e){
+            e.stopPropagation();
+            window.location.href="openShop_protocol_det.html";
+        });
+
+	})
+</script>
+
+
+</body>
+
+</html>
+  

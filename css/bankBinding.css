@@ -1,0 +1,27 @@
+/*
+*绑定手机
+ */
+ html,body{width:100%;height:100%;overflow:hidden;position:relative;background-color:#f0f0f0}
+.head-common{position:static;}
+
+/*绑定手机*/
+.sec-bankbinding{}
+.sec-bankbinding h1{font-size:13px;color:#999;line-height:30px;height:30px;padding-left:15px;border-bottom:1px solid #ccc;}
+
+.sec-bankbinding .username,.sec-bankbinding .bankName,.sec-bankbinding .cardNo{padding:7px 15px;height:49px;background-color:white;border-bottom:1px solid #ccc;
+}
+.sec-bankbinding .username span,.sec-bankbinding .bankName span,.sec-bankbinding .cardNo span{display:block;width:70px;line-height:35px;height:35px;margin-right:20px;
+font-size:15px;color:#000;}
+.sec-bankbinding .username p,.sec-bankbinding .bankName p,.sec-bankbinding .cardNo p{height:35px;}
+.sec-bankbinding .username p input,.sec-bankbinding .bankName p input,.sec-bankbinding .cardNo p input{height:100%;padding-left:8px;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;
+background-color:#f0f0f0;border: none;border-radius:3px;}
+/*选择银行卡银行*/
+.sec-bankbinding .bankType{height:49px;line-height:49px;background-color:white;border-bottom:1px solid #ccc;padding-left:15px;position:relative;
+display:block;color:#000}
+.sec-bankbinding .bankType i{float:right;font-style:normal;margin-right:30px}
+.sec-bankbinding .bankType::after{background:url(../images/icons/arr_left_gray.png) no-repeat center;background-size:8px 16px;
+	position:absolute;display:block;content:"";width:8px;height:16px;right:15px;top:50%;margin-top:-8px;}
+/*按钮*/
+.bankbinding-btn{padding:0px 15px 0 15px;margin-top:40px; }
+.bankbinding-btn button{width:100%;height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;}

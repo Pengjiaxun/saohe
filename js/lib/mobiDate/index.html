@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Mobiscroll</title>
+
+    <script src="http://zeptojs.com/zepto.js"></script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    
+    <script src="js/mobiscroll.zepto.js"></script>
+    <script src="js/mobiscroll.core.js"></script>
+    <script src="js/mobiscroll.frame.js"></script>
+    <script src="js/mobiscroll.scroller.js"></script>
+
+    <script src="js/mobiscroll.util.datetime.js"></script>
+    <script src="js/mobiscroll.datetimebase.js"></script>
+    <script src="js/i18n/mobiscroll.i18n.zh.js"></script>
+    
+    <link href="css/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.ios.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.ios.css" rel="stylesheet" type="text/css" />
+
+
+    
+ 
+
+    
+
+    
+    
+    <style type="text/css">
+        /* Demo Page styling, you can disregard this in your implementation */
+        body { padding: 0; margin: 0; font-size: 16px; font-family: arial, verdana, sans-serif; }
+        input, select { width: 100%; padding: .625em; margin: 0 0 .625em 0; border: 1px solid #aaa; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+        .header { padding: .625em; background: #5185a8;}
+        .header h1 { margin: 0; padding: 0; color: #fff; text-align: center; font-size: 1.25em; font-weight: bold; text-shadow: 1px 1px 1px #000; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+        .content { padding: 1em; }
+    </style>
+
+    <script>
+        $(function () {
+            //初始化日期控件
+            var opt = {
+                preset: 'date', //日期
+                theme: 'ios', //皮肤样式
+                display: 'bottom', //显示方式 
+                mode: 'scroller', //日期选择模式
+                dateFormat: 'yy-mm-dd', // 日期格式
+                setText: '确定', //确认按钮名称
+                cancelText: '取消',//取消按钮名籍我
+                dateOrder: 'yymmdd', //面板中日期排列格式
+                dayText: '日', monthText: '月', yearText: '年', //面板中年月日文字
+                endYear:2020 //结束年份
+            };
+            
+            $('#demo_time').mobiscroll(opt);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Mobiscroll</h1>
+    </div>
+
+    <div class="content">
+        <!-- Time demo markup -->
+        <div data-role="fieldcontain" class="demo-cont" id="demo_cont_time">
+            <label for="demo_time">选择时间</label>
+            <input type="text" id="demo_time" />  
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>上传身份证照片</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/openShop.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body id="openShop_uploadID_bg">
+    <!--头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">上传身份证照片</div>
+            <a class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+	<!--上传身份证照片-->
+	<section class="openShop_uploadID">
+		<h1 class="title">请点击示例图添加按钮上传证件照片</h1>
+        <ul class="ui-row upload-box">
+            <li class="ui-col ui-col-50">
+                <div class="upload-img">
+                    <img src="images/upload/item-img.png" alt="" >
+                    <button></button>
+                </div>
+                <h2 class="upload-desc">身份证(正)</h2>
+            </li>
+            <li class="ui-col ui-col-50">
+                <div class="upload-img">
+                    <img src="images/icons/uploadID/pic_reverse.png" alt="" >
+                    <button></button>
+                </div>
+                <h2 class="upload-desc">身份证(反)</h2>
+            </li>
+        </ul>
+        <ul class="ui-row upload-box">
+            <li class="ui-col ui-col-50">
+                <div class="upload-img">
+                    <img src="images/icons/uploadID/pic_handheld_id.png" alt="" >
+                    <button></button>
+                </div>
+                <h2 class="upload-desc">手持身份证图</h2>
+            </li>
+            <li class="ui-col ui-col-50">
+                
+            </li>
+        </ul>
+        <div class="upload-btn">
+            <button id="upload">下一步</button>
+        </div>
+	</section>
+	
+    
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/lib/rem.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		
+		$(function(){
+            $(".upload-img button").tap(function(){
+                // 调用微信自带的选择图片接口
+                wx.chooseImage({
+                  success: function (res) {
+                    images.localId = res.localIds;
+                    alert('已选择 ' + res.localIds.length + ' 张图片');
+                  }
+                });
+            });
+            //提示框
+            $("#upload").tap(function(){
+                //调用微信自带的上传图片接口
+
+                // 错误提示
+                el=$.tips({
+                    content:'没有上传图片！',
+                    stayTime:2000,
+                    type:"warm"
+                })
+                el.on("tips:hide",function(){
+                    window.location.href="";
+                })
+            });
+		})
+
+	</script>
+
+</body>
+
+</html>
+  

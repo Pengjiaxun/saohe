@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>手机号码</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/bindPhone.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    
+    </head>
+<body>
+    <!--头部-->
+    <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">手机号码</div>
+            <a href="cashRecord.html" class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+
+	<!--手机号码-->
+	<section class="sec-bindPhone">
+		<h1>手机绑定后，可使用手机号码登录系统！</h1>
+        <div class="mobile-box vg-flex-wrap">
+            <span>手机号码</span>
+            <p class="vg-flex-item"><input type="text"></p>
+        </div>
+        <div class="code-box vg-flex-wrap">
+            <span>验证码</span>
+            <p class="vg-flex-item"><input type="text"></p>
+            <button>发送验证码</button>
+        </div>
+        <div class="bindPhone-btn">
+            <button id="bindPhone">确定</button>
+        </div>
+	</section>
+    
+    
+  
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+	<script>
+		$(function(){
+            
+            $("#bindPhone").tap(function(){
+                var el;
+                el=$.tips({
+                    content:'验证失败！',
+                    stayTime:2500,
+                    type:"warn"
+                })
+                el.on("tips:hide",function(){
+                    window.location.href="bindPhone.html";
+                })
+                
+            });
+            
+		})
+        
+        
+	</script>
+        
+</body>
+
+</html>
+  

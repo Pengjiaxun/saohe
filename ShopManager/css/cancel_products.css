@@ -1,0 +1,97 @@
+#bg_tj{background:#f0f0f0;}
+/*头部*/
+
+/*产品列表*/
+.list{
+   
+    position:relative;
+}
+.cover-head{width:100%;height:44px;overflow: hidden;}
+.pro-cnt{position:relative;}
+.pro-list{
+    background:#fff;
+    margin-top:10px;
+}
+.pro-list .selectIcon{
+    background:url("../image/icon/icon_not_select.png") no-repeat center;
+    background-size:20px;
+    width:40px;
+    height:120px;
+   
+}
+.pro-list .selectIcon.selected{
+    background:url("../image/icon/icon_select.png") no-repeat center;
+    background-size:20px;
+    width:40px;
+    height:120px;
+
+}
+
+.pro_img{
+    width:120px;
+    height:120px;
+    margin-right:10px;
+    overflow:hidden;
+}
+.pro-title{
+    color:#000;
+    font-size:14px;
+    line-height:19px;
+    padding:10px 0 4px;
+}
+.pro-num{
+    color:#999;
+    font-size:12px;
+    line-height:14px;
+}
+.pro-price{
+    line-height:45px;
+    color:red;
+}
+/*底部*/
+.footer-btn{
+    width:100%;
+    height:40px;
+    position:fixed;
+    bottom:0;
+    background:#ccc;
+}
+.footer-btn .selectIcon{
+    background:url("../image/icon/icon_not_select.png") no-repeat center;
+    background-size:20px;
+    width:40px;
+    height:40px;
+
+}
+.footer-btn .selectIcon.selected{
+    background:url("../image/icon/icon_select.png") no-repeat center;
+    background-size:20px;
+    width:40px;
+    height:40px;
+
+}
+.footer-btn .allSelect{
+    margin:8px 0;
+    width:50px;
+}
+/*.selecting span{
+    display:inline-block;
+    line-height:40px;
+}*/
+#addNum{
+    color:#000;
+    width:90px;
+    margin:8px 0;
+    float:right;
+}
+#addNum span{
+    color:red;
+    padding-left:5px;
+}
+
+
+
+
+
+
+

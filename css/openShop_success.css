@@ -1,0 +1,82 @@
+
+/*
+*支付成功页
+*/
+.sec-openShop_success{margin:40px 15px 25px 15px;background-color:white;border-radius:8px;padding:15px 0 20px 0;}
+.failed-icon{height:85px;background:url(../images/icons/icon_success.png) no-repeat center;background-size:75px 85px; }
+.sec-openShop_success h1{font-size:18px;text-align:center;margin-top:10px;line-height:1;}
+.sec-openShop_success p{font-size:15px;color:#333;word-break:break-all;padding:5px 20px 0px 20px;text-align: center;}
+.sec-openShop_success .gopay{color:#d74b41;}
+
+/*二维码*/
+.openShop_success-qr{width:220px;height:220px;margin:0 auto;}
+.openShop_success-qr img{width: 100%;}
+.openShop_success-h2{text-align:center;font-size:14px;padding-top:15px;padding-bottom:15px;}
+
+
+/*按钮*/
+.openShop_success-btn{padding:0px 15px 20px 15px;}
+
+/* .openShop_success-btn li{width:100%;height:42px;float:left;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.openShop_success-btn li:first-child{padding-right:8px}
+.openShop_success-btn li:last-child{padding-left:8px} */
+
+
+.openShop_success-btn a{width:100%;height:42px;line-height: 42px;text-align:center;font-size:16px;
+color:#fff;border-radius: 4px;display:block;}
+
+/* 推荐 */
+.cantoo{
+	width: 100%;
+	height:0.85rem;
+	margin-top: 18px;
+    /* line-height: 56px; */
+    background: url("../images/icons/open_shop_success_03.png") center no-repeat;
+    background-size: cover;
+}
+/* .cantoo img{width: 345px;} */
+.openShop_success-btn .recommend{
+	width: 208px;
+	text-align: center;
+	margin:0 auto;
+	padding: 20px 0 36px 0
+}
+.recommend-wrap{
+	height: 56px;
+	line-height: 56px;
+    background:url("../images/icons/toux_decorate.png") center no-repeat;
+    background-size: cover;
+}
+.img-wrap{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 5px;
+    margin-left: 5px;
+
+}
+.img-wrap img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.recommend_personName{
+/* 	display: inline-block;
+vertical-align: middle; */
+width: 108px;
+text-overflow:ellipsis;
+overflow:hidden;
+white-space:nowrap;
+font-size: 15px;
+color: #5c3164;
+font-weight: bold;
+}
+.openShop_success-btn .recommend img{border-radius: 50%;width: 100%;height: 100%;}
+.openShop_success-btn a:first-child{background: #5c3164;}
+.openShop_success-btn a:last-child{background: #4C8A62;}
+
+
+
+
+

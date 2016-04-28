@@ -1,0 +1,314 @@
+
+/*****************************************
+**协议
+******************************************/
+.sec-openShop_protocol{
+	width:100%;
+}
+.sec-openShop_protocol .logo{
+	padding-top:13.33%;
+	width:90%;
+	margin:0 auto;
+}
+.sec-openShop_protocol .logo img{
+	width:100%;
+}
+/*推荐人*/
+.sec-openShop_protocol .referrer-wrap{
+	/*position:relative;*/
+	-webkit-box-align:center;
+}
+
+.sec-openShop_protocol .face{
+	width:252px;
+	height:88px;
+	overflow:hidden;
+	margin:0 auto;
+	padding-left:81px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.sec-openShop_protocol .face img{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	border:3px solid rgba(255,255,255,0.5);
+
+}
+.sec-openShop_protocol .referrer{
+	padding:5px 15px;
+	font-size:18px;
+	line-height:1;
+	text-align:center;
+	word-break:break-all;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:white;
+}
+/*下一步按钮*/
+.sec-openShop_protocol .btn-box{
+	padding:25px 15px 10px 15px;
+}
+.sec-openShop_protocol .btn-box a{
+	width:100%;
+	display: block;
+	height: 44px;
+	line-height: 44px;
+	text-align:center;
+	border-radius:22px;
+	font-size:16px;
+	letter-spacing:6px;
+}
+/*同意协议*/
+.agree-box{
+	color:white;
+	padding:10px 30px;
+}
+.agree-box .check-btn{
+	width:16px;
+	height: 16px;
+	background:url(../images/icons/uploadID/box_dis.png) no-repeat center;
+	background-size:contain;
+	margin-top:4px;
+	margin-right:10px;
+}
+.agree-box.checked .check-btn{
+	background:url(../images/icons/uploadID/box_select.png) no-repeat center;
+	background-size:contain;
+}
+.agree-box .agree-cnt{
+	font-size:15px;
+	color:white;
+	word-break:break-all;
+	color:#e5e5e5;
+}
+.agree-box .agree-cnt a{
+	color:#00a5e0;
+	font-weight:bold;
+}
+
+
+/*****************************************
+**协议内容详情
+******************************************/
+.sec-openShop_protocol_det{
+	padding:15px;
+}
+.sec-openShop_protocol_det h1{
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding-bottom:20px;
+}
+.sec-openShop_protocol_det dt{
+	font-weight:bold;
+	font-size:12px;
+	padding:15px 0 5px 0;
+	word-break:break-all;
+}
+.sec-openShop_protocol_det dd{
+	font-size:12px;
+	word-break:break-all;
+	padding:5px 0;
+}
+
+/******************************************
+**用户信息
+******************************************/
+.openShop_userInfo{
+	padding:10px 15px;
+}
+.openShop_userInfo .userInfo-input-box{
+	padding:7px 15px 7px 0;
+	height:50px;
+	margin-bottom:10px;
+	border-radius:5px;
+}
+.openShop_userInfo .userInfo-input-box span{
+	display:block;
+	width:92px;
+	line-height:35px;
+	height:35px;
+	font-size:15px;
+	color:#000;
+	text-align:center;
+}
+.openShop_userInfo .userInfo-input-box span i{
+	color:red;
+}
+.openShop_userInfo .userInfo-input-box p {
+	height:35px;
+	position:relative;
+}
+.openShop_userInfo .userInfo-input-box p input {
+	height:100%;
+	padding-left:8px;
+	width:100%;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color:#f0f0f0;
+	border: none;
+	outline:none;
+	border-radius:4px;
+	-webkit-appearance:none;
+}
+/*密码框*/
+.pwdShow{
+	position:absolute;
+}
+.pwdCover{
+	position:absolute;
+	letter-spacing:1px;
+	opacity:0
+	
+}
+/*密码确认框*/
+.pwdConfirmShow{
+	position:absolute;
+}
+.pwdConfirmCover{
+	position:absolute;
+	letter-spacing:1px;
+	opacity:0
+}
+/*验证码按钮*/
+.btn-sendCode{
+	width:92px;
+	margin-left:10px;
+	height:35px;
+	border-radius:4px;
+	line-height:35px;
+	color:white;
+	font-size:15px;
+}
+/*验证码无效状态*/
+.openShop_userInfo .btn-sendCode.disabled{
+	background:#999;
+	color:#ccc;
+	font-size:12px
+}
+
+/*按钮*/
+.openShop_userInfo-btn {
+	padding-top:40px;
+}
+.openShop_userInfo-btn button {
+	width:100%;
+	height:44px;
+	line-height: 44px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	border-radius: 4px;
+	letter-spacing:6px;
+}
+
+
+/******************************************
+**上传身份证
+******************************************/
+/*标题*/
+.openShop_uploadID .title{
+	height:45px;
+	line-height:45px;
+	font-size:15px;
+	color:#666;
+	text-align:center;
+}
+.openShop_uploadID .upload-box{
+	padding:0px 45px;
+}
+.openShop_uploadID .upload-box li{
+	padding-top:20px;
+}
+.openShop_uploadID .upload-box li:first-child{
+	padding-right: 22px;
+}
+.openShop_uploadID .upload-box li:last-child{
+	padding-left: 22px;
+}
+/*图片*/
+.openShop_uploadID .upload-img{
+	width:6.0rem;
+	height:6.0rem;
+	position:relative;
+	overflow:hidden;
+	border-radius:6px;
+	display:-webkit-box;
+	display:box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}
+/*增加按钮*/
+.openShop_uploadID .upload-img button{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-appearance:none;
+	border:none;
+	outline: none;
+}
+
+.openShop_uploadID .upload-img img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+/*描述文字*/
+.openShop_uploadID .upload-desc{
+	font-size:14px;
+	line-height:32px;
+	text-align:center;
+}
+/*按钮*/
+.upload-btn {
+	padding:40px 15px 15px 15px;
+}
+.upload-btn button {
+	width:100%;
+	height:44px;
+	line-height: 44px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	border-radius: 4px;
+	letter-spacing:6px;
+}
+
+
+
+
+
+/******************************************
+**如何开店
+******************************************/
+.sec-openShop_step .top img{
+	display: block;
+}
+.sec-openShop_step .bottom{
+	position:relative;
+}
+.sec-openShop_step .bottom img{
+	display:block;
+}
+.sec-openShop_step .bottom a{
+	display:block;
+	width:54%;
+	height: 44px;
+	line-height:44px;
+	text-align:center;
+	border-radius:4px;
+	border: 2px solid #fff;
+	background:rgba(255,255,255,.5);
+	color:white;
+	font-size:16px;
+	position:absolute;
+	top:0;
+	left:23%;
+	outline:none; 
+}
+

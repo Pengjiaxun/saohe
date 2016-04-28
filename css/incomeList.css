@@ -1,0 +1,27 @@
+
+/*
+*提现记录
+*/
+
+/*提现记录*/
+.sec-incomeList{}
+
+/*折叠框********************/
+/*折叠框头部*/
+.accordion{margin-top:10px;}
+.accordion.show .accordion-hd{border-bottom:none;}
+.accordion-hd{background:white;border-top:1px solid #ccc;border-bottom:1px solid #ccc;position:relative;padding:15px;height:48px;font-size:15px;}
+.accordion-hd-l{height:18px;}
+.accordion-badge{min-width:18px;height:18px;line-height:18px;border-radius:9px;text-align:center;font-size:10px;
+display:block;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 5px}
+.accordion-hd-r{width:64px;font-weight:bold;display:block;height:18px;line-height:18px;margin:0 15px 0 5px;}
+.accordion-hd::after{content:"";display:block;width:15px;height:15px;position:absolute;top:17px;right:15px;}
+/*折叠框内容*/
+.accordion-bd{display:none;}
+.accordion.show .accordion-bd{display:block;}
+.accordion-bd-list{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background:white;margin-bottom:6px;padding:8px 15px}
+.accordion-bd-bd:last-child{margin-bottom:0;}
+.accordion-bd-list table{width:100%;}
+.accordion-bd-list table tr{height:30px;line-height:30px;}
+.pro-name{max-width:160px;overflow:hidden;}
+

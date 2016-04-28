@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>收益列表</title>
+        <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/incomeList.css">
+        <link rel="stylesheet" type="text/css" href="css/skin/skinPurple.css">
+    </head>
+<body>
+    <!--收益列表头部-->
+   <header>
+        <div class="head-common">
+            <a href="javascript:history.go(-1);" class="head-l head-back">返回</a>
+            <div class="head-m">收益列表</div>
+            <a href="##" class="head-r"></a>
+        </div><!--/head-common-->
+    </header><!--/head-->
+    <div class="cover-head"></div><!--/覆盖占位头部-->
+
+	<!--收益列表-->
+	<section class="sec-incomeList">
+				
+		<!-- 已结算收益 -->
+		<div class="accordion income-got show">
+			<div class="accordion-hd vg-flex-wrap">
+				<div class="accordion-hd-l vg-flex-item">结算状态</div>
+				<span class="accordion-badge">56</span>
+				<i class="accordion-hd-r">已结算</i>
+			</div>
+			<div class="accordion-bd">
+				<div class="accordion-bd-list">
+					<table>
+						<tr>
+							<td>商品名称</td>
+							<td class="tx-r c-333 pro-name"><div class="ui-nowrap">一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！</div></td>
+						</tr>
+						<tr>
+							<td>订单编号</td>
+							<td class="tx-r c-333">111111111</td>
+						</tr>
+						<tr>
+							<td>订单时间</td>
+							<td class="tx-r c-333">2015.12.12 15:15:22</td>
+						</tr>
+						<tr>
+							<td>收益</td>
+							<td class="tx-r c-333">289.00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="accordion-bd-list">
+					<table>
+						<tr>
+							<td>商品名称</td>
+							<td class="tx-r c-333 pro-name"><div class="ui-nowrap">一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！</div></td>
+						</tr>
+						<tr>
+							<td>订单编号</td>
+							<td class="tx-r c-333">111111111</td>
+						</tr>
+						<tr>
+							<td>订单时间</td>
+							<td class="tx-r c-333">2015.12.12 15:15:22</td>
+						</tr>
+						<tr>
+							<td>收益</td>
+							<td class="tx-r c-333">289.00</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 未结算收益 -->
+		<div class="accordion income-ungot">
+			<div class="accordion-hd vg-flex-wrap">
+				<div class="accordion-hd-l vg-flex-item">结算状态</div>
+				<span class="accordion-badge">56</span>
+				<i class="accordion-hd-r">未结算</i>
+			</div>
+			<div class="accordion-bd">
+				<div class="accordion-bd-list">
+					<table>
+						<tr>
+							<td>商品名称</td>
+							<td class="tx-r c-333 pro-name"><div class="ui-nowrap">一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！</div></td>
+						</tr>
+						<tr>
+							<td>订单编号</td>
+							<td class="tx-r c-333">111111111</td>
+						</tr>
+						<tr>
+							<td>订单时间</td>
+							<td class="tx-r c-333">2015.12.12 15:15:22</td>
+						</tr>
+						<tr>
+							<td>收益</td>
+							<td class="tx-r c-333">289.00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="accordion-bd-list">
+					<table>
+						<tr>
+							<td>商品名称</td>
+							<td class="tx-r c-333 pro-name"><div class="ui-nowrap">一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！一杯咖啡嘻嘻嘻嘻！</div></td>
+						</tr>
+						<tr>
+							<td>订单编号</td>
+							<td class="tx-r c-333">111111111</td>
+						</tr>
+						<tr>
+							<td>订单时间</td>
+							<td class="tx-r c-333">2015.12.12 15:15:22</td>
+						</tr>
+						<tr>
+							<td>收益</td>
+							<td class="tx-r c-333">289.00</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+		
+
+    </section><!-- /sec-incomeList -->
+	
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/1.0.1/frozen.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		// 切换折叠展开
+		$(".accordion-hd").tap(function(){
+			$(this).parent(".accordion").toggleClass("show");
+		});
+
+	})
+</script>
+
+
+</body>
+
+</html>
+  

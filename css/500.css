@@ -1,0 +1,16 @@
+
+/*
+*400错误页
+*/
+/*订单空页*/
+@media screen and (min-width:375px){
+	.err-500{width:68%;margin:70px auto;min-height:270px}
+}
+@media screen and (min-width:320px) and (max-width:374px){
+	.err-500{width:68%;margin:40px auto;min-height:210px}
+}
+
+
+
+
+

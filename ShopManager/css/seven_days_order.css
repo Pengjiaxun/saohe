@@ -1,0 +1,111 @@
+#bg_tj{background:#f0f0f0;}
+/*头部*/
+.head-common{
+    background-color:#5c3164;
+    padding: 0px 10px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    display:-webkit-box;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.head-back{
+    background: url(../image/icon/icon_back.png) left center no-repeat;
+    background-size: 20px 20px;
+    text-align: left;
+    text-indent: 14px;
+    line-height: 44px;
+    padding-left:10px;
+    display: block;
+    color: #fff;
+}
+.head-r{
+    display: block;
+    width: 56px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    text-align:center;
+}
+.head-common .head-m{
+    display: block;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*头部占位符*/
+.cover-head{
+	overflow:hidden;
+	height:30px;
+}
+/*中间部分*/
+.zhexian_order{
+    position:relative;
+    height:200px;
+    margin:20px 15px;
+    display:-webkit-box;
+    -webkit-box-flex:1;
+    border-radius:4px;
+    background:rgba(0,0,0,0.4);
+}
+.main_head{
+    width:100%;
+    height:45px;
+}
+.main_head .order{
+    float:left;
+    font-size:14px;
+    color:#fff;
+    line-height:20px;
+    padding: 5px 0 0 20px;  
+}
+.main_head .price{
+    float:right;
+    font-size:14px;
+    color:#fff;
+    line-height:20px;
+    padding:5px 20px 0 0;
+}
+#main_order{
+    border-top:2px solid #ccc;
+    width:95%;
+    height:80%;
+    margin:30px 10px 10px 10px;
+    position:absolute;
+    top:0;
+    left:0;
+    /*margin:45px auto;*/
+    display:-webkit-box;
+    -webkit-box-flex:1;
+}
+.seven_order{
+    margin:0 15px;
+}
+.day{
+    padding:0 10px;
+    color:#fff;
+    line-height:34px;
+    height:34px;
+    background:rgba(0,0,0,0.4);
+    margin-top:10px;
+    border-radius:4px;
+}
+
+
+
+
+
+
+
+
+
+

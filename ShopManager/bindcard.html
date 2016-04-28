@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>银行卡绑定</title>
+    <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <link rel="stylesheet" type="text/css" href="css/cash.css">
+    <link rel="stylesheet" type="text/css" href="css/bind.css">
+    <link rel="stylesheet" type="text/css" href="css/skinPurple.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body ontouchstart="">
+    <!-- 头部导航 -->
+    <header class="ui-header ui-header-positive">
+         <a class="head-l head-back">返回</a>
+        <h1>银行卡绑定</h1>
+    </header>
+    <!--/覆盖占位头部-->
+    <div class="cover-head"></div>
+    <!--提现-->
+    <section class="sec-cash">
+        <h1>填写资料</h1>
+        <div class="cash-box cash-box-my">
+            <div class="cash-input vg-flex-wrap ui-border-t cardType">
+                <span class="cash-box-title long">请选择银行卡账户类型<i id="typeInput"></i></span><i class="arrowLeft"></i>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t region">
+                <span class="cash-box-title">地区</span>
+                <p class="regionInput"><input type="text" placeholder="请输入省份" id="province" ></p>
+                <p class="regionInput"><input type="text" placeholder="请输入城市" id="city" ></p>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">开户人姓名</span>
+                <p class="vg-flex-item"><input type="text" autofocus placeholder="请填写"></p>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t bankChos">
+                <span class="cash-box-title long">请选择开户银行<i id="bankInput"></i></span><i class="arrowLeft"></i>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">支行名称</span>
+                <p class="vg-flex-item"><input type="text" placeholder="请填写"></p>
+            </div>
+            <div class="cash-input vg-flex-wrap ui-border-t">
+                <span class="cash-box-title">银行账户</span>
+                <p class="vg-flex-item"><input type="text" placeholder="请填写"></p>
+            </div>
+        </div>
+        <div class="btn-cash"><button>确定</button></div>
+    </section><!-- /sec-mywallet -->
+
+    <!-- 银行卡账户弹出框 -->
+    <div class="bindCard-recom">
+            <div class="public">
+                对公账户
+            </div>
+            <div class="private">
+                对私账户
+            </div>
+            <div class="cancel">取消</div>
+    </div>
+
+    <!-- 选择银行弹出框 -->
+    <div class="recom cash-out">
+        <div class="band-nav">选择银行<i id="close"></i></div>
+        <div class="wechat fist clearfix">
+            <div class="bank_build fl">
+                <i class="youzheng-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_China_youzheng.png" alt="">
+                    <p class="band-name">中国邮政储蓄银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="gongshang-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_China_gongshang.png" alt="">
+                    <p class="band-name">中国工商银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="nongye-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_China_nongye.png" alt="">
+                    <p class="band-name">中国农业银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="zhongguo-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_China_bank.png" alt="">
+                    <p class="band-name">中国银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="jianshe-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_China_jianshe.png" alt="">
+                    <p class="band-name">中国建设银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="jiaotong-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_traffic_bank.png" alt="">
+                    <p class="band-name">中国交通银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="zhaoshang-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_zhaoshang_bank.png" alt="">
+                    <p class="band-name">中国招商银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="zhongxin-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_zhongxin_bank.png" alt="">
+                    <p class="band-name">中国中信银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="pingan-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_pingan_bank.png" alt="">
+                    <p class="band-name">中国平安银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="guangfa-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_guangfa_bank.png" alt="">
+                    <p class="band-name">中国广发银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="minshen-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_minsheng_bank.png" alt="">
+                    <p class="band-name">中国民生银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="guangda-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_guangda_icon.png" alt="">
+                    <p class="band-name">中国光大银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="xingye-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_xingye_bank.png" alt="">
+                    <p class="band-name">中国兴业银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="pufa-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_pufa_bank.png" alt="">
+                    <p class="band-name">中国浦发银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+        <div class="wechat clearfix">
+            <div class="bank_build fl">
+                <i class="huaxia-big"></i>
+            </div>
+            <div class="band-info">
+                <div>
+                    <img class="band-icon-small" src="image/icon/bank/icon_huaxia_bank.png" alt="">
+                    <p class="band-name">中国华夏银行</p><br/>
+                    <p class="band-type">储值卡</p><br/>
+                </div>
+                <p class="band-num fl">****************1234</p>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- 是否退出弹窗 -->
+    <div class="dialog ui-center">是否退出此次编辑
+        <div class="sure">
+            <div class="yes btn fl">是</div>
+            <div class="no btn fr">否</div> 
+        </div>
+    </div>
+     <!-- 遮罩层 -->
+    <div class="ui-dialog"></div>
+
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        // 是否退出弹窗
+        $(".head-back").click(function(){
+            $(".ui-dialog").css("display","block");
+            $(".dialog").css("display","block");
+        });
+
+        $(".no").click(function(){
+            $(".ui-dialog").css("display","none");
+            $(".dialog").css("display","none");
+        });
+        $(".ui-dialog").click(function(){
+            $(".ui-dialog").css("display","none");
+            $(".dialog").css("display","none");
+        });
+         $(".yes").click(function(){
+            location.href= 'cash.html';
+        });
+
+    /*银行卡账户弹窗*/
+        $(".cardType").click(function(){
+            $(".bindCard-recom").css({"bottom":0,"animation":"moveon1 0.5s"});
+            $(".ui-dialog").css("display","block");
+        });
+        $(".cancel").click(function(){
+            $(".bindCard-recom").css({"bottom":"-114px","animation":"movedown1 0.5s"});
+            $(".ui-dialog").css("display","none");
+        });
+
+        $(".ui-dialog").click(function(){
+            $(this).css("display","none");
+            $(".bindCard-recom").css({"bottom":"-114px","animation":"movedown1 0.5s"});
+        });
+
+        $(".bindCard-recom .public").click(function(){
+            $("#typeInput").text("对公账户");
+
+            $(".bindCard-recom").css("animation","movedown1 0.5s");
+            $(".bindCard-recom").css("bottom","-114px");
+            flag=false;
+            $(".cash-box .region").css("display","block");
+            $(".ui-dialog").css("display","none");
+        });
+        $(".bindCard-recom .private").click(function(){
+            $("#typeInput").text("对私账户");
+            $(".cash-box .region").css("display","none");
+            $(".bindCard-recom").css("animation","movedown1 0.5s");
+            $(".bindCard-recom").css("bottom","-114px");
+            $(".ui-dialog").css("display","none");
+            flag=false;
+        });
+
+        /*选择银行弹窗*/
+        var t=false;
+        $(".bankChos").on("click",function(){
+
+            if(!t){
+                $(".recom").css("animation","moveon0 1s");
+                $(".recom").css("bottom","0");
+                $(".ui-dialog").css("display","block");
+                t=true;
+            }
+            else{
+                $(".recom").css("animation","movedown0 1s");
+                $(".recom").css("bottom","-450px");
+                $(".ui-dialog").css("display","none");
+                t=false;
+            }
+        });
+        $("#close").click(function(){
+            $(".recom").css("animation","movedown0 1s");
+            $(".recom").css("bottom","-450px");
+            $(".ui-dialog").css("display","none");
+            t=false;
+
+        });
+            $(".ui-dialog").click(function(){
+            $(".ui-dialog").css("display","none");
+            $(".recom").css("animation","movedown0 1s");
+            $(".recom").css("bottom","-450px");
+        });
+     });    
+
+    </script>
+</body>
+</html>

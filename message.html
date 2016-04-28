@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="cardspay.cn">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>消息中心</title>
+    <link rel="stylesheet" type="text/css" href="css/ui/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/message.css">
+</head>
+<body>
+
+    <!--消息中心-->
+    <nav class="message-tab">
+        <a href="message.html" class="active">未读</a><a href="messageRead.html">已读</a>
+    </nav>
+
+    <section class="message-sec" id="container">
+        <!-- <div class="message-list">
+            <h1 class="message-date">2015.11.12 15:32:20</h1>
+            <a class="message-panel">
+                <div class="message-panel-hd">
+                    供货商发货
+                </div>
+                <div class="message-panel-bd">
+                    夏晴红购买的(卫龙牌小辣条）供货商已发货，订单编号：1254512542125451245，快递单号：215121512151
+                </div>
+            </a>
+        </div> -->
+
+
+    </section><!--/message-sec-->
+
+
+
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/1.0.1/frozen.js"></script>
+    <script type="text/javascript" src="js/lib/stick.js"></script>
+    <script type="text/javascript">
+        //document.body.addEventListener('touchstart', function () {
+        //// 触发active伪类样式
+        //});
+        // 瀑布流
+        /** 模拟ajax加载，提供假数据 **/
+        var loadTime = 0;
+        function loadMore() {
+            if (++loadTime >= 3) {
+                return
+            }
+            setTimeout(function () {
+                //loading
+                var el = $.loading({
+                    content: '加载中...',
+                })
+                setTimeout(function () {
+                    el.loading("hide");
+                }, 300);
+                list = [
+                  {}, {}
+                ];
+                list.forEach(function (item) {
+                    var html = '<div class="message-list">' +
+                                              '<h1 class="message-date">2015.11.12 15:32:20</h1>' +
+                                              '<a class="message-panel">' +
+                                                  '<div class="message-panel-hd">' +
+                                                      '供货商发货' +
+                                                  '</div>' +
+                                                  '<div class="message-panel-bd">' +
+                                                      '夏晴红购买的(卫龙牌小辣条）供货商已发货，订单编号：1254512542125451245，快递单号：215121512151' +
+                                                  '</div>' +
+                                              '</a>' +
+                                          '</div>';
+                    stick.addItem(html, item.cover);
+                });
+            }, 300);
+        }
+
+        //定义瀑布流组件
+        var stick = new Stick({
+            container: document.getElementById('container'),
+            //column_width: 200,
+            column_gap: 0,
+            onNeedMore: loadMore
+        });
+        loadMore();
+        // 读完后跳转
+        $("#container").on("tap", ".message-panel", function (e) {
+            console.log($(this).parents(".message-list"));
+            $(this).parents(".message-list").remove();
+            //window.location.href = "messageRead.html";
+        })
+
+
+    </script>
+
+
+</body>
+
+</html>

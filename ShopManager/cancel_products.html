@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="cardspay.cn">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />   
+        <title>添加产品</title>
+        <link rel="stylesheet" href="frozenui-1.3.0/css/frozen.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/add_products.css">
+    </head>
+   <body id="bg_tj">
+    <!-- 头部 -->
+    <header>
+        <div class="head-common">
+            <a href="classified_manage.html" class="head-back">返回</a>
+            <div class="head-m">添加产品</div>
+            <a href="shop_recommend.html" class="head-r ">取消</a>
+        </div>
+    
+    </header>
+    <!-- 头部占位符 -->
+    <div class="cover-head"></div>
+    <section id="sec-pro">
+        <div class="list">
+            <div class="pro-list vg-flex-wrap">
+                <div class="selectIcon"></div>
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+                <div class="selectIcon"></div>
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+                <div class="selectIcon"></div>
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+                <div class="selectIcon"></div>
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+            <div class="pro-list vg-flex-wrap">
+                <div class="selectIcon"></div>
+                <div class="pro_img">
+                    <img src="image/icon/p2.png">
+                </div>
+                <div class="pro-cnt vg-flex-item">
+                    <h1 class="pro-title">浓香蛋糕  40g/块</h1>
+                    <h2 class="pro-num">库存量:999</h2>
+                    <h2 class="pro-num">销量:999</h2>
+                    <h2 class="pro-num">收益:10</h2>
+                    <h3 class="pro-price">￥288.00</h3>
+                </div>
+            </div>
+
+            
+        </div>
+       
+    </section>
+    <footer>
+        <div class="footer-btn">
+            <div class="selectIcon fl"></div>
+            <div class="allSelect fl">全选</div>
+            <a href="shop_recommend.html" id="addNum">添加<span>(0)</span></a>
+        </div>
+    </footer>
+   
+    <script src="frozenui-1.3.0/lib/zepto.min.js"></script>
+    <script src="frozenui-1.3.0/js/frozen.js"></script>
+    <script>
+        $(function(){
+            var all=false;
+            var allSe=$(".pro-list .selectIcon");
+            var allBtn=$(".footer-btn .selectIcon");
+            // 检查全选
+            function checkAll(){
+                var sum=0;
+                for(var i=0;i<allSe.length;i++){
+                    if($(allSe[i]).hasClass("selected")){
+                        sum++;
+                    }
+                }
+                if(allSe.length==sum){
+                    all=true;
+                }else{
+                    all=false;
+                }
+
+            };
+            // 检查每个店选框勾选还是去掉
+            // function checkShop(that){
+            //     var s=that.parents(".pro-list").children(".selected").size();
+            //     var obj=that.parents(".pro-list").children(".selected");
+            //     var n=0;
+            //     if(that.hasClass("selected")){
+            //         for(var i=0;i<s;i++){
+            //             if($(obj[i]).hasClass("selected")){
+            //                 n+=1;
+            //             }
+            //         }
+            //         if(n==s){
+            //             that.parents(".pro-list").children(".selected").addClass("selected");
+            //         }else{
+            //             that.parents(".pro-list").children(".selected").removeClass("selected");
+            //         }
+            //     }else{
+            //         that.parents(".pro-list").children(".selected").removeClass("selected");
+            //     }
+                
+            // };
+
+            allBtn.tap(function(){//全选付款
+                checkAll();
+                if(!all){
+                    $(this).addClass("selected");
+                    allSe.addClass("selected");
+                    all=false;
+                }else{
+                    $(this).removeClass("selected");
+                    allSe.removeClass("selected");
+                    all=true;
+                }   
+            });
+
+            //每个单选点击
+            allSe.tap(function(e){
+                e.preventDefault();
+                var that=$(this);
+                $(this).toggleClass("selected");
+                if(that.hasClass("shopSelected")){
+                    if(that.hasClass("selected")){
+                        that.parents(".pro-list").children(".selectIcon").addClass("selected")
+                    }else{
+                        that.parents(".pro-list").children(".selectIcon").removeClass("selected")
+                    }
+                    checkAll();
+                    if(all){
+                        allBtn.addClass("selected");
+                      
+                        all=false;
+                    }else{
+                        allBtn.removeClass("selected");
+                        
+                        all=true;
+                    }
+                }else{
+                    // checkShop(that);
+                    checkAll();
+                    if(all){
+                        allBtn.addClass("selected");
+                        
+                        all=false;
+                    }else{
+                        allBtn.removeClass("selected");
+                       
+                        all=true;
+                    }
+                }
+                
+            });
+            // 单击累加选择
+            var num=0;
+            var addOn=document.getElementById("addNum");
+            addOn.innerHTML="添加<span>("+num+")</span>";
+            $(".pro-list").tap(function(){
+                if($(this).children(".selectedIcon").hasClass("selected"))
+                {
+                    $(this).children(".selectedIcon").removeClass("selected");
+                    num--;
+                }
+                else
+                {  
+                    $(this).children(".selectedIcon").addClass("selected");
+                    num++;
+                }
+                addOn.innerHTML="添加<span>("+num+")</span>";
+            });
+        });
+
+    </script>
+</body>
+</html>
